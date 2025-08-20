@@ -28,6 +28,7 @@ h1 {
 
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none; // IE
+
   &::-webkit-scrollbar {
     display: none; // Chrome/Safari
   }
@@ -36,7 +37,7 @@ h1 {
 
 
 
-.services-slider-wrapper{
+.services-slider-wrapper {
   gap: 20px;
   display: flex;
   width: 930px;
@@ -50,7 +51,7 @@ h1 {
   // top: 1047px;
   // left: 713px;
 
-  
+
   opacity: 1;
   transform: rotate(0deg);
 
@@ -106,11 +107,11 @@ h1 {
 
 
   position: relative;
-  width: 100%;             
-  max-width: 1920px;       
-  aspect-ratio: 1920 / 930; 
+  width: 100%;
+  max-width: 1920px;
+  aspect-ratio: 1920 / 930;
   overflow: hidden;
-  margin:  auto;     // top right bottom left
+  margin: auto; // top right bottom left
   margin-bottom: 50px;
 
 
@@ -145,22 +146,29 @@ h1 {
   .bg-1 {
     background-image: url("/assets/images/service-1.png");
   }
+
   .bg-2 {
     background-image: url("/assets/images/service-2.png");
   }
+
   .bg-3 {
     background-image: url("/assets/images/service-3.png");
   }
+
   .bg-4 {
     position: relative;
     overflow: hidden;
     z-index: 1;
     background: linear-gradient(135deg, #ffe2e2, #ffcccc);
   }
+
   .bg-4::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url('/assets/images/card-bg.png');
     background-size: cover;
     background-position: center;
@@ -168,16 +176,21 @@ h1 {
     z-index: -1;
     opacity: 1;
   }
+
   .bg-5 {
     position: relative;
     overflow: hidden;
     z-index: 1;
     background: linear-gradient(135deg, #ccf2e6, #b2e6d5);
   }
+
   .bg-5::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url('/assets/images/card-bg.png');
     background-size: cover;
     background-position: center;
@@ -185,16 +198,21 @@ h1 {
     z-index: -1;
     opacity: 1;
   }
+
   .bg-6 {
     position: relative;
     overflow: hidden;
     z-index: 1;
     background: linear-gradient(135deg, #fff5cc, #ffec99);
   }
+
   .bg-6::before {
     content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url('/assets/images/card-bg.png');
     background-size: cover;
     background-position: center;
@@ -206,7 +224,7 @@ h1 {
 
 
 
-.col-lg-7{
+.col-lg-7 {
   width: 60%;
   margin: 0;
 }
@@ -238,12 +256,15 @@ h1 {
   .section__title {
     font-size: 1.5rem;
   }
+
   .ser-box {
     padding: 16px;
   }
+
   .ser-box h4 {
     font-size: 1rem;
   }
+
   .ser-box p {
     font-size: 0.9rem;
   }
@@ -347,12 +368,29 @@ h1 {
 // }
 
 
-.color-1 .service-title-card { color: #070787; }
-.color-2 .service-title-card { color: #1D3E81; }
-.color-3 .service-title-card { color: #85502E; }
-.color-4 .service-title-card { color: #e18383ee; }
-.color-5 .service-title-card { color: #28542e; }
-.color-6 .service-title-card { color: #854f2e; }
+.color-1 .service-title-card {
+  color: #070787;
+}
+
+.color-2 .service-title-card {
+  color: #1D3E81;
+}
+
+.color-3 .service-title-card {
+  color: #85502E;
+}
+
+.color-4 .service-title-card {
+  color: #e18383ee;
+}
+
+.color-5 .service-title-card {
+  color: #28542e;
+}
+
+.color-6 .service-title-card {
+  color: #854f2e;
+}
 
 
 
@@ -372,8 +410,10 @@ h1 {
 .services-slider .ser-box:before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-position: right bottom;
   background-size: cover;
   z-index: 9;
@@ -433,6 +473,7 @@ h1 {
 .service-row {
   margin-top: 140px;
   margin-left: -10px;
+
   .service-title {
     font-family: 'Geist', sans-serif !important;
     // font-size: 75px;
@@ -441,6 +482,7 @@ h1 {
     font-weight: 100;
     color: #6A28BA;
   }
+
   .service-subtitle {
     font-family: 'Geist', sans-serif !important;
     // font-size: 75px;
@@ -464,6 +506,7 @@ h1 {
   gap: 5px;
   --bs-border-radius: 3px;
 }
+
 .service-btn-left,
 .service-btn-right {
   margin-top: 50px;
@@ -476,11 +519,12 @@ h1 {
 
 
   &:active {
-    border-color: #e03e1a; 
+    border-color: #e03e1a;
     transform: scale(0.95);
   }
-   &:hover:not(:disabled) {
-    background-color: #ffe3e3; 
+
+  &:hover:not(:disabled) {
+    background-color: #ffe3e3;
   }
 
   &:disabled {
@@ -496,12 +540,12 @@ h1 {
 /* =================== MOBILE (≤700px) =================== */
 @media (max-width: 700px) {
   .service-section {
-    aspect-ratio: auto;        // don't lock weird heights on small screens
+    aspect-ratio: auto; // don't lock weird heights on small screens
     margin-bottom: 30px;
   }
 
   .service-bg-title {
-    font-size: 48px;           // shrink background title
+    font-size: 48px; // shrink background title
     margin-left: 0;
     letter-spacing: 10px;
     text-align: center;
@@ -510,10 +554,6 @@ h1 {
   .service-row {
     margin-top: 60px;
     text-align: center;
-
-    .service-title {
-      font-size: 28px !important;
-    }
 
     .service-subtitle {
       font-size: 28px !important;
@@ -584,9 +624,18 @@ h1 {
   .service-row {
     margin-top: 80px;
 
-    .service-title { font-size: 40px !important; }
-    .service-subtitle { font-size: 40px !important; }
-    .service-paragraph { font-size: 16px; line-height: 1.5; }
+    .service-title {
+      font-size: 40px !important;
+    }
+
+    .service-subtitle {
+      font-size: 40px !important;
+    }
+
+    .service-paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
   .service-section-btn {
@@ -611,8 +660,13 @@ h1 {
     max-width: 48%;
     height: auto;
 
-    h4.service-title-card { font-size: 24px; }
-    p { font-size: 15px; }
+    h4.service-title-card {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 }
 
@@ -628,9 +682,17 @@ h1 {
   .service-row {
     margin-top: 140px;
 
-    .service-title { font-size: 65px; }
-    .service-subtitle { font-size: 65px; }
-    .service-paragraph { font-size: 23px; }
+    .service-title {
+      font-size: 65px;
+    }
+
+    .service-subtitle {
+      font-size: 65px;
+    }
+
+    .service-paragraph {
+      font-size: 23px;
+    }
   }
 
   .services-slider-wrapper {
@@ -645,7 +707,18 @@ h1 {
     width: 352px;
     height: 395px;
 
-    h4.service-title-card { font-size: 35px; }
-    p { font-size: 18px; }
+    h4.service-title-card {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .service-title {
+    font-size: 35px !important;
   }
 }
