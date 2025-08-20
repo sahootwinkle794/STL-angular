@@ -1,0 +1,59 @@
+
+<section class="ondemand-section ">
+  <div class="container-fluid text-overlay">
+    <div class="ondemand-flex-wrapper">
+
+      <span class="arrow-left" (click)="previousSlide()">
+        <img src="assets/images/arrow left.png" alt="arrow-left">
+      </span>
+
+      <div class="ondemand-section-content">
+
+
+        <h1 class="ondemand-title">{{ currentSlide.heading }}</h1>
+        <h2 class="ondemand-subtitle">{{ currentSlide.highlight }}</h2>
+
+        <div class="ondemand-arrows">
+          <div class="ondemand-points">
+            <p *ngFor="let point of currentSlide.points">
+              <i class="fa-solid fa-star"></i> {{ point }}
+            </p>
+          </div>
+        </div>
+
+        <button class="btn ondemand-btn">
+          {{ currentSlide.button.text }}
+          <img src="assets/images/btn-arrow.svg" alt="img" class="ondemand-arrow">
+        </button>
+
+        <!-- <div class="ondemand-progress-bar" (click)="handleProgressClick($event)">
+          <div class="progress-fill" [ngStyle]="{ width: progressPercentage + '%' }"></div>
+        </div> -->
+
+
+
+<div class="ondemand-progress-bar" (click)="handleProgressClick($event)">
+  <div
+    class="progress-half left"
+    [ngClass]="{ 'active': progressSide === 'left' }"
+  ></div>
+  <div
+    class="progress-half right"
+    [ngClass]="{ 'active': progressSide === 'right' }"
+  ></div>
+</div>
+
+
+
+
+      </div>
+      
+      
+
+      <span class="arrow-right" (click)="nextSlide()">
+        <img src="assets/images/arrow right.png" alt="arrow-right">
+      </span>
+
+    </div>
+  </div>
+</section>

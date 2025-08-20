@@ -1,0 +1,327 @@
+
+// .request-consultation {
+//   padding: 80px 20px;
+//   background: #f5f9fc;
+
+//   .container {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 50px;
+//     align-items: flex-start;
+//   }
+
+//   /* === Left Form === */
+//   .form-wrapper {
+//     background: #ffffff;
+//     border-radius: 16px;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//     padding: 40px 30px;
+//     transition: box-shadow 0.3s ease;
+
+//     &:hover {
+//       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+//     }
+
+//     .form-title {
+//       font-size: 2rem;
+//       font-weight: 700;
+//       margin-bottom: 25px;
+//       color: #2c3e50;
+//     }
+
+//     form {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 25px;
+
+//       .form-row {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr;
+//         gap: 20px;
+//       }
+
+//       .form-group {
+//         position: relative;
+
+//         label {
+//           font-size: 0.9rem;
+//           color: #34495e;
+//           margin-bottom: 6px;
+//           font-weight: 600;
+//         }
+
+//         input,
+//         textarea {
+//           width: 100%;
+//           padding: 14px 15px;
+//           border: 1px solid #dcdfe6;
+//           border-radius: 10px;
+//           background: #f9fbfd;
+//           font-size: 1rem;
+//           color: #2c3e50;
+//           transition: all 0.3s ease;
+
+//           &:focus {
+//             border-color: #007bff;
+//             background: #ffffff;
+//             box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+//             outline: none;
+//           }
+//         }
+
+//         textarea {
+//           resize: none;
+//           min-height: 100px;
+//         }
+//       }
+
+//       .send-btn {
+//         background: linear-gradient(135deg, #1e90ff, #007bff);
+//         color: #fff;
+//         padding: 14px 30px;
+//         border: none;
+//         border-radius: 50px;
+//         font-size: 1.05rem;
+//         font-weight: 600;
+//         display: inline-flex;
+//         width: 200px;
+//         align-items: center;
+//         justify-content: center;
+//         gap: 10px;
+//         cursor: pointer;
+//         box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+//         transition: all 0.3s ease;
+
+//         &:hover {
+//           background: linear-gradient(135deg, #007bff, #0056b3);
+//           box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+//           transform: translateY(-2px);
+//         }
+
+//         .icon {
+//           font-size: 1.2rem;
+//         }
+//       }
+//     }
+//   }
+
+//   /* === Right Info Block === */
+//   .info-wrapper {
+//     h3 {
+//       font-size: 1.7rem;
+//       font-weight: 700;
+//       margin-bottom: 15px;
+//       color: #2c3e50;
+//     }
+
+//     p {
+//       font-size: 1rem;
+//       line-height: 1.7;
+//       color: #555;
+//       margin-bottom: 15px;
+//     }
+
+//     .highlight {
+//       font-weight: 600;
+//       color: #007bff;
+
+//       a {
+//         color: #007bff;
+//         text-decoration: underline;
+//         transition: color 0.3s ease;
+
+//         &:hover {
+//           color: #0056b3;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// /* === Responsive Design === */
+// @media (max-width: 992px) {
+//   .request-consultation .container {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .request-consultation .form-wrapper,
+//   .request-consultation .info-wrapper {
+//     width: 100%;
+//   }
+// }
+
+// @media (max-width: 576px) {
+//   .request-consultation .form-wrapper {
+//     padding: 30px 20px;
+//   }
+
+//   .request-consultation form .form-row {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .request-consultation .send-btn {
+//     width: 100%;
+//     justify-content: center;
+//   }
+// }
+
+
+
+
+/* ======= Request Consultation Section ======= */
+.request-consultation {
+  padding: 80px 20px;
+  background: #f5f9fc;
+}
+
+.request-consultation .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* ======= Form Wrapper ======= */
+.form-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50;
+}
+
+.form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 14px 15px;
+  border: 1px solid #dcdfe6;
+  border-radius: 10px;
+  background: #f9fbfd;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.form-group textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #1e90ff, #007bff);
+  color: #fff;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 200px;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.send-btn:hover {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  transform: translateY(-2px);
+}
+
+.send-btn .icon {
+  font-size: 1.2rem;
+}
+
+/* ======= Info Wrapper ======= */
+.info-wrapper h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.info-wrapper p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.info-wrapper .highlight {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.info-wrapper .highlight a {
+  color: #007bff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.info-wrapper .highlight a:hover {
+  color: #0056b3;
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 992px) {
+  .request-consultation .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .send-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

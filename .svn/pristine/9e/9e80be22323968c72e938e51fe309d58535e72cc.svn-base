@@ -1,0 +1,59 @@
+<body>   
+  <nav class="breadcrumb" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li><a href="/">Home</a></li> >
+    <li><a href="/career">Career</a></li> 
+  </ol>
+</nav>
+
+
+    <section class="openings-job"> 
+
+      <!--  trying the job- card click open link  -->
+      <a routerLink="/career/job-opening"  routerLinkActive='active' class="read-more">
+    <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <!-- <a routerLink="/career/job-opening"  routerLinkActive='active' class="read-more">Read More</a> -->
+   <span class="read-more">Read More</span>
+</div>
+</a>
+
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+</section>
+
+</body>
+
+

@@ -1,0 +1,45 @@
+<section class="ready-sec section">
+  <div class="container foot-form">
+    <div class="row align-items-center">
+      <div class="col-lg-5">
+        <h2 class="main-sec-head">
+          Ready to discuss your toughest <span class="tech-span">tech challenges?</span>
+        </h2>
+        <p>Fill out the form and get on a call within 24-48 hours with our product and tech expert.</p>
+        <p>No account managers - <a href="#" class="promise">that's a promise.</a></p>
+      </div>
+
+      <div class="col-lg-7">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-box">
+          <div class="form-group">
+            <label>Hello, my name is:</label>
+            <input type="text" class="form-control" placeholder="Full name*" formControlName="fullName" />
+            <div *ngIf="contactForm.get('fullName')?.touched && contactForm.get('fullName')?.invalid" class="text-danger">
+              Name is required.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Here is my email:</label>
+            <input type="email" class="form-control" placeholder="Email address*" formControlName="email" />
+            <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="text-danger">
+              Valid email is required.
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>About project:</label>
+            <textarea class="form-control center-placeholder" placeholder="Your project description*" formControlName="projectDescription"></textarea>
+            <div *ngIf="contactForm.get('projectDescription')?.touched && contactForm.get('projectDescription')?.invalid" class="text-danger">
+              Project description is required.
+            </div>
+          </div>
+
+          <button class="btn btn-animate" type="submit">
+            Send <img src="/assets/images/btn-arrow.svg" alt="" class="img-fluid" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

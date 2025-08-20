@@ -1,0 +1,25 @@
+<div class="drive-business">
+  <div class="content">
+    <section class="header-title">
+      <h1 class="title">Drive Business Growth with</h1>
+      <h1 class="bold-title">Our IT Consultation and</h1>
+      <h2 class="bold-title">Managed Services</h2>
+      <p>Our end-to-end services are designed to align your tech initiatives with your business goals.</p>
+      <p>Adopt evolving tech needs and become an industry leader with our tailored consultation and managed services.</p>
+    </section>
+
+    <section class="sub-title">
+      <h3 class="highlighted-text">
+        Scale Smarter, Not Harder - Expert Results Without the Hassle
+      </h3>
+      <button class="btn-call">
+        Book A <strong>FREE</strong> Discovery Call
+        <span class="arrow">→</span>
+      </button>
+    </section>
+  </div>
+
+  <!-- <div class="bg-img">
+    <img src="/public/bg-drive-business.png" alt="Business Growth" />
+  </div> -->
+</div>

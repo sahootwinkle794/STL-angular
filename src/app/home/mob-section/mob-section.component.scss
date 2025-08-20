@@ -1,0 +1,116 @@
+.mob-sec {
+    padding: 98px 0;
+    background: url('../../../../public/assets/images/mob-bg.png');
+    background-size: 100%;
+    background-position: top 0 left;
+    background-repeat: no-repeat;
+    animation: slideBackground 10s linear infinite;
+    background-size: cover;
+    // background-size: contain;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+@keyframes slideBackground {
+  // 0% {
+  //   background-position: 0% 0%;
+  // }
+
+  // 50% {
+  //   background-position: 100% 100%;
+  // }
+
+  // 80% {
+  //   background-position: 0% 0%;
+  // } 
+
+  0% {
+    background-position: top;
+  }
+
+  100% {
+    background-position: bottom;
+  }
+}
+
+
+
+.mob-sec .col-lg-6 .mob-box {
+  padding: 50px 50px;
+  background: linear-gradient(180deg, #DBECFF 0%, #72CAEA 100%);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box {
+  background: linear-gradient(180deg, #FFE8E1 0%, #F0A28A 100%);
+}
+
+.mob-box:before {
+  content: '';
+  position: absolute;
+  background: url('../../../../public/assets/images/card-bg.png');
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  left: 0;
+  top: 0;
+}
+
+.mob-sec .mob-box h2 {
+  color: #094E92;
+  font-size: 57px;
+  font-weight: 200;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box h2 {
+  color: #925240
+}
+
+.mob-sec .mob-box h2 span {
+  font-weight: 700;
+}
+
+.mob-sec .mob-box p {
+  font-size: 25px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.mob-sec .mob-box a {
+  background: linear-gradient(180deg, #069B8A 0%, #0A57BB 100%);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 30px;
+  height: 48px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 45px;
+  position: relative;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box a {
+  background: linear-gradient(180deg, #E2A390 0%, #EA2D2E 100%);
+}
+
+.mob-sec .mob-box a img {
+  top: -5px;
+  position: relative;
+  left: 10px;
+}
+
+
+
+.chat-btn:hover .img-fluid{
+
+transform: rotate(13deg);
+        margin-left: 10px;
+        transition: all 0.3s ease-in-out;
+
+}

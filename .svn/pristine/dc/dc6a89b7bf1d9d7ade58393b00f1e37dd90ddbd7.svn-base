@@ -1,0 +1,51 @@
+
+<section class="request-consultation">
+  <div class="container">
+    <!-- Left: Form -->
+    <div class="form-wrapper">
+      <h2 class="form-title">Request a FREE Consultation!</h2>
+      <form [formGroup]="consultationForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name*</label>
+            <input type="text" placeholder="Enter your name" formControlName="name" />
+          </div>
+          <div class="form-group">
+            <label>Company Name*</label>
+            <input type="text" placeholder="Enter your company name" formControlName="company" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address*</label>
+            <input type="email" placeholder="Enter your email" formControlName="email" />
+          </div>
+          <div class="form-group">
+            <label>Phone Number*</label>
+            <input type="text" placeholder="Enter your phone number" formControlName="phone" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="3" placeholder="Enter your message" formControlName="message"></textarea>
+        </div>
+        <button type="submit" class="send-btn">
+          Send Now
+          <span class="icon">→</span>
+        </button>
+      </form>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="info-wrapper">
+      <h3>What Happens Next?</h3>
+      <p>We'll email you to confirm that we've received your request and are starting to work on it.</p>
+      <p>Our advisor will review your requirements and contact you within 3 business days.</p>
+      <p>Our business development manager will provide you with recommendations and initial project estimates within 3-5 days.</p>
+      <p class="highlight">
+        Ready to get started? <a href="#">Contact us today to discuss your project!</a>
+      </p>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,17 @@
+<section class="why-stl">
+  <div class="container">
+    <h2 class="main-title">{{ mainTitle }}</h2>
+
+    <div class="features">
+      <div class="feature" *ngFor="let item of features">
+        <div class="icon-wrapper">
+          <img [src]="item.icon" [alt]="item.title" class="feature-icon" />
+        </div>
+        <div class="text-content">
+          <h4 class="feature-title">{{ item.title }}</h4>
+          <p class="feature-text">{{ item.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

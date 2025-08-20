@@ -1,0 +1,22 @@
+<p>why-invest-manages-services works!</p>
+
+<div class="why-invest-services">
+    <section class="why-invest">
+        <div class="container">
+            <div class="content">
+                <div class="text-block">
+                <h3 class="main-title">{{mainTitle}}</h3>
+                <h2 class="sub-title">{{subTitle}}</h2>
+            </div>
+            <div class="cards">
+                <div class="card" *ngFor="let item of whyInvest">
+                    <h4 class="card-title">{{item.title}}</h4>
+                    <p class="card-text">{{item.text}}</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+

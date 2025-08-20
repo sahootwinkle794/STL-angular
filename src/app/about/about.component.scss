@@ -1,0 +1,1702 @@
+
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wgh');
+// @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100;900&family=Outfit:wght@100;900&display=swap');
+
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.about-hero-and-story {
+  background-image: url('/assets/images/about-page/Updatedbg-1.png');
+  background-size: cover;
+  // background-position: center;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  // align-items: center;
+  // gap: 10px;
+  flex-wrap: wrap;
+  // border-radius: 100px;
+
+  // margin: auto;
+}
+
+.hero-title{
+  display: flex;
+  z-index: 2;
+  position: absolute;
+
+}
+.hero-subtitle{
+  display: flex;
+  margin-top: 10vh;
+
+}
+
+.hero-container {
+  position: relative ;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 10px;
+  flex-wrap: wrap;
+  // border-radius: 100px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero-content {
+  // align-items: right;
+  // justify-content: right;
+  padding-top: 200px;
+  padding-left: 130px;
+  padding-bottom: 40px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h3 {
+  font-size: 65px;
+  color: #030202;
+  margin-bottom: 10px;
+  font-style: Mixed;
+  font-weight: 150;
+ font-family: 'Geist',sans-serif !important;
+}
+
+.hero-content h1 {
+  font-size: 62px;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+   font-family: 'Geist',sans-serif !important;
+  //  font-size: 80px;
+   font-style: Mixed;
+}
+
+.hero-content p {
+  font-family: "Outfit", sans-serif !important;
+  color: #020101;
+  font-size: 21px;
+  line-height: 2;
+}
+
+// .hero-image {
+
+  // width: 300px;
+  // clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  // overflow: hidden;
+  // position: relative;
+  // padding-top: 95px;
+  // padding-right: 51px;
+// }
+
+.hero-image img {
+  // margin-right: 0;
+  
+  // transition: transparent
+  // ;
+  // width: 100%;
+  // height: auto;
+  // object-fit: cover;
+  // display: block;
+    justify-content: left;
+  // align-items: left;
+  flex: 1;
+  // width: 780px;
+  height: 780px;
+  padding-top: 95PX;
+  margin-right: -35px;
+}
+
+/* ✅ Responsive: Tablet & Below */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 80px 30px 30px 30px;
+    text-align: center;
+  }
+
+  .hero-content h3 {
+    font-size: 36px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .hero-image {
+    padding: 20px;
+    clip-path: none;
+  }
+
+  .hero-image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* ✅ Mobile screens */
+@media (max-width: 600px) {
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-content {
+    padding: 60px 15px 30px 15px;
+  }
+
+  .hero-image {
+    padding: 10px;
+  }
+}
+
+
+// Story section
+
+.story-section {
+  background-image: url('/assets/images/about-page/We-Started.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 120px;
+  position: relative;
+  color: white;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  display: flex;
+
+  // Ultra-wide centering
+  @media (min-width: 1921px) {
+    justify-content: center; 
+    padding-left: 0; 
+    padding-right: 0;
+
+    .overlay {
+      max-width: 1600px; 
+      width: 100%;
+    }
+  }
+}
+
+.overlay {
+  display: flex;
+  padding-top: 20px;
+  border-radius: 8px;
+  font-family: 'Geist', sans-serif !important;
+}
+
+.story-content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.watch-btn {
+  padding-left: 40px;
+  background: linear-gradient(#0A47B9 0%, #763289 100%);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* ✅ Responsive: Tablet */
+@media (max-width: 1024px) {
+  .story-section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .overlay {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .story-content h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .story-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .watch-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ✅ Responsive: Mobile */
+@media (max-width: 600px) {
+  .story-section {
+    padding: 60px 20px;
+  }
+
+  .overlay {
+    padding: 0;
+  }
+
+  .story-content h2 {
+    font-size: 28px;
+  }
+
+  .story-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .watch-btn {
+    font-size: 16px;
+    padding-left: 15px;
+  }
+}
+
+/* File: ceo-message.component.css */
+
+
+
+// Ceo section css
+// .ceo-first-section{
+//   background-image: url('/assets/images/about-page/We-Started.png');
+
+// }
+.ceo-first-section .ceo-main-section {
+  background-image: url('/assets/images/about-page/Rectangle 1060.png');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-left: 90px;
+  padding-top: 50px;
+
+  /* Tablet and below */
+  @media (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    display: flex;
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    justify-content: center; // centers the text + image horizontally
+    padding-left: 0;
+    padding-right: 0;
+
+    /* Optional: limit total content width so it doesn’t stretch too far */
+    .ceo-text-section,
+    .ceo-image-section {
+      max-width: 800px; // adjust as needed
+    }
+
+    /* Wrap both in a centered container */
+    .overlay {
+      max-width: 1600px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+}
+
+.ceo-text-section {
+  font-family: 'Geist', sans-serif !important;
+  flex: 1;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .ceo-third-p {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+  }
+
+  .ceo-line {
+    margin: 10px 0 20px;
+  }
+
+  .quote-block {
+    font-family: "Outfit", sans-serif !important;
+    font-size: 1.1rem;
+    color: #030202;
+
+    p {
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .quote-img {
+      width: 50px;
+      margin-right: 8px;
+      margin-bottom: -40px;
+      margin-left: -50px;
+    }
+  }
+
+  .ceo-signature {
+    margin-top: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px 10px;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.ceo-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 300px;
+  }
+}
+
+
+/* ===== Section Layout ===== */
+.vision-section {
+  background-color: #fafeffe5;
+  padding: 70px 40px;
+  font-family: 'Geist', sans-serif;
+  max-width: 100%;
+  max-height: 100vh;
+  // padding-top: 60px;
+  // padding-left: 50px;
+  // padding-left: 0px;
+}
+
+.vision-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Left Side Text ===== */
+.vision-text {
+  flex: 1;
+  max-width: 420px;
+}
+
+.vision-text h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.vision-text h2 span {
+  font-weight: 700;
+  color: #000;
+}
+
+.vision-subheading {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.vision-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* ===== Navigation Arrows ===== */
+.arrow-button {
+  margin-top: 50px;
+  display: flex;
+  gap: 3px;
+border-radius: 5%;
+}
+
+.arrow-btn {
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  border: 1px solid #F24E1E;
+  background-color: transparent;
+  color: #F24E1E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: #F24E1E;
+  color: #fff;
+}
+
+/* ===== Card Container ===== */
+.vision-cards {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+/* ===== Individual Card Styling ===== */
+.vision-card {
+  --final-tilt: -2deg; /* default tilt */
+  min-width: 220px;
+  max-width: 280px;
+  height: 280px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  animation: cardCircularIn 0.9s ease forwards;
+  animation-delay: calc(var(--order) * 0.15s); /* Stagger effect for many cards */
+  transform-style: preserve-3d;
+}
+
+// .vision-card:hover{
+//   cursor: pointer;
+//   // transform: translateY(-5px) rotate(var(--final-tilt));
+//   // transform: scaleY(10deg);
+//   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+// }
+
+// /* Tilt variety for natural look */
+// .vision-card:nth-child(odd) {
+//   --final-tilt: -2deg;
+// }
+// .vision-card:nth-child(even) {
+//   --final-tilt: 2deg;
+// }
+
+// .vision-card:hover {
+//   transform: translateY(-5px) rotate(var(--final-tilt));
+// }
+
+/* ===== Card Content ===== */
+.vision-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.vision-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #222;
+}
+
+/* ===== Background Variants ===== */
+.vision-card.blue {
+  background: linear-gradient(135deg, #d5e8ff, #a8cfff);
+}
+
+.vision-card.green {
+  background: linear-gradient(135deg, #d4f8e8, #a6e7c9);
+}
+
+.vision-card.orange {
+  background: linear-gradient(135deg, #ffe3d1, #ffbfa3);
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .vision-container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  .vision-text {
+    max-width: 100%;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .vision-cards {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
+
+// belief section
+.belief-section {
+  background-size: cover;
+  justify-content: center;
+  padding: 60px;
+  gap: 30px;
+  max-width: 100%;
+  background-image: url("/assets/images/about-page/Rectangle 1060.png");
+
+  .section-header {
+    font-family: 'Geist', sans-serif !important;
+    text-align: center;
+    width: auto;
+    margin: 0 auto 40px;
+
+    h2 {
+      font-size: 2.7rem;
+
+      .light {
+        font-weight: 140;
+      }
+
+      strong {
+        font-weight: 550;
+      }
+    }
+  }
+
+  .description-belief {
+    font-family: 'Geist', sans-serif !important;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+
+    .description1,
+    .description2 {
+      padding: 0;
+    }
+  }
+
+  .belief-cards {
+    font-family: 'Geist', sans-serif !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .card {
+      display: flex;
+      background: #fff;
+      border-radius: 6px;
+      padding: 40px 30px;
+      width: 400px;
+      height: 400px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+      margin-bottom: 0px;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        text-align: left;
+        width: 160px;
+        height: 150px;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-family: 'Geist', sans-serif !important;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 3px;
+          background-color: #7020D2;
+          margin-top: 6px;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        color: #100b0b;
+      }
+
+      ul {
+        font-size: 1rem;
+        padding-left: 20px;
+        margin-bottom: 10px;
+
+        li {
+          font-size: 1rem;
+          color: #100b0b;
+          list-style-type: disc;
+        }
+      }
+
+      .read-more {
+        color: #020405;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column; /* keeps header + cards stacked */
+    align-items: center;
+
+    .belief-cards {
+      max-width: 1600px;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .belief-section {
+    padding: 40px 20px;
+
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .belief-cards {
+      gap: 20px;
+
+      .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .card img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .card h4 {
+        font-size: 1rem;
+      }
+
+      .card p,
+      .card ul li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .belief-section {
+    padding: 30px 15px;
+
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .belief-cards {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .card img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .belief-section {
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .belief-cards .card {
+      padding: 15px;
+    }
+  }
+}
+
+.testimonials-section {
+  background-size: cover;
+  justify-content: center;
+  background-image: url('/assets/images/about-page/testimonial-bg.png');
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-bottom: 60px;
+  max-width: 100%;
+  font-family: 'Geist', sans-serif !important;
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    font-family: 'Geist', sans-serif !important;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #7020D2;
+      overflow: hidden;
+      margin: 0 auto 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .subtitle {
+      color: black;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #ffd700;
+      font-size: 2.2rem;
+
+      span {
+        margin: 0 1px;
+        color: #ccc;
+
+        &.filled {
+          color: #7020D2;
+        }
+      }
+    }
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    padding-left: 130px;
+    gap: 3px;
+    border-radius: 5%;
+
+    button {
+      // width: 60px;
+      // height: 60px;
+      // border: 1px solid #ccc;
+      // background: white;
+      // border-radius: 3px;
+      // font-size: 1.2rem;
+      // cursor: pointer;
+       border-radius: 4px;
+       width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  border: 1px solid #F24E1E;
+  background-color: transparent;
+  color: #F24E1E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+      &.active {
+        border-color: #ee9229;
+        color: #f88c27;
+      }
+
+      span {
+        display: inline-block;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .testimonials-wrapper {
+      max-width: 1600px;
+      justify-content: center;
+    }
+
+    .carousel-buttons {
+      padding-left: 0;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonials-section {
+    padding: 40px 20px;
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-card {
+      width: 280px;
+      padding: 15px;
+
+      .testimonial-image {
+        width: 80px;
+        height: 80px;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .description {
+        font-size: 0.85rem;
+      }
+
+      .stars {
+        font-size: 1.8rem;
+      }
+    }
+
+    .carousel-buttons {
+      padding-left: 0;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    .testimonials-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-card {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// specialit section
+
+.specialist-section {
+  background-size: cover;
+  justify-content: center;
+  background-image: url('/assets/images/about-page/Specialist-bg.png');
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Geist', sans-serif !important;
+  text-align: center;
+
+  .section-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    h2 {
+      font-family: 'Geist', sans-serif !important;
+      font-size: 3.5rem;
+      font-weight: 100;
+
+      strong {
+        font-weight: 550;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      color: #0f0808;
+      font-size: 1rem;
+      position: absolute;
+    }
+  }
+
+  .card-wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 130px;
+  }
+
+  .specialist-card {
+    background: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    padding-left: 30px;
+    padding-right: 10px;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      align-items: flex-start;
+      display: flex;
+      margin-top: 30px;
+      width: 126px;
+      height: 105px;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      text-align: left;
+      font-family: 'Geist', sans-serif !important;
+      font-size: 1.4rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: left;
+      font-family: "Outfit", sans-serif !important;
+      font-size: 1rem;
+      color: #070202;
+      font-weight: 400;
+    }
+  }
+
+  .carousel-nav {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    padding-left: 130px;
+    gap: 2px;
+
+    button {
+      // width: 60px;
+      // height: 60px;
+      // border: 1px solid #F24E1E;
+      // background-color: transparent;
+      // border-radius: 2px;
+      // font-size: 1.2rem;
+      // cursor: pointer;
+       border-radius: 4px;
+       width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  border: 1px solid #F24E1E;
+  background-color: transparent;
+  color: #F24E1E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+      &.active {
+        border-color: #F24E1E;
+        color: #F24E1E;
+      }
+
+      span {
+        display: inline-block;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-wrapper {
+      max-width: 1600px;
+      justify-content: center;
+      padding-left: 0;
+    }
+
+    .carousel-nav {
+      justify-content: center;
+      padding-left: 0;
+    }
+  }
+}
+
+
+
+// work section
+
+.work-section {
+  background-size: cover;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f8fbfd;
+  text-align: center;
+
+  .header {
+    font-family: 'Geist', sans-serif !important;
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2.8rem;
+      font-weight: 250;
+
+      span {
+        font-weight: 150;
+        font-style: normal;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    p {
+      font-family: "Outfit", sans-serif !important;
+      color: #000000;
+      font-size: 1rem;
+      margin-top: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .cards-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 120px;
+  }
+
+  .card {
+    text-align: left;
+    background: #fff;
+    border-radius: 12px;
+    padding: 70px 70px;
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      padding-left: 8px;
+      width: 180px;
+      height: 110px;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-family: 'Geist', sans-serif !important;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      color: #020000;
+      line-height: 1.6;
+      font-weight: 400;
+      letter-spacing: 6%;
+    }
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    .cards-container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding-left: 0;
+      justify-content: center;
+    }
+  }
+}
+
+
+//leader section
+ 
+.leaders-section {
+  justify-content: center;
+  background-size: cover;
+  max-width: 100%;
+  padding: 70px 130px;
+  text-align: center;
+  background: #fff;
+
+  .section-title h2 {
+    font-family: 'Geist', sans-serif !important;
+    font-size: 2.5rem;
+    font-weight: 250;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  .leaders-grid {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    // justify-content: center;
+  }
+
+  .leader-card {
+    width: 200px;
+    text-align: center;
+
+    .image-container {
+      position: relative;
+      width: 280px;
+      height: 290px;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    h4 {
+      font-family: 'Geist', sans-serif !important;
+      padding-left: 70px;
+      color: #00A1E4;
+      margin: 12px 0 4px;
+      font-size: 1rem;
+      justify-content: center;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      font-family: 'Geist', sans-serif !important;
+      font-size: 0.9rem;
+      color: #000000;
+      margin: 0;
+      padding-left: 70px;
+    }
+  }
+
+  /* ✅ Ultra-wide screens (1921px and above) */
+  @media (min-width: 1921px) {
+    .leaders-grid {
+      max-width: 1600px;
+      margin: 0 auto;
+      justify-content: center;
+      gap: 80px; /* slightly tighter for large screens */
+    }
+  }
+}
+
+/* Existing styles outside the main section */
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+  height: 250px;
+}
+
+.icon {
+  text-align: left;
+  padding-left: 10px;
+  background-image: url('/assets/images/about-page/Rectangle 1590.png');
+  height: 80px;
+  width: 80px;
+  padding-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+
+//clients section
+.clients-section {
+  background-size: cover;
+  justify-content: center;
+  max-width: 100%;
+  padding: 80px 130px;
+  background: #f9f9f9;
+
+  /* ✅ Ultra-wide screen centering */
+  @media (min-width: 1921px) {
+    .clients-container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.clients-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.clients-text {
+  flex: 1 1 40%;
+}
+
+.clients-text h2 {
+  font-family: 'Geist', sans-serif !important;
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  font-weight: 250;
+  line-height: 120%;
+  letter-spacing: 0%;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.clients-text p {
+  font-family: "Outfit", sans-serif !important;
+  color: #000000;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: left;
+  margin-top: 60px;
+  gap: 3px;
+  border-radius: 5%;
+}
+
+.arrow-buttons button {
+  // gap: 30px;
+  // width: 60px;
+  // height: 60px;
+  // border: 1px solid #F24E1E;
+  // color: #F24E1E;
+  // background: white;
+  // border-radius: 3px;
+  // font-size: 1.2rem;
+  // cursor: pointer;
+   border-radius: 4px;
+   width: 60px;
+  height: 60px;
+  font-size: 1.4rem;
+  border: 1px solid #F24E1E;
+  background-color: transparent;
+  color: #F24E1E;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &.active {
+    border-color: #ee9229;
+    color: #f88c27;
+  }
+}
+
+.arrow-buttons button:disabled {
+  opacity: 0.4;
+}
+
+.clients-logos {
+  flex: 1 1 55%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.logo-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+//status section
+
+.stats-section {
+  background-color: #FBEDFF;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.stats-title {
+  font-family: 'Geist', sans-serif !important;
+  font-size: 45px;
+  font-weight: 250;
+  margin-bottom: 40px;
+
+  strong {
+    font-weight: 600;
+  }
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* ✅ allow wrapping if needed */
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 200px;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-icon {
+  width: 25px;
+  height: 50px;
+}
+
+.stat-value {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.stat-label {
+  font-size: 18px;
+  color: #050000;
+}
+
+/* 📱 Mobile (≤ 767px) */
+@media (max-width: 767px) {
+  .stats-title {
+    font-size: 28px;
+  }
+
+  .stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+
+  .stat-icon {
+    width: 18px;
+    height: 35px;
+  }
+}
+
+/* 💻 Small Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  .stats-grid {
+    max-width: 1000px;
+    gap: 70px;
+  }
+
+  .stat-value {
+    font-size: 45px;
+  }
+}
+
+/* 🖥️ Medium Desktop (≥ 1366px) */
+@media (min-width: 1366px) {
+  .stats-grid {
+    max-width: 1200px;
+    gap: 80px;
+  }
+
+  .stat-value {
+    font-size: 55px;
+  }
+}
+
+/* 🖥️ Large Desktop (≥ 1920px) */
+@media (min-width: 1920px) {
+  .stats-grid {
+    max-width: 1400px;
+    gap: 90px;
+  }
+
+  .stat-value {
+    font-size: 65px;
+  }
+}
+
+/* 🖥️ 2K Display (≥ 2560px) */
+@media (min-width: 2560px) {
+  .stats-grid {
+    max-width: 1600px;
+    gap: 110px;
+  }
+
+  .stat-value {
+    font-size: 75px;
+  }
+
+  .stats-title {
+    font-size: 55px;
+  }
+}
+
+
+
+//cta section
+
+.cta-section {
+  background-size: cover;
+  max-width: 100%;
+  background-image: url('/assets/images/about-page/Rectangle 1620.png');
+  padding: 70px 120px;
+  font-family: 'Arial', sans-serif;
+
+  /* ✅ Ultra-wide screen centering */
+  @media (min-width: 1921px) {
+    .cta-container {
+      max-width: 1600px;
+      margin: 0 auto;
+      padding-left: 0; /* removes unnecessary left offset */
+      padding-right: 0;
+    }
+  }
+}
+
+.cta-container {
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-text {
+  font-family: 'Geist', sans-serif !important;
+  flex: 1;
+  min-width: 280px;
+  font-weight: 100;
+}
+
+.cta-subtitle {
+  font-weight: 150;
+  line-height: 3rem;
+  font-size: 50px;
+  color: #100808;
+  margin-bottom: 10px;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.cta-button {
+   border-radius: 4px;
+  color: white;
+  padding: 14px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.3s ease;
+  background: linear-gradient(#097ACC 0%, #7020D2 100%);
+}
+
+.cta-button:hover {
+  background: linear-gradient(
+    rgb(192, 156, 223) 0%,
+    rgb(148, 189, 228) 30px,
+    rgb(167, 221, 243) 100%
+  );
+}
+
+.cta-button .arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.cta-image {
+  text-align: right;
+}
+
+.cta-image img {
+  margin-right: 30px;
+  height: auto;
+}
+
+.cta-arrow {
+  transform: rotateZ(-30deg);
+  margin-left: 10px;
+  text-align: center;
+}

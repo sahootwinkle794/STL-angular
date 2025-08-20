@@ -1,0 +1,22 @@
+
+<section class="when-invest">
+  <div class="container">
+    <div class="card-container">
+      <div
+        class="invest-card"
+        *ngFor="let card of cards"
+        [ngStyle]="{ 'background-color': card.background }"
+      >
+        <h2 class="card-title">{{ card.title }}</h2>
+        <h4 class="card-subtitle">{{ card.subtitle }}</h4>
+        <ul class="card-points">
+          <li *ngFor="let point of card.points">{{ point }}</li>
+        </ul>
+        <button class="cta-button">
+          {{ card.buttonText }}
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
