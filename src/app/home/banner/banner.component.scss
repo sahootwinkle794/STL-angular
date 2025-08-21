@@ -362,14 +362,12 @@
   }
 
   .banner-btn {
-    justify-content: left;
+    justify-content: center;
     margin-top: 0px !important;
     gap: 12px;
     flex-wrap: wrap;
-    padding: 17px !important;
     display: flex;
     max-width: 300px;
-    margin-left: 0px;
   }
 
   .btn-service {
@@ -387,9 +385,17 @@
     padding: 20px;
   }
 
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   h2.banner-subtitle {
     font-size: 23px !important;
   }
+
   .banner-subtitle-wrapper {
     height: 28px;
     overflow: hidden;

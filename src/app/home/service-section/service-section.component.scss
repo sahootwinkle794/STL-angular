@@ -711,12 +711,31 @@ h1 {
 
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+  .service-bg-title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    font-size: 50px;
+    color: #EFF0F1;
+    z-index: -1;
+  }
+
+  .service-row {
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .service-title {
     font-size: 35px !important;
   }
 
   .service-row {
-    text-align: left;
+    text-align: center;
   }
 
   .service-subtitle {
@@ -736,4 +755,24 @@ h1 {
     height: auto;
     transition: transform 0.5s ease-in-out;
   }
+
+  .service-row {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .service-wrapper {
+    margin-top: 0px;
+    gap: 0;
+  }
+
+  .service-section {
+    padding: 0px;
+  }
+
+  .service-section {
+    aspect-ratio: auto;
+    margin-bottom: 86px;
+  }
+
 }
