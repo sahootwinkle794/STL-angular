@@ -106,7 +106,6 @@
   justify-content: center;
   margin-bottom: 30px;
 }
-
 .img-box::before {
   content: '';
   position: absolute;
@@ -118,7 +117,6 @@
   border-radius: 50px;
   z-index: -1;
 }
-
 .main-sec-head {
   display: flex;
   color: #6A28BA;
@@ -128,10 +126,6 @@
   z-index: 1;
   padding: 0 20px;
 }
-
-
-
-
 .img-box::before {
   content: "";
   position: absolute;
@@ -144,22 +138,15 @@
   z-index: -1;
   margin-left: 330px;
 }
-
 .rotate-left {
-
   width: 20px;
   transform: rotate(-90deg);
 }
-
 .rotate-right {
   width: 20px;
   transform: rotate(90deg);
 }
-
-
-
 // NEW UPDATE
-
 .services-carousel-wrapper {
   display: flex;
   align-items: center;
@@ -168,11 +155,6 @@
   width: 100%;
   position: relative;
   margin-top: 50px;
-
-
-
-
-
 
   .arrow-btn {
     cursor: pointer;
@@ -242,8 +224,6 @@
   }
 }
 
-
-
 // img background
 
 .icon-circle {
@@ -253,10 +233,6 @@
   z-index: -1;
 
 }
-
-
-
-
 
 
 /* =================== MOBILE (≤700px) =================== */

@@ -29,12 +29,14 @@ h1 {
   scrollbar-width: none; // Firefox
   -ms-overflow-style: none; // IE
 
-  &::-webkit-scrollbar {
+  &::-webkit-scrollbar { 
     display: none; // Chrome/Safari
   }
 }
-
-
+.service-row .service-paragraph {
+    font-size: 23px;
+    line-height: 27px;
+}   
 
 
 .services-slider-wrapper {
