@@ -14,33 +14,25 @@
         </div>
 
         <div class="service-section-btn">
-          <button (click)="scrollSlider('left')" [disabled]="isLeftDisabled"  class="btn service-btn-left">
+          <button (click)="scrollSlider('left')" [disabled]="isLeftDisabled" class="btn service-btn-left">
             <img src="assets/images/service-arrow-left.svg" />
           </button>
-          <button (click)="scrollSlider('right')"  [disabled]="isRightDisabled"  class="btn service-btn-right">
+          <button (click)="scrollSlider('right')" [disabled]="isRightDisabled" class="btn service-btn-right">
             <img src="assets/images/service-arrow-right.svg" />
           </button>
         </div>
       </div>
 
       <div class="col-lg-7">
-  <div class="services-slider-wrapper d-flex">
-    <div
-      class="ser-box"
-      *ngFor="let service of visibleServices; let i = index"
-      [ngClass]="['bg-' + ((activeIndex + i) % services.length + 1),
-                  'color-' + ((activeIndex + i) % services.length + 1) ]"
-    >
-      <img
-        [src]="service.img"
-        class="img-fluid ser-box-img"
-        alt="{{ service.title }}"
-      />
-      <h4 class="service-title-card">{{ service.title }}</h4>
-      <p>{{ service.description }}</p>
-    </div>
-  </div>
-</div>
+        <div class="services-slider-wrapper d-flex">
+          <div class="ser-box" *ngFor="let service of visibleServices; let i = index" [ngClass]="['bg-' + ((activeIndex + i) % services.length + 1),
+                  'color-' + ((activeIndex + i) % services.length + 1) ]">
+            <img [src]="service.img" class="img-fluid ser-box-img" alt="{{ service.title }}" />
+            <h4 class="service-title-card">{{ service.title }}</h4>
+            <p>{{ service.description }}</p>
+          </div>
+        </div>
+      </div>
 
 
 
