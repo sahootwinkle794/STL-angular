@@ -17,8 +17,8 @@ export class ProductsPlatformsComponent {
 
 
   
-  sectionTitleKey = 'Products and Platforms';
-  sectionSubtitleKey = 'Products and platforms';
+  sectionTitleKey = 'Products & Platforms';
+  sectionSubtitleKey = 'Products & Platforms';
   sectionHeadlineKey = 'Key Stakeholders, One Solution';
   sectionDescriptionKey =
     'Our unified products, solutions, and platform help businesses to satisfy every stakeholder of their business from customers, employees, to partners, and create an exceptional experience for them.';

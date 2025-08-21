@@ -555,10 +555,6 @@ h1 {
     margin-top: 60px;
     text-align: center;
 
-    .service-subtitle {
-      font-size: 28px !important;
-    }
-
     .service-paragraph {
       font-size: 14px;
       line-height: 1.4;
@@ -623,10 +619,6 @@ h1 {
 
   .service-row {
     margin-top: 80px;
-
-    .service-title {
-      font-size: 40px !important;
-    }
 
     .service-subtitle {
       font-size: 40px !important;
@@ -721,7 +713,12 @@ h1 {
   .service-title {
     font-size: 35px !important;
   }
-  .service-row{
+
+  .service-row {
     text-align: left;
+  }
+
+  .service-subtitle {
+    font-size: 23px !important;
   }
 }
