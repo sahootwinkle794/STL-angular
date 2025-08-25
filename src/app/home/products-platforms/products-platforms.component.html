@@ -1,5 +1,4 @@
-
-	<section class="sec-animation section">
+<section class="sec-animation section">
   <div class="pro-plat-sec">
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -12,28 +11,28 @@
             <p class="text-center">{{ sectionDescriptionKey }}</p>
 
 
-            <section id="panel" class="web-panel" 
-         (mouseenter)="isHovered = true" 
-         (mouseleave)="isHovered = false">
-          <button (click)="prev()" class="btn " [disabled]="currentIndex === 0"><img src="assets/images/arrow left.png" alt="" class="arrow-left"></button>
-  <div class="proPlat-box" *ngIf="products.length > 0">
-    <img [src]="products[currentIndex].bgImage" alt="" class="img-fluid proPlat-box-bg" />
-    <div class="row">
-      <div class="col-md-6  mb-4 mb-md-0">
-        <img [src]="products[currentIndex].mainImage" alt="" class="img-fluid pb-img" />
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <div class="info text-start">
-          <h4>{{ products[currentIndex].title }}</h4>
-          <p class="m-0">{{ products[currentIndex].description }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-     <div class="carousel-controls d-flex justify-content-between mt-3">
-                <button (click)="next()" class="btn " [disabled]="currentIndex === products.length - 1"><img src="assets/images/arrow right.png" alt="" class="arrow-right"></button>
+            <section id="panel" class="web-panel" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false">
+              <button (click)="prev()" class="btn " [disabled]="currentIndex === 0"><img
+                  src="assets/images/arrow left.png" alt="" class="arrow-left"></button>
+              <div class="proPlat-box" *ngIf="products.length > 0">
+                <img [src]="products[currentIndex].bgImage" alt="" class="img-fluid proPlat-box-bg" />
+                <div class="row">
+                  <div class="col-md-6  mb-4 mb-md-0">
+                    <img [src]="products[currentIndex].mainImage" alt="" class="img-fluid pb-img" />
+                  </div>
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="info text-start">
+                      <h4>{{ products[currentIndex].title }}</h4>
+                      <p class="m-0">{{ products[currentIndex].description }}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-</section>
+              <div class="carousel-controls d-flex justify-content-between mt-3">
+                <button (click)="next()" class="btn " [disabled]="currentIndex === products.length - 1"><img
+                    src="assets/images/arrow right.png" alt="" class="arrow-right"></button>
+              </div>
+            </section>
 
           </div>
         </div>
@@ -41,8 +40,3 @@
     </div>
   </div>
 </section>
-
-
-
-
-

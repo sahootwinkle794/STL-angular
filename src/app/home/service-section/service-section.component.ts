@@ -1,17 +1,14 @@
-
-import { Component } from '@angular/core';
-// import { trigger, transition, style, animate, query, stagger } from '@angular/animations';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-service-section',
   templateUrl: './service-section.component.html',
-  styleUrls: ['./service-section.component.scss'],
+  styleUrls: ['./service-section.component.scss']
 })
-export class ServiceSectionComponent {
+export class ServiceSectionComponent implements OnInit, OnDestroy {
   sectionTitle = 'Explore Our';
   sectionSubtitle = 'Full Scope IT Services';
-  sectionDescription =
-  'Whether starting or scaling, our services eliminate every tech barrier and empower your business to succeed digitally.';
+  sectionDescription = 'Whether starting or scaling, our services eliminate every tech barrier and empower your business to succeed digitally.';
 
   services = [
     {
@@ -47,51 +44,46 @@ export class ServiceSectionComponent {
   ];
 
   activeIndex = 0;
-  visibleCount = 3;  
+  visibleCount = 3;
+  slideWidth = 300;
 
+  private autoSlideInterval: any;
+
+  ngOnInit(): void {
+    this.startAutoSlide();
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.autoSlideInterval);
+  }
 
   scrollSlider(direction: 'left' | 'right') {
-  if (direction === 'left') {
-    if (this.activeIndex > 0) {
-      this.activeIndex -= 1;
-    }
-  } else {
-    if (this.activeIndex < this.services.length - 3) {
-      this.activeIndex += 1;
+    if (direction === 'left') {
+      if (this.activeIndex > 0) {
+        this.activeIndex -= 1;
+      }
+    } else {
+      if (this.activeIndex < this.services.length - this.visibleCount) {
+        this.activeIndex += 1;
+      }
     }
   }
+
+  startAutoSlide() {
+    this.autoSlideInterval = setInterval(() => {
+      if (this.activeIndex < this.services.length - this.visibleCount) {
+        this.activeIndex++;
+      } else {
+        this.activeIndex = 0; // reset to start when end is reached
+      }
+    }, 3000); // every 3 seconds
+  }
+
+  get isLeftDisabled() {
+    return this.activeIndex === 0;
+  }
+
+  get isRightDisabled() {
+    return this.activeIndex >= this.services.length - this.visibleCount;
+  }
 }
-
-get visibleServices() {
-  return this.services.slice(this.activeIndex, this.activeIndex + 3);
-}
-
-
-
-
-get isLeftDisabled() {
-  return this.activeIndex === 0;
-}
-
-get isRightDisabled() {
-  return this.activeIndex >= this.services.length - 3;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

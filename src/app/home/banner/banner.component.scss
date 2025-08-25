@@ -394,7 +394,7 @@
   pointer-events: none;
   transform: scaleX(-1);
   object-fit: cover;
-   transform: scaleX(-1) scale(1); 
+  transform: scaleX(-1) scale(1);
   transform-origin: center;
   transition: transform 0.5s ease;
 }
@@ -412,7 +412,7 @@
 
   // height: calc(100vh - 50px);
   // max-height: 1000px;
-   flex-direction: column;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   z-index: 1;
@@ -443,6 +443,7 @@
     opacity: 0;
     transform: translateX(100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -467,7 +468,7 @@
 }
 
 .banner-subtitle-wrapper {
-  height: 48px; 
+  height: 48px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -571,6 +572,7 @@
     opacity: 0;
     transform: translateX(100%);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -593,13 +595,13 @@
 }
 
 .btn-service {
-  background: linear-gradient(150deg,#FD8033 0%, #EC292A 100%);
+  background: linear-gradient(150deg, #FD8033 0%, #EC292A 100%);
   color: #FFFFFF;
 
 }
 
 .btn-Case {
-  background: linear-gradient(150deg,#0A47B9 0%, #763289 100%);
+  background: linear-gradient(150deg, #0A47B9 0%, #763289 100%);
   color: #FFFFFF;
 }
 
@@ -618,6 +620,7 @@
   transform: translateY(-5px) scale(1.05); // lift effect
   box-shadow: 0px 8px 20px rgba(253, 128, 51, 0.4);
 }
+
 .btn-Case:hover {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0px 8px 20px rgba(10, 71, 185, 0.4);
@@ -641,6 +644,10 @@
 /* =================== MOBILE (≤700px) =================== */
 
 @media only screen and (min-width: 300px) and (max-width: 700px) {
+  .banner {
+    padding: 130px 0 80px 0;
+  }
+
   .bg-video {
     width: 100vw !important;
     height: 100vh !important;
@@ -652,29 +659,29 @@
   }
 
 
-.banner-content {
-  padding:  0 0 0 25px !important;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  // margin-top: 20vh;
-  // margin-top: 120px;
-  // padding: 80px 80px 40px 80px;
-  // padding-left: 5vw;
-  opacity: 0;
-  transform: translateX(100%);
-  animation: slideInFromRight 1s forwards;
-  animation-delay: 0.5s;
-}          
+  .banner-content {
+    padding: 0 0 0 25px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // margin-top: 20vh;
+    // margin-top: 120px;
+    // padding: 80px 80px 40px 80px;
+    // padding-left: 5vw;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInFromRight 1s forwards;
+    animation-delay: 0.5s;
+  }
 
   .banner-title {
-    font-size: 35px !important;
+    font-size: 32px !important;
     line-height: 1.2;
   }
 
   .banner-subtitle {
-    font-size: 35px !important;
+    font-size: 32px !important;
     line-height: 1.2;
   }
 
@@ -685,44 +692,44 @@
     margin: 0;
   }
 
- .banner-btn {
-  width: 400px;
-  padding-left: 0 !important;
-  margin-top: 20px;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-left: 20px;
-  display: flex;
-  min-width: 300px;
-}
+  .banner-btn {
+    width: 400px;
+    padding-left: 0 !important;
+    margin-top: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    display: flex;
+    min-width: 300px;
+  }
 
-  .btn-service{
+  .btn-service {
     height: 45px;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 45px;
     // width: 250px;
   }
 
   .btn-Case {
     height: 45px;
     font-size: 14px;
-    padding: 0 15px;
+    padding: 0 31px;
 
   }
 
   .banner-arrow {
-  margin-left: 25px;   
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
-  gap: 10px;
-}
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    gap: 10px;
+  }
 
-.btn-service:hover .banner-arrow,
-.btn-Case:hover .banner-arrow {
-  transform: rotate(13deg);
-  margin-left: 100px;
-}
+  .btn-service:hover .banner-arrow,
+  .btn-Case:hover .banner-arrow {
+    transform: rotate(13deg);
+    margin-left: 100px;
+  }
 
 }
 
@@ -732,9 +739,11 @@
   .banner-title {
     font-size: 48px !important;
   }
+
   .banner-subtitle {
     font-size: 40px !important;
   }
+
   .banner-semi-subtitle {
     font-size: 22px !important;
   }
@@ -749,13 +758,11 @@
 
 
 @media (min-width: 1001px) {
-    .banner-subtitle{
-        font-size: 72px !important;
-    }
+  .banner-subtitle {
+    font-size: 72px !important;
+  }
 }
 
 
 
-@media only screen and (min-width: 300px) and (max-width: 700px){
-
-}
+@media only screen and (min-width: 300px) and (max-width: 700px) {}

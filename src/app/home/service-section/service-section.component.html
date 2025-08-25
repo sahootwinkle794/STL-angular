@@ -1,87 +1,8 @@
-<!-- <section class="service-section d-flex">
-  <div class="container-fluid">
-    <h1 class="service-bg-title mt-5">SERVICES</h1>
-    <div class="service-wrapper">
-
-      <div class="service-row">
-        <h1 class="service-title d-flex">Explore Our</h1>
-        <h2 class="service-subtitle d-flex">Full Scope IT</h2>
-        <h2 class="service-subtitle d-flex">Services</h2>
-
-        <div class="service-paragraph">
-          <p class="service-paragraph">Whether starting or scaling, our services eliminate</p>
-          <p class="service-paragraph">every tech barrier and empower your business to</p>
-          <p class="service-paragraph">succeed digitally.</p>
-        </div>
-
-        <div class="service-section-btn">
-          <button (click)="scrollSlider('left')" [disabled]="isLeftDisabled"  class="btn service-btn-left">
-            <img src="assets/images/service-arrow-left.svg" />
-          </button>
-          <button (click)="scrollSlider('right')"  [disabled]="isRightDisabled"  class="btn service-btn-right">
-            <img src="assets/images/service-arrow-right.svg" />
-          </button>
-        </div>
-      </div>
-
-      <div class="col-lg-7">
-  <div class="services-slider-wrapper d-flex">
-    <div
-      class="ser-box"
-      *ngFor="let service of visibleServices ; let i = index"
-      [ngClass]="['bg-' + ((activeIndex + i) % services.length + 1),
-                  'color-' + ((activeIndex + i) % services.length + 1) ]"
-    >
-      <img
-        [src]="service.img"
-        class="img-fluid ser-box-img"
-        alt="{{ service.title }}"
-      />
-      <h4 class="service-title-card">{{ service.title }}</h4>
-      <p>{{ service.description }}</p>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-    </div>
-  </div>
-</section> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="service-section d-flex">
   <div class="container-fluid">
     <h1 class="service-bg-title">SERVICES</h1>
     <div class="service-wrapper">
-          
+
       <div class="service-row">
         <h1 class="service-title d-flex">Explore Our</h1>
         <h2 class="service-subtitle d-flex">Full Scope IT</h2>
@@ -104,26 +25,20 @@
       </div>
 
       <div class="col-lg-7">
-        <!-- Add a template reference here for ViewChild -->
-        <div class="services-slider-wrapper d-flex" #servicesSlider>
-          <div
-            class="ser-box"
-            *ngFor="let service of visibleServices; let i = index"
-            [ngClass]="[
-              'bg-' + ((activeIndex + i) % services.length + 1),
-              'color-' + ((activeIndex + i) % services.length + 1)
-            ]"
-          >
-            <img
-              [src]="service.img"
-              class="img-fluid ser-box-img"
-              alt="{{ service.title }}"
-            />
-            <h4 class="service-title-card">{{ service.title }}</h4>
-            <p>{{ service.description }}</p>
+        <div class="services-slider-wrapper">
+          <div class="slider-track d-flex" [style.transform]="'translateX(' + (-activeIndex * slideWidth) + 'px)'">
+            <div class="ser-box" *ngFor="let service of services; let i = index" [ngClass]="[
+          'bg-' + ((i) % services.length + 1),
+          'color-' + ((i) % services.length + 1)
+        ]" [style.minWidth.px]="slideWidth">
+              <img [src]="service.img" class="img-fluid ser-box-img" alt="{{ service.title }}" />
+              <h4 class="service-title-card">{{ service.title }}</h4>
+              <p>{{ service.description }}</p>
+            </div>
           </div>
         </div>
       </div>
+
 
     </div>
   </div>
