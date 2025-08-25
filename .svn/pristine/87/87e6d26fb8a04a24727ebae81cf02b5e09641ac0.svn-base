@@ -1,0 +1,134 @@
+import { Component } from '@angular/core';
+import { trigger, transition, style, animate } from '@angular/animations';
+
+@Component({
+  selector: 'app-ondemand-section',
+  templateUrl: './ondemand-section.component.html',
+  styleUrl: './ondemand-section.component.scss',
+
+
+
+// animations: [
+//     trigger('slideFade', [
+//       transition(':enter', [
+//         style({ opacity: 0, transform: 'translateY(10px)' }),
+//         animate('400ms ease-in-out', style({ opacity: 1, transform: 'translateY(0)' }))
+//       ]),
+//       transition(':leave', [
+//         animate('200ms ease-in-out', style({ opacity: 0, transform: 'translateY(-10px)' }))
+//       ])
+//     ])
+//   ]
+})
+
+export class OndemandSectionComponent {
+
+ 
+  ondemandSlides = [
+    {
+      heading: 'On-Demand Tech Team, Anytime',
+      highlight: 'Every Time Your Business Need',
+      points: [
+        'Save resources on training your team. We have deep industry expertise and a team of techies that blend in effortlessly with your business.',
+        'Expect results months faster and reduce experimental error with our flexible engagement options.'
+      ],
+      button: {
+        text: 'Explore Our Consultation & Managed Services',
+        // icon: 'fa-solid fa-share-square',
+        link: '#'
+      }
+    },
+    {
+      heading: 'A 15+ Year Journey –100+ Brands Onboard',
+      highlight: 'A Terrific/Stellar 15+ Year Journey ',
+      points: [
+        'Our clients have put their trust in us for years. Some of them for the past 5 years.',
+        'That’s the best reward we have ever received and the only way we measure our success.'
+      ],
+      button: {
+        text: 'Our Best Results',
+        // icon: 'fa-solid fa-share-square',
+        link: '#'
+      }
+    }
+  ];
+
+  //   currentSlide = 0;
+
+  // goToSlide(index: number) {
+  //   this.currentSlide = index;
+  // }
+
+  // scrollNext(container: HTMLElement) {
+  //   container.scrollBy({ left: 300, behavior: 'smooth' }); 
+  // }
+
+  // scrollPrev(container: HTMLElement) {
+  //   container.scrollBy({ left: -300, behavior: 'smooth' }); 
+  // }
+
+  // try .ts
+
+  currentIndex = 0;
+
+  get currentSlide() {
+    return this.ondemandSlides[this.currentIndex];
+  }
+
+  get progressPercentage() {
+    return ((this.currentIndex + 1) / this.ondemandSlides.length) * 100;
+  }
+
+  nextSlide() {
+    if (this.currentIndex < this.ondemandSlides.length - 1) {
+      this.currentIndex++;
+    }
+  }
+
+  previousSlide() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
+  }
+
+  // handleProgressClick(event: MouseEvent) {
+  //   const element = event.currentTarget as HTMLElement;
+  //   const rect = element.getBoundingClientRect();
+  //   const clickX = event.clientX - rect.left;
+  //   const clickedIndex = Math.floor((clickX / rect.width) * this.ondemandSlides.length);
+  //   this.currentIndex = clickedIndex;
+  // }
+
+
+
+
+  // try progress bar   working two sided progress bar
+
+  progressSide: 'left' | 'right' = 'left'; // default
+
+// handleProgressClick(event: MouseEvent): void {
+//   const bar = (event.currentTarget as HTMLElement);
+//   const rect = bar.getBoundingClientRect();
+//   const clickX = event.clientX - rect.left; // X position relative to the bar
+//   const width = rect.width;
+
+//   this.progressSide = clickX < width / 2 ? 'left' : 'right';
+// }
+
+
+
+handleProgressClick(event: MouseEvent): void {
+  const bar = event.currentTarget as HTMLElement;
+  const rect = bar.getBoundingClientRect();
+  const clickX = event.clientX - rect.left;
+  const width = rect.width;
+
+  if (clickX < width / 2) {
+    this.progressSide = 'left';
+    this.previousSlide(); // 👈 trigger left slide
+  } else {
+    this.progressSide = 'right';
+    this.nextSlide(); // 👈 trigger right slide
+  }
+}
+}

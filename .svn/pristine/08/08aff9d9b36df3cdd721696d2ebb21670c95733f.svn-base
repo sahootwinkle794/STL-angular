@@ -1,0 +1,46 @@
+<body>   
+    <section class="openings-job"> 
+    <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a routerLink="/career/job-opening"  routerLinkActive='active' class="read-more">Read More</a>
+</div>
+
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+
+
+ <div class="job-card">
+  <h3>Job Openings</h3>
+  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
+  <a href='/index.html' class="read-more">Read More</a>
+</div>
+</section>
+
+</body>

@@ -1,0 +1,76 @@
+<!-- <section class="banner-sec d-flex w-2033 h-964 flex-column position-relative section">
+
+  <video width="100%" height="auto" autoplay loop muted>
+    <ng-container *ngFor="let source of videoSources">
+      <source [src]="source.src" [type]="source.type">
+    </ng-container>
+    Your browser does not support the video tag.
+  </video>
+  
+
+
+  <div class="container banner">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="banner-h2">
+          <span class="banner-text1">Solving Problems With</span>
+          Versatile Technology <br />Solutions.
+        </h2>
+		<h3>We Build User-centric, Responsive Websites</h3>
+
+		
+		<div class="button-container">
+        <ul class="btn-list list-unstyled d-flex align-items-center">
+          <li *ngFor="let btn of buttons">
+            <a [href]="btn.link" class="btn btn-sm animated-button" [ngClass]="btn.class">
+              {{ btn.text }} <i [class]="btn.icon"></i>
+            </a>
+          </li>
+        </ul>
+		</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ -->
+
+
+
+
+     <section class="banner d-flex flex-column position-relative">
+      <video width="100%" height="1080px" autoplay loop muted class="bg-video">
+    <ng-container *ngFor="let source of videoSources">
+      <source [src]="source.src" [type]="source.type">
+    </ng-container>
+    Your browser does not support the video tag.
+  </video>
+      <div class="container-fluid d-flex mt-2">
+        <div class="row">
+          <!-- <div class="col-md-6"> -->
+            <div class="banner-content">
+              <h1 class="banner-title ">Solving Problems With </h1>
+              <h2 class="banner-subtitle">Versatile Technology</h2>
+              <h3 class="banner-subtitle">Solutions.</h3>
+
+                <!-- Updated HTML -->
+                    <div class="banner-subtitle-wrapper">
+                      <div class="banner-subtitle-container" [style.transform]="transformStyle">
+                        <h4
+                          class="banner-semi-subtitle"
+                          *ngFor="let subtitle of subtitles"
+                        >
+                          {{ subtitle }}
+                        </h4>
+                      </div>
+                    </div>
+            </div>
+            <div class="banner-btn">
+              <button class="btn btn-service">View Our Services<img src="/assets/images/btn-arrow.svg" alt="arrow" class="banner-arrow"></button>
+              <button class="btn btn-Case">Check Our Case Studies<img src="/assets/images/btn-arrow.svg" alt="arrow" class="banner-arrow"></button>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>

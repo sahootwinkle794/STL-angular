@@ -1,0 +1,761 @@
+// //  to import the FOnt style in the SCSS
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&display=swap');
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+// //  this is the banner section
+
+
+/* Background video */
+// .bg-video {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 120%;
+//   width: 100%;
+//   object-fit: cover;
+//   z-index: 0;
+//   pointer-events: none;
+//   transform: scaleX(-1);
+//   object-fit: cover;
+//    transform: scaleX(-1) scale(1); 
+//   transform-origin: center;
+//   transition: transform 0.5s ease;
+// }
+
+
+// //  new added section for the banner 
+// .banner {
+//   position: relative;
+//   width: 100%;             
+//   max-width: 1920px;       
+//   aspect-ratio: 1920 / 930; 
+//   overflow: hidden;
+//   margin: 0 auto;
+
+
+//   height: 100vh;
+//   max-height: 1000px;
+//    flex-direction: column;
+//   justify-content: center;
+//   margin: 0 auto;
+//   z-index: 1;
+// }
+
+
+// /* Banner content */
+// .banner-content {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   // margin-top: 20vh;
+//   margin-top: 120px;
+//   padding-left: 5vw;
+//   opacity: 0;
+//   transform: translateX(100%);
+//   animation: slideInFromRight 1s forwards;
+//   animation-delay: 0.5s;
+// }
+
+
+
+// /* Slide-in animation */
+// @keyframes slideInFromRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(100%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// /* Titles */
+// .banner-title {
+//   font-family: 'Geist', sans-serif;
+//   font-size: 80px;
+//   font-weight: 250;
+// }
+
+// .banner-subtitle {
+//   font-family: 'Geist', sans-serif;
+//   font-size: 80px;
+//   opacity: 0;
+//   transform: translateX(100%);
+//   animation: slideInFromRight 1s forwards;
+//   animation-delay: 0.6s;
+//   font-weight: 600;
+// }
+
+// .banner-subtitle-wrapper {
+//   height: 48px; 
+//   overflow: hidden;
+//   position: relative;
+//   cursor: pointer;
+// }
+
+// // .banner-subtitle-container {
+// //   display: flex;
+// //   flex-direction: column;
+// //   transition: transform 0.6s ease-in-out;
+// //   will-change: transform;
+// // }
+
+// // .banner-semi-subtitle {
+// //   font-family: 'Geist', sans-serif;
+// //   font-size: 40px;
+// //   color: #623692;
+// //   font-weight: 400;
+// //   margin: 0;
+// //   line-height: 48px;
+// //   height: 48px;
+// //   display: flex;
+// //   align-items: center;
+// //   white-space: nowrap;
+// // }
+
+
+
+
+
+
+// .banner-subtitle-wrapper {
+//   height: 48px;
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .banner-subtitle-container {
+//   display: flex;
+//   flex-direction: column;
+//   transition: transform 0.6s ease-in-out;
+//   will-change: transform;
+// }
+
+// .banner-semi-subtitle {
+//   font-family: 'Geist', sans-serif;
+//   font-size: 40px;
+//   color: #623692;
+//   font-weight: 400;
+//   margin: 0;
+//   line-height: 48px;
+//   height: 48px;
+//   display: flex;
+//   align-items: center;
+//   white-space: nowrap;
+// }
+
+// /* MOBILE OPTIMIZATION ≤700px */
+// @media (max-width: 700px) {
+//   .banner-subtitle-wrapper {
+//     height: 32px; // smaller ticker window
+//   }
+
+//   .banner-semi-subtitle {
+//     font-size: 18px;
+//     line-height: 32px;
+//     height: 32px;
+//     text-align: center;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Buttons */
+// .banner-btn {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: 40px;
+//   gap: 20px;
+//   z-index: 1;
+//   padding-left: 5vw;
+//   transform: translateX(100%);
+//   animation: slideInFromRight 1s forwards;
+//   animation-delay: 0.9s;
+// }
+
+// @keyframes slideInFromRight {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(100%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// .btn-service,
+// .btn-Case {
+//   border-radius: 50px;
+//   height: 60px;
+//   padding-left: 25px;
+//   font-family: "Outfit", sans-serif;
+//   font-size: 20px;
+//   font-weight: 500;
+//   text-align: left;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   display: flex;
+//   align-items: center;
+//   transition: all 0.8s ease;
+// }
+
+// .btn-service {
+//   background: linear-gradient(150deg,#FD8033 0%, #EC292A 100%);
+//   color: #FFFFFF;
+
+// }
+
+// .btn-Case {
+//   background: linear-gradient(150deg,#0A47B9 0%, #763289 100%);
+//   color: #FFFFFF;
+// }
+
+// /* Arrow Section */
+// .banner-arrow {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 30px;
+//   margin-left: 30px;
+//   align-items: center;
+//   transition: all 0.3s ease;
+// }
+
+
+// .btn-service:hover {
+//   transform: translateY(-5px) scale(1.05); // lift effect
+//   box-shadow: 0px 8px 20px rgba(253, 128, 51, 0.4);
+// }
+// .btn-Case:hover {
+//   transform: translateY(-5px) scale(1.05);
+//   box-shadow: 0px 8px 20px rgba(10, 71, 185, 0.4);
+// }
+
+
+
+// // new hover section added
+
+// .btn-service:hover .banner-arrow,
+// .btn-Case:hover .banner-arrow {
+//   transform: rotate(13deg);
+//   margin-left: 40px;
+// }
+
+
+
+// // Try responsive section
+// /* =================== RESPONSIVE LAYER =================== */
+
+// /* =================== MOBILE (≤700px) =================== */
+// @media (max-width: 700px) {
+//   .banner {
+//     // margin-top: -100px;
+//     // margin-bottom: 100%;
+//     height: 100vh;   
+//     // height: 100%;          // full screen height
+//     text-align: center;        // center all text
+//   }
+
+//   .banner-content {
+//     align-items: left;       // center horizontally
+//     margin-top: 60px;          // move content up so it fits better
+//     // padding-left: 0;           // remove left padding
+//     // text-align: left;        // center text
+//   }
+
+//   .banner-title {
+//     font-size: 35px !important;
+//     line-height: 1.2;
+//   }
+
+//   .banner-subtitle {
+//     font-size: 35px !important;
+//     line-height: 1.2;
+//   }
+
+//   .banner-semi-subtitle {
+//     font-size: 12px !important;
+//     line-height: 26px;
+//     font-weight: 600;
+//     margin: 0;
+//   }
+
+//   .banner-btn {
+//     justify-content: center;   // center buttons
+//     padding-left: 0 !important;
+//     margin-top: 20px;
+//     gap: 12px;
+//     flex-wrap: wrap;   
+//             // allow wrapping if needed
+
+//             margin-left: 60px;
+//             display: flex;
+//             max-width: 300px;
+
+
+//   }
+
+//   .btn-service,
+//   .btn-Case {
+//     height: 45px;
+//     font-size: 14px;
+//     padding: 0 15px;
+//   }
+
+//   .banner-arrow {
+//     margin-left: 10px;
+//     gap: 10px;
+//   }
+// }
+
+
+// /* TABLET (701px – 1000px) */
+// @media (min-width: 701px) and (max-width: 1000px) {
+//   .banner-title {
+//     font-size: 48px !important;
+//   }
+//   .banner-subtitle {
+//     font-size: 40px !important;
+//   }
+//   .banner-semi-subtitle {
+//     font-size: 22px !important;
+//   }
+
+//   .btn-service,
+//   .btn-Case {
+//     height: 50px;
+//     font-size: 16px;
+//   }
+// }
+
+
+
+// @media (min-width: 1001px) {
+//     .banner-subtitle{
+//         font-size: 72px !important;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// NEW TRY BANNER SCSS 
+
+
+
+//  to import the FOnt style in the SCSS
+// @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+//  this is the banner section
+
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  transform: scaleX(-1);
+  object-fit: cover;
+   transform: scaleX(-1) scale(1); 
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+
+//  new added section for the banner 
+.banner {
+  position: relative;
+  // width: 100%;                   
+  // aspect-ratio: 1920 / 930;
+  padding: 80px 0 80px 0;
+  overflow: hidden;
+  margin: 0 auto;
+
+
+  // height: calc(100vh - 50px);
+  // max-height: 1000px;
+   flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+/* Banner content */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // margin-top: 20vh;
+  // margin-top: 120px;
+  padding: 80px 80px 40px 80px;
+  // padding-left: 5vw;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+  animation-delay: 0.5s;
+}
+
+
+
+/* Slide-in animation */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Titles */
+.banner-title {
+  font-family: 'Geist', sans-serif;
+  font-size: 80px;
+  font-weight: 250;
+}
+
+.banner-subtitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 80px;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 2s forwards;
+  animation-delay: 0.6s;
+  font-weight: 600;
+}
+
+.banner-subtitle-wrapper {
+  height: 48px; 
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+// .banner-subtitle-container {
+//   display: flex;
+//   flex-direction: column;
+//   transition: transform 0.6s ease-in-out;
+//   will-change: transform;
+// }
+
+// .banner-semi-subtitle {
+//   font-family: 'Geist', sans-serif;
+//   font-size: 40px;
+//   color: #623692;
+//   font-weight: 400;
+//   margin: 0;
+//   line-height: 48px;
+//   height: 48px;
+//   display: flex;
+//   align-items: center;
+//   white-space: nowrap;
+// }
+
+
+
+
+
+
+.banner-subtitle-wrapper {
+  height: 48px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner-subtitle-container {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.banner-semi-subtitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 40px;
+  color: #623692;
+  font-weight: 400;
+  margin: 0;
+  line-height: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* MOBILE OPTIMIZATION ≤700px */
+@media (max-width: 700px) {
+  .banner-subtitle-wrapper {
+    height: 32px;
+  }
+
+  .banner-semi-subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    height: 32px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons */
+.banner-btn {
+  display: flex;
+  flex-wrap: wrap;
+  // margin-top: 40px;
+  gap: 20px;
+  z-index: 1;
+  padding-left: 5vw;
+  transform: translateX(100%);
+  animation: slideInFromRight 2s forwards;
+  animation-delay: 0.9s;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn-service,
+.btn-Case {
+  border-radius: 50px;
+  height: 60px;
+  padding-left: 25px;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  transition: all 0.8s ease;
+}
+
+.btn-service {
+  background: linear-gradient(150deg,#FD8033 0%, #EC292A 100%);
+  color: #FFFFFF;
+
+}
+
+.btn-Case {
+  background: linear-gradient(150deg,#0A47B9 0%, #763289 100%);
+  color: #FFFFFF;
+}
+
+/* Arrow Section */
+.banner-arrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 30px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+
+.btn-service:hover {
+  transform: translateY(-5px) scale(1.05); // lift effect
+  box-shadow: 0px 8px 20px rgba(253, 128, 51, 0.4);
+}
+.btn-Case:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0px 8px 20px rgba(10, 71, 185, 0.4);
+}
+
+
+
+// new hover section added
+
+.btn-service:hover .banner-arrow,
+.btn-Case:hover .banner-arrow {
+  transform: rotate(13deg);
+  margin-left: 40px;
+}
+
+
+
+// Try responsive section
+/* =================== RESPONSIVE LAYER =================== */
+
+/* =================== MOBILE (≤700px) =================== */
+
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .bg-video {
+    width: 100vw !important;
+    height: 100vh !important;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+
+.banner-content {
+  padding:  0 0 0 25px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // margin-top: 20vh;
+  // margin-top: 120px;
+  // padding: 80px 80px 40px 80px;
+  // padding-left: 5vw;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+  animation-delay: 0.5s;
+}          
+
+  .banner-title {
+    font-size: 35px !important;
+    line-height: 1.2;
+  }
+
+  .banner-subtitle {
+    font-size: 35px !important;
+    line-height: 1.2;
+  }
+
+  .banner-semi-subtitle {
+    font-size: 12px !important;
+    line-height: 26px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+ .banner-btn {
+  width: 400px;
+  padding-left: 0 !important;
+  margin-top: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  display: flex;
+  min-width: 300px;
+}
+
+  .btn-service{
+    height: 45px;
+    font-size: 14px;
+    padding: 0 15px;
+    // width: 250px;
+  }
+
+  .btn-Case {
+    height: 45px;
+    font-size: 14px;
+    padding: 0 15px;
+
+  }
+
+  .banner-arrow {
+  margin-left: 25px;   
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+.btn-service:hover .banner-arrow,
+.btn-Case:hover .banner-arrow {
+  transform: rotate(13deg);
+  margin-left: 100px;
+}
+
+}
+
+
+/* TABLET (701px – 1000px) */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .banner-title {
+    font-size: 48px !important;
+  }
+  .banner-subtitle {
+    font-size: 40px !important;
+  }
+  .banner-semi-subtitle {
+    font-size: 22px !important;
+  }
+
+  .btn-service,
+  .btn-Case {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+
+
+@media (min-width: 1001px) {
+    .banner-subtitle{
+        font-size: 72px !important;
+    }
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 700px){
+
+}

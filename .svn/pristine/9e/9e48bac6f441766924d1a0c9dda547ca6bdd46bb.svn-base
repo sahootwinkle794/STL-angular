@@ -1,0 +1,57 @@
+<section class="support-section">
+  <div class="support-header">
+    <h2>Friendly Folks Standing By</h2>
+    <p>
+      Talk to Real People, Who Listen to Your Requirements, Provide Valuable Inputs,And Promptly Resolve Any Issues. <br> We’re Here 7 Days A Week.
+    </p>
+  </div>
+
+  <div class="support-cards">
+    <div class="support-card" *ngFor="let card of supportCards">
+      <img [src]="card.icon" [alt]="card.title" />
+      <h4>{{ card.title }}</h4>
+      <p>{{ card.description }}</p>
+      <span class="support-button"><a class="support-btn" [routerLink]="card.link">{{ card.button }}</a></span>
+      
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="global-presence">
+  <div class="left-section">
+    <h2>Fast-track your 
+        <br>
+         progress with<br /><span>a worldwide partner</span></h2>
+
+    <a class="cta-button" routerLink="/contact">
+      Book A <strong>FREE</strong> Discovery Call
+      <span class="arrow"><img src="assets/images/contact-page/arr.png" alt=""></span>
+    </a>
+
+    <p class="subtext">
+      Join over 15k subscribers receiving our newsletter. Stay informed with the
+      latest tech updates, recent advancements, product releases, and insights we
+      believe you’ll find valuable.
+    </p>
+  </div>
+
+  <div class="right-section">
+    <h4>STL Around the World - Our Offices</h4>
+    <div class="map-container">
+      <img src="assets/images/contact-page/map.png" alt="World Map" />
+
+      <!-- Dots/locations -->
+      <!-- <span class="map-dot usa">USA</span>
+      <span class="map-dot dubai">Dubai</span>
+      <span class="map-dot india">India</span> -->
+    </div>
+    <span class="map-dot" *ngFor="let dot of mapDots" [ngClass]="dot.class">
+  {{ dot.label }}
+</span>
+
+  </div>
+</section>
+
+

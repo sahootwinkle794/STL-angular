@@ -1,0 +1,340 @@
+// @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wgh');
+// @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100;900&family=Outfit:wght@100;900&display=swap');
+
+// // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.support-section {
+  padding: 60px 0px;
+//   background: linear-gradient(to bottom, #f5faff, #ffffff);
+background-image: url('../../../public/assets/images/contact-page/con-bg.png');
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.support-header{
+    margin-top: 110px;
+}
+
+.support-header h2 {
+  font-family: 'Geist',sans-serif !important;
+  font-size: 80px;
+  text-shadow: #090404;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.support-header p {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+ color: #000000;
+  text-shadow: #141111;
+   font-style: normal;
+}
+
+.support-cards {
+  // width: 6000px;
+  padding-left: 120px;
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.support-cards.card4{
+
+display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+.support-card.card-4{
+    margin-bottom: 80px;
+
+}
+
+.support-card:hover {
+  transform: translateY(-10px);
+}
+
+.support-card img {
+  width: 50px;
+  margin-bottom: 15px;
+  margin-left: 100px;
+}
+
+.support-card h4 {
+   font-family: 'Geist',sans-serif !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.support-card p {
+  font-family: "Outfit", sans-serif !important;
+  font-size: 0.95rem;
+  color: #000000;
+  margin-bottom: 20px;
+
+  .card-4 p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 220px;
+}
+
+}
+
+.support-btn {
+  display: inline-block;
+  padding: 30px 15px;
+  border: 1px solid rgb(161, 216, 226);
+  color: rgb(161, 216, 226);
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color:rgb(161, 216, 226);
+  width: 350px;
+}
+a.support-btn .card-4{
+    padding: 100px;
+    margin-top: 100px;
+    display: flex;
+        
+}
+
+
+.support-btn:hover {
+  background-color: #baecff;
+  color: white;
+}
+
+
+//  New updad suppot-button adn cards
+
+.support-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 300px;
+  height: 100%;
+  min-height: 380px; /* adjust as needed */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+ box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  transition: transform 0.4s ease;
+}
+
+.support-card img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.support-card h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.support-card p {
+  font-family: "Outfit", sans-serif !important;
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.support-button {
+  margin-top: auto; /* push to bottom */
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.support-btn {
+   display: inline-block;
+  padding: 10px 10px;
+  border: 1px solid #0a66c2;
+  color: #0a66c2;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.support-btn:hover {
+  background-color: #0056b3;
+}
+
+.support-card:nth-child(4) .support-button {
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 1920px) {
+  .support-cards {
+    justify-content: center;
+    max-width: 1600px; /* Adjust based on your card width + gaps */
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+// global section
+.global-presence {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI', sans-serif;
+   background: linear-gradient(166.12deg, #ECF4F4 -22.43%, #D5F0F4 122.35%);
+}
+
+.left-section {
+  background: linear-gradient(166.12deg, #ECF4F4 -22.43%, #D5F0F4 122.35%);
+    padding-left: 120px;
+    padding-top: 70px;
+  flex: 1 1 40%;
+  background-size: cover;
+}
+
+.left-section h2 {
+   font-family: 'Geist',sans-serif !important;
+  font-size: 3rem;
+  font-weight: 200;
+  line-height: 1.3;
+  color: #3d6d80;
+}
+
+.left-section h2 span {
+  font-family: 'Geist',sans-serif !important;
+  font-weight: 700;
+  color: #1e5f9c;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 25px 0;
+  padding: 14px 24px;
+  background: linear-gradient(#00A1E4 0%,#00597E 100%);
+  color: #ffff;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #004a99;
+}
+
+.cta-button .arrow {
+  margin-left: 10px;
+}
+
+.subtext {
+  font-family: "Outfit", sans-serif !important;
+  max-width: 400px;
+  font-size: 0.95rem;
+  color: #070404;
+}
+
+.right-section {
+    background-color: #fff;
+  flex: 2 2 55%;
+  position: relative;
+}
+
+.right-section h4 {
+  font-family: 'Geist',sans-serif !important;
+  padding-top: 15px;
+  padding-left: 7px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #111;
+  font-weight: 500;
+}
+
+.map-container {
+  position: relative;
+  background-color: #d8d5d5;
+  width: 100%;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Map Dots */
+.map-dot {
+  position: absolute;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.map-dot::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #0a66c2;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+/* Manually position dots (adjust as needed) */
+.map-dot.usa {
+  top: 35%;
+  left: 12%;
+}
+
+.map-dot.dubai {
+  top: 55%;
+  left: 45%;
+}
+
+.map-dot.india {
+  top: 48%;
+  left: 75%;
+}
+// support button
+.support-button{
+  display: flex;
+
+}
+
+
+
+
+@media screen and (min-width: 1920px) {
+  .global-presence {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    max-width: 1600px; 
+    margin: 0 auto; 
+  }
+
+  .left-section {
+    position: relative;
+    padding-left: 75px; 
+  }
+
+  .right-section {
+    flex: 0 0 55%;
+    background: #fff;
+  }
+}

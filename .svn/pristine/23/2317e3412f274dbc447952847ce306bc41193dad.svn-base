@@ -1,0 +1,251 @@
+.mob-sec {
+    padding: 98px 0;
+    background: url('../../../../public/assets/images/mob-bg.png');
+    background-size: 100%;
+    background-position: top 0 left;
+    background-repeat: no-repeat;
+    animation: slideBackground 10s linear infinite;
+    background-size: cover;
+    // background-size: contain;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+@keyframes slideBackground {
+
+  0% {
+    background-position: top;
+  }
+
+  100% {
+    background-position: bottom;
+  }
+}
+
+
+
+.mob-sec .col-lg-6 .mob-box {
+  padding: 50px 50px;
+  background: linear-gradient(180deg, #DBECFF 0%, #72CAEA 100%);
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box {
+  background: linear-gradient(180deg, #FFE8E1 0%, #F0A28A 100%);
+}
+
+.mob-box:before {
+  content: '';
+  position: absolute;
+  background: url('../../../../public/assets/images/card-bg.png');
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  left: 0;
+  top: 0;
+}
+
+.mob-sec .mob-box h2 {
+  color: #094E92;
+  font-size: 57px;
+  font-weight: 200;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box h2 {
+  color: #925240
+}
+
+.mob-sec .mob-box h2 span {
+  font-weight: 700;
+}
+
+.mob-sec .mob-box p {
+  font-size: 25px;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.mob-sec .mob-box a {
+  background: linear-gradient(180deg, #069B8A 0%, #0A57BB 100%);
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0 30px;
+  height: 48px;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 45px;
+  position: relative;
+}
+
+.mob-sec .col-lg-6:last-child .mob-box a {
+  background: linear-gradient(180deg, #E2A390 0%, #EA2D2E 100%);
+}
+
+.mob-sec .mob-box a img {
+  top: -5px;
+  position: relative;
+  left: 10px;
+}
+
+
+
+.chat-btn:hover .img-fluid{
+
+transform: rotate(13deg);
+        margin-left: 10px;
+        transition: all 0.3s ease-in-out;
+
+}
+
+
+
+
+
+//  for responsive screen
+
+/* =========== MOBILE (≤700px) =========== */
+@media (max-width: 700px) {
+  .mob-sec {
+    padding: 40px 0 32px 0;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .mob-sec .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mob-sec .row {
+    margin: 0;
+  }
+
+  .mob-sec .col-lg-9 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .mob-sec .row > .col-lg-6 {
+    width: 100% !important;
+    max-width: none;
+    flex: 0 0 100%;
+    margin-bottom: 28px;
+    padding: 0;
+  }
+
+  .mob-box {
+    padding: 24px 14px !important;
+    border-radius: 24px !important;
+    margin-bottom: 12px;
+  }
+
+  .mob-box h2 {
+    font-size: 26px !important;
+    line-height: 130%;
+    margin-bottom: 16px;
+  }
+
+  .mob-box p {
+    font-size: 15px !important;
+    margin-bottom: 28px;
+  }
+
+  .mob-box a {
+    font-size: 15px !important;
+    height: 40px !important;
+    line-height: 38px !important;
+    border-radius: 25px !important;
+    padding: 0 18px !important;
+  }
+
+  .mob-box a img {
+    width: 24px;
+    left: 7px;
+    top: -2px;
+  }
+}
+
+/* =========== TABLET (701px - 1000px) =========== */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .mob-sec {
+    padding: 64px 0;
+    background-size: cover;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+  }
+
+  .mob-sec .col-lg-9 {
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .mob-sec .row > .col-lg-6 {
+    width: 48% !important;
+    max-width: none;
+    flex: 0 0 48%;
+    margin-bottom: 0;
+    padding: 0 6px;
+  }
+
+  .mob-box {
+    padding: 38px 22px !important;
+    border-radius: 32px !important;
+  }
+
+  .mob-box h2 {
+    font-size: 38px !important;
+    margin-bottom: 21px;
+  }
+
+  .mob-box p {
+    font-size: 21px !important;
+    margin-bottom: 36px;
+  }
+
+  .mob-box a {
+    font-size: 17px !important;
+    height: 45px !important;
+    line-height: 43px !important;
+    border-radius: 32px !important;
+    padding: 0 22px !important;
+  }
+}
+
+/* =========== DESKTOP (≥1001px) =========== */
+@media (min-width: 1001px) {
+  .mob-sec {
+    padding: 98px 0;
+    background-size: cover;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .mob-box {
+    padding: 50px 50px;
+    border-radius: 40px;
+  }
+
+  .mob-box h2 {
+    font-size: 57px;
+  }
+
+  .mob-box p {
+    font-size: 25px;
+  }
+
+  .mob-box a {
+    font-size: 18px;
+    border-radius: 50px;
+    height: 48px;
+    line-height: 45px;
+    padding: 0 30px;
+  }
+}

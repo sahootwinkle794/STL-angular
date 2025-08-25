@@ -1,0 +1,77 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-cloud-services',
+  templateUrl: './cloud-services.component.html',
+  styleUrls: ['./cloud-services.component.scss'] // ✅ MUST be plural + array
+})
+export class CloudServicesComponent {
+  // your code here...
+
+
+    cards = [
+    {
+      title: 'Cloud Migration',
+      description: `Move your business applications and workloads to the cloud, eliminating hardware dependencies and improving system resilience. Our migration services ensure minimal downtime, data integrity, and a strategy tailored to your unique business needs.`,
+      image: '/assets/images/Cloud-1.png'
+    },
+    {
+      title: 'Cloud Operations and Optimizations',
+      description: `Enhance your cloud environment’s performance by fine-tuning operations, identifying inefficiencies, and optimizing resources. Automation and cost-proof management strategies ensure smooth, scalable operations without over-provisioning.`,
+      image: '/assets/images/Cloud-2.png'
+    },
+    {
+      title: 'Application Modernization',
+      description: `Transform outdated applications with cloud-native features to enhance scalability and user experience. We modernize legacy apps using advanced cloud technologies, enabling seamless integration and improved platform agility.`,
+      image: '/assets/images/Cloude-3.png'
+    },
+    {
+      title: 'Data Centre Modernization',
+      description: `Revamp your on-premise data centers by integrating cloud technologies, achieving greater storage capacity, and more efficient resource usage. We enable hybrid or fully cloud environments, including hardware refresh, and improving scalability.`,
+      image: '/assets/images/Cloude-4.png'
+    }
+  ];
+
+    cloudTypes = [
+    {
+      title: 'Public Cloud',
+      description:
+        'Leverage shared infrastructure from leading providers like AWS, Azure, and Google Cloud to scale rapidly with minimal upfront costs and high availability.',
+      image: '/assets/images/Transfrom-1.png'
+    },
+    {
+      title: 'Private Cloud',
+      description:
+        'Maintain control over your dedicated infrastructure for greater security, compliance, and customization, which is ideal for sensitive data or specific regulatory requirements.',
+      image: '/assets/images/Transfrom-2.png'
+    },
+    {
+      title: 'Hybrid Cloud',
+      description:
+        'Combine the flexibility of the public cloud with the control of the private cloud, allowing seamless data and workload sharing across environments for optimized performance.',
+      image: '/assets/images/Transfrom-3.png'
+    },
+    {
+      title: 'Multi-Cloud',
+      description:
+        'Utilize multiple cloud providers to avoid vendor lock-in, enhance resilience, and optimize costs by strategically deploying workloads based on each provider’s strengths.',
+      image: '/assets/images/Transfrom-4.png'
+    }
+  ];
+
+   stats = [
+    {
+      value: '80%',
+      text: 'of organizations are expected to have transitioned from traditional data centers to cloud solutions.'
+    },
+    {
+      value: '35%',
+      text: 'Businesses save, on average, 35% on operational costs after moving to cloud infrastructure.'
+    },
+    {
+      value: '90%',
+      text: 'of companies have reported security improvements after migrating to the cloud.'
+    }
+  ];
+}

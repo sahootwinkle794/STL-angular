@@ -1,0 +1,69 @@
+import { Component, ViewChild,ElementRef } from '@angular/core';
+import { AfterViewInit, HostListener } from '@angular/core';
+
+@Component({
+  selector: 'app-service-section',
+  templateUrl: './service-section.component.html',
+  styleUrl: './service-section.component.scss'
+})
+export class ServiceSectionComponent {
+
+// TRY 1
+  @ViewChild('sliderContainer', { static: false }) sliderContainer!: ElementRef;
+
+scrollSlider(direction: 'left' | 'right') {
+  const container = this.sliderContainer.nativeElement;
+  const cardWidth = 420;
+  const gap = 16;
+  const scrollAmount = cardWidth + gap ;
+  container.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
+}
+
+
+ sectionTitle = 'Explore Our';
+  sectionSubtitle = 'Full Scope IT Services';
+  sectionDescription =
+    'Whether starting or scaling, our services eliminate every tech barrier and empower your business to succeed digitally.';
+
+  services = [
+    {
+      img: '/assets/images/1.svg',
+      title: 'Website Development',
+      description:
+        'Create fast, responsive websites that hook visitors and push them down the conversion pipeline.',
+    },
+    {
+      img: '/assets/images/2.svg',
+      title: 'Application Development',
+      description:
+        'Build custom applications that automate staff tasks, meet regulatory requirements, and improve service delivery.'
+    },
+    {
+      img: '/assets/images/3.svg',
+      title: 'Data and Analytics',
+      description:
+        'Turn data into insights to make smarter business decisions.'
+    },
+    {
+      img: '/assets/images/4.png',
+      title: 'Security Services',
+      description:
+        'Keep your systems secure with proactive security solutions.'
+    },
+    {
+      img: '/assets/images/5.png',
+      title: 'Cloud Services',
+      description:
+        'Access scalable, reliable cloud solutions for better business agility.'
+    },
+    {
+      img: '/assets/images/6.png',
+      title: 'Emerging Technologies',
+      description:
+        'Implement cutting-edge technologies to drive innovation and growth.'
+    }
+  ];
+
+    loopedServices = [...this.services, ...this.services];
+
+}

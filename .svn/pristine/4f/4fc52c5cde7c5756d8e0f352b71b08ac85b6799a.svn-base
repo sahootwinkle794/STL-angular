@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { CareerRoutingModule } from './career-routing.module';
+import { CareerComponent } from './career.component';
+import { JobOpeningComponent } from './job-opening/job-opening.component';
+
+
+
+@NgModule({
+  declarations: [
+    CareerComponent,
+    JobOpeningComponent
+  ],
+  imports: [
+    CommonModule,
+    CareerRoutingModule,
+    RouterModule.forChild([{ path: '', component: CareerComponent }])
+  ]
+})
+export class CareerModule { }

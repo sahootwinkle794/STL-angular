@@ -1,0 +1,306 @@
+// this sectio is for the go-paperless
+
+// $primary-color: #000;
+// $secondary-color: #666;
+// $background: #f0fafd;
+
+.containesection-new{
+  background-image: url('/assets/images/sakhyam/dms1stbg.png');
+    background-size: 1700px 600px; /* width height */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem;
+  flex-wrap: wrap;
+  // background: $background;
+
+  .text-section {
+    flex: 1 1 50%;
+    max-width: 600px;
+
+    h2 {
+      // color: $secondary-color;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      // color: $primary-color;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      // color: $secondary-color;
+      line-height: 1.6;
+    }
+  }
+
+  .image-section {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+
+  //copies from sakhyam section
+  
+.key-features {
+  background: linear-gradient(135deg, #f8fcff, #eefaff);
+  padding: 4rem 2rem;
+   background-size: 1700px 600px; /* width height */
+  background-repeat: no-repeat;
+  background-position: center;
+  // text-align: center;
+
+   .features-header {
+    h2 {
+      padding-left: 120px;
+       text-align: left;
+      font-size: 2.3rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+
+      span {
+        font-weight: 200;
+      }
+    }
+  }
+  }
+
+  .features-wrapper {
+    display: flex;
+    text-align: left;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .feature {
+      flex: 1;
+      min-width: 180px;
+      max-width: 200px;
+      text-align: left;
+
+      img {
+        width: 50px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    }
+  }
+
+  .nav-arrows {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: left;
+    gap: 0.4rem;
+    padding-left: 120px;
+
+    .arrow-btn {
+      background: transparent;
+      border: 2px solid #ff4b2b;
+      color: #ff4b2b;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        background: transparent;
+        // background: #ff4b2b;
+        color: #fd5d13;
+      }
+    }
+  }
+
+
+/* ✅ Responsive */
+@media (max-width: 900px) {
+  .key-features .features-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .key-features .features-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+// the section for the FAQ starts 
+
+.faq-section {
+  // background: #f7f7f7;
+  background-image: url('/assets/images/sakhyam/faqbg.pg');
+  padding: 8rem 10rem;
+  // width: 800px;
+  // margin: auto;
+  text-align: left;
+  // display: flex;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+
+  .faq {
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+
+      &.open .faq-answer {
+        max-height: 300px;
+        padding: 1rem;
+      }
+
+      .faq-question {
+        width: 100%;
+        background: #fff;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        text-align: left;
+        font-weight: bold;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover {
+          background: #f1f1f1;
+        }
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 1rem;
+        transition: all 0.3s ease;
+        color: #555;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+//Ready section css
+// .foot-form{
+//   margin-top: 150px;
+// }
+.ready-sec{
+  background-image: url('/assets/images/sakhyam/dmsbglast.png');
+   background-size: 1600px 600px; /* width height */
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.ready-sec .main-sec-head {
+  color: #000000;
+  font-weight: 90;
+  font-size: 57px;
+  // padding: 0;
+  // background: transparent;
+}
+
+.ready-sec .main-sec-head span {
+  font-weight: 700;
+  display: block;
+  font-size: 60px;
+}
+
+.ready-sec p {
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.form-box {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background: #EDEDED;
+  border: 1px solid #DADADA;
+}
+
+.form-box label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Exo 2", serif;
+  font-size: 15px;
+  color: #000000;
+}
+
+.form-box .form-control {
+  background: #F7F7F7;
+  border: 1px solid #D3D6DA;
+  height: 60px;
+  padding: 0 20px;
+  line-height: 50px;
+  border-radius: 10px;
+}
+
+.form-box textarea.form-control {
+  height: 144px;
+}
+
+.form-box button {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 40px;
+//   background: linear-gradient(180deg, #076689 0%, #032633 100%);
+background: linear-gradient(135deg, #0A47B9 0%, #763289 100%);
+  padding: 0 30px;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #fff;
+}
+
+.form-box button:hover {
+  color: #fff;
+}
+
+.form-box button img {
+  margin-left: 20px;
+  position: relative;
+  top: -5px;
+}
+.ready-sec section{
+  padding-left: 5px;
+}
+.row{
+  margin: 0;
+  padding-left: 40px;
+}
+.btn{
+  margin-top: 0.5rem;
+}

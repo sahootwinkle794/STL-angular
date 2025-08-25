@@ -1,0 +1,89 @@
+<!-- Cloud-Section -->
+ <section class="cloud-section">
+  <div class="cloud-content">
+    <h2>
+      Break Free from Frequent <br />
+      <strong>Downtime, Manual maintenance, <br /> and Cost Overruns.</strong>
+    </h2>
+
+    <p class="subtext">
+      Innovate and scale your business leveraging the benefits of the cloud without handling <br />
+      the technical complexities of your cloud infrastructure.
+    </p>
+    <p class="description">
+      STL helps you design, architect, and optimize your cloud infrastructure beyond simple automation.
+    </p>
+
+    <button class="discovery-btn">
+      Access Your Free Discovery Calls <span></span>
+    </button>
+  </div>
+</section>
+
+<!-- Transfrom-section -->
+ <section class="cards-section">
+  <h2>
+    Transform, Innovate,<br />
+    <strong>and Thrive with Cloud Solutions</strong>
+  </h2>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let card of cards" [ngStyle]="{ 'background-image': 'url(' + card.image + ')' }">
+      <div class="card-overlay">
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cloud deployment section -->
+
+
+ <section class="deployment-section">
+  <h2>Cloud Deployments We Handle</h2>
+
+  <div class="deployment-cards">
+    <div class="deployment-card" *ngFor="let cloud of cloudTypes">
+      <img [src]="cloud.image" [alt]="cloud.title" class="card-image" />
+      <div class="card-text">
+        <h3>{{ cloud.title }}</h3>
+        <p>{{ cloud.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="nav-btn">
+      <span>&larr;</span>
+    </button>
+    <button class="nav-btn">
+      <span>&rarr;</span>
+    </button>
+  </div>
+</section>
+
+<!-- Inevitable Section -->
+ <section class="inevitable-section">
+  <!-- <div class="inevitable-container"> -->
+    <div class="inevitable-left">
+      <h6 class="left-cloud">The Shift to Cloud Is <br /> <strong>Inevitable</strong></h6>
+      <p class="left-subcloud">Is your business ready to scale with the speed of the cloud?</p>
+      <button class="cta-button">
+        Talk to our experts today
+        <span>
+          <img src="/assets/images/arrow-right.png" alt="arrow"  class="img-shift-cloud"/>
+        </span>
+      </button>
+    </div>
+
+    <div class="inevitable-stats">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <h3>{{ stat.value }}</h3>
+        <p>{{ stat.text }}</p>
+      </div>
+    </div>
+  <!-- </div> -->
+</section>
+
+

@@ -1,0 +1,103 @@
+body{
+  background-color: rgb(232, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.breadcrumb{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.openings-job{
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+  margin-bottom: 50px;
+  width: 920px;
+
+}
+.job-card {
+  background-color:white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 200px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+
+   transition: transform 1s ease, 
+              box-shadow 0.3s ease, 
+              filter 0.3s ease,
+              border 0.3s ease;
+}
+
+
+.job-card:hover{
+    cursor: pointer;
+  transform: translateY(-8px) scale(1.03);  
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); 
+  filter: brightness(1.05);                   
+}
+
+.job-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.job-card p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  align-self: flex-end;
+  color: #0033cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+// blur effect
+
+
+.openings-job:hover .job-card {
+  filter: blur(2px);
+  transform: scale(1); /* prevent them all from scaling */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* The hovered card stays clear and highlighted */
+.openings-job .job-card:hover {
+  filter: blur(0);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}

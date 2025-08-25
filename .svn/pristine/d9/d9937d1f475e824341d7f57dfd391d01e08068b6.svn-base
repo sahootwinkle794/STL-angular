@@ -1,0 +1,222 @@
+//  to import the FOnt style in the SCSS
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+//  this is the banner section
+
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // width: 100vw;
+  // height: 120vh;
+  height: 120%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  transform: scaleX(-1);
+
+
+   object-fit: cover;
+
+
+    //  transform: scaleX(-1) scale(1); 
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+/* Banner content */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  // margin-top: 20vh;
+  margin-top: 120px;
+  padding-left: 5vw;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+  animation-delay: 0.5s;
+}
+
+/* Slide-in animation */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Titles */
+.banner-title {
+  font-family: 'Geist', sans-serif;
+  // font-size: 6vw;
+  font-size: 80px;
+  font-weight: 250;
+  // margin-bottom: 10px;
+
+}
+
+.banner-subtitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 80px;
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+  animation-delay: 0.6s;
+  font-weight: 600;
+}
+
+
+// .banner-semi-subtitle {
+//   font-family: 'Geist', sans-serif;
+//   font-size: clamp(24px, 5vw, 40px); // responsive font size
+//   color: #623692;
+//   font-weight: 400;
+//   margin-bottom: 20px;
+
+//   display: inline-block;
+//   transform-origin: center;
+//   backface-visibility: hidden;
+//   perspective: 1000px;
+//   opacity: 1;
+
+// }
+
+
+// test
+
+
+
+.banner-subtitle-wrapper {
+  height: 48px; // Match font-size + line-height
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.banner-subtitle-container {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.banner-semi-subtitle {
+  font-family: 'Geist', sans-serif;
+  font-size: 40px;
+  color: #623692;
+  font-weight: 400;
+  margin: 0;
+  line-height: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+// 
+
+
+
+/* Buttons */
+.banner-btn {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  z-index: 1;
+  padding-left: 5vw;
+  transform: translateX(100%);
+  animation: slideInFromRight 1s forwards;
+  animation-delay: 0.9s;
+}
+
+/* Slide-in animation */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.btn-service,
+.btn-Case {
+  border-radius: 50px;
+  height: 60px;
+  padding-left: 25px;
+  font-family: "Outfit", sans-serif;
+  // font-size: 1.2rem;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  // text-align: right;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  // width: 80vw;
+  // max-width: 320px;
+}
+
+.btn-service {
+  background: linear-gradient(150deg,#FD8033 0%, #EC292A 100%);
+  color: #FFFFFF;
+}
+
+.btn-Case {
+  background: linear-gradient(150deg,#0A47B9 0%, #763289 100%);
+  color: #FFFFFF;
+}
+
+/* Arrow Section */
+.banner-arrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-left: 30px;
+  align-items: center;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 768px) {
+  .banner-title,
+  .banner-subtitle {
+    font-size: 9vw;
+  }
+
+  .banner-semi-subtitle {
+    font-size: 5vw;
+  }
+
+  .btn-service,
+  .btn-Case {
+    width: 90vw;
+    font-size: 1rem;
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-title,
+  .banner-subtitle {
+    font-size: 10vw;
+  }
+
+  .banner-semi-subtitle {
+    font-size: 6vw;
+  }
+
+  .banner-content {
+    padding-left: 4vw;
+    margin-top: 8vh;
+  }
+}

@@ -1,0 +1,1581 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Outfit:wgh');
+.about-hero-and-story {
+  background-image: url('/assets/images/about-page/Updatedbg-1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  // align-items: center;
+  // gap: 10px;
+  flex-wrap: wrap;
+  // border-radius: 100px;
+
+  margin: auto;
+}
+
+.hero-title{
+  display: flex;
+  z-index: 2;
+  position: absolute;
+
+}
+.hero-subtitle{
+  display: flex;
+  margin-top: 10vh;
+
+}
+
+.hero-container {
+  position: relative ;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // gap: 10px;
+  flex-wrap: wrap;
+  // border-radius: 100px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero-content {
+  // align-items: right;
+  // justify-content: right;
+  padding-top: 200px;
+  padding-left: 130px;
+  padding-bottom: 40px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-content h3 {
+  font-size: 62px;
+  color: #030202;
+  margin-bottom: 10px;
+  font-style: Mixed;
+  font-weight: 150;
+ font-family: 'Geist',sans-serif !important;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  color: #000;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+   font-family: 'Geist',sans-serif !important;
+  //  font-size: 80px;
+   font-style: Mixed;
+}
+
+.hero-content p {
+  font-family: "Geist", sans-serif !important;
+  color: #020101;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.hero-image {
+
+  // width: 300px;
+  // clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+  // overflow: hidden;
+  // position: relative;
+  // padding-top: 95px;
+  // padding-right: 51px;
+}
+
+.hero-image img {
+  // transition: transparent
+  // ;
+  // width: 100%;
+  // height: auto;
+  // object-fit: cover;
+  // display: block;
+    justify-content: left;
+  align-items: left;
+  flex: 1;
+  // width: 780px;
+  height: 750px;
+  padding-top: 50PX;
+}
+
+/* ✅ Responsive: Tablet & Below */
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 80px 30px 30px 30px;
+    text-align: center;
+  }
+
+  .hero-content h3 {
+    font-size: 36px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .hero-image {
+    padding: 20px;
+    clip-path: none;
+  }
+
+  .hero-image img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* ✅ Mobile screens */
+@media (max-width: 600px) {
+  .hero-content h3 {
+    font-size: 28px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-content {
+    padding: 60px 15px 30px 15px;
+  }
+
+  .hero-image {
+    padding: 10px;
+  }
+}
+
+
+// Story section
+
+.story-section {
+  background-image: url('/assets/images/about-page/We-Started.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // max-width: 3000px;
+  max-width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 82px;
+  position: relative;
+  color: white;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  justify-content: center;
+}
+
+.overlay {
+  padding-top: 20px;
+  border-radius: 8px;
+  margin: auto;
+  padding-left: 50px;
+   font-family: 'Geist',sans-serif !important;
+}
+
+.story-content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.watch-btn {
+  // padding: 20px 35px;
+  padding-left: 40px;
+  background: linear-gradient(#0A47B9 0%, #763289 100%);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* ✅ Responsive: Tablet */
+@media (max-width: 1024px) {
+  .story-section {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .overlay {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .story-content h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .story-content p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .watch-btn {
+    display: block;
+    margin: 0 auto;
+
+  }
+}
+
+/* ✅ Responsive: Mobile */
+@media (max-width: 600px) {
+  .story-section {
+    padding: 60px 20px;
+  }
+
+  .overlay {
+    padding: 0;
+  }
+
+  .story-content h2 {
+    font-size: 28px;
+  }
+
+  .story-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .watch-btn {
+    font-size: 16px;
+    padding-left: 15px;
+    
+
+  }
+}
+/* File: ceo-message.component.css */
+
+
+
+// Ceo section css
+// .ceo-first-section{
+//   background-image: url('/assets/images/about-page/We-Started.png');
+
+// }
+
+.ceo-first-section .ceo-main-section {
+  background-image: url('/assets/images/about-page/Rectangle 1060.png');
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-top: 50px;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+}
+
+.ceo-text-section {
+   font-family: 'Geist',sans-serif !important;
+  flex: 1;
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  .ceo-third-p{
+     display: flex;
+  z-index: 2;
+  position: absolute;
+  }
+
+  .ceo-line {
+    margin: 10px 0 20px;
+  }
+
+  .quote-block {
+    font-size: 1.1rem;
+    color: #030202;
+
+    p {
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .quote-img {
+      width: 50px;
+      margin-right: 8px;
+      margin-bottom: -40px;
+      margin-left: -50px;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-bottom: -20px;
+      }
+    }
+  }
+
+  .ceo-signature {
+    margin-top: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 20px 10px;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+.ceo-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    // padding: 1rem 0;
+  }
+
+  // .ceo-image-wrapper img {
+  //   width: 100%;
+  //   max-width: 400px;
+  //   height: auto;
+
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
+  }
+// }
+
+
+
+// .ceo-image-wrapper {
+//   position: relative;
+//   width: 200px;
+//   height: 200px;
+// }
+
+// .circle {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   object-fit: contain;
+//   border-radius: 50%;
+//   pointer-events: none;
+// }
+
+// .circle-bg {
+//   z-index: 1;
+//   opacity: 1;
+// }
+
+// .circle-border {
+//   z-index: 2;
+// }
+
+// .diagonal-strip {
+//   // position: absolute;
+//   // width: 300px;
+//   height: 100px;
+//   top: 60px;
+//   left: -50px;
+//   // transform: rotate(45deg);
+//   // z-index: 3;
+//   object-fit: cover;
+//   border-radius: 10px;
+// }
+
+// vision section
+
+.vision-section {
+  justify-content: center;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  // padding: 60px 20px;
+  padding-left: 120px;
+  padding-top: 60px;
+  background-color: #fafeffe5;
+}
+
+.vision-container {
+   font-family: 'Geist',sans-serif !important;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.vision-text {
+  flex: 1;
+  max-width: 450px;
+}
+
+.vision-text h2 {
+   font-family: 'Geist',sans-serif !important;
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+
+.vision-text h2 span {
+   font-family: 'Geist',sans-serif !important;
+  font-weight: 600;
+  color: #000;
+}
+
+.vision-subheading {
+   font-family: 'Geist',sans-serif !important;
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.vision-description {
+   font-family: 'Geist',sans-serif !important;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 400;
+}
+
+.arrow-button {
+  margin-top: 60px;
+  display: flex;
+  // padding: 10px 10px;
+  // gap: 0px;
+  padding-left: 10px;
+
+ gap: 2px;
+}
+
+.arrow-btn {
+   width: 60px;
+   height: 60px;
+  font-size: 1.2rem;
+  border: 1px solid #F24E1E;
+  background-color: transparent;
+  color:#F24E1E;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.arrow-btn:hover {
+  background-color: #ff4d30;
+  color: #fff;
+}
+
+.vision-cards {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.vision-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  height: 300px;
+  padding: 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.vision-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vision-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+}
+
+.vision-card.blue {
+
+  background-image: url("/assets/images/about-page/Rectangle 1061.png");
+  // background: linear-gradient(#B2EEFC 100%,#C2E1FD 0%);
+}
+
+.vision-card.green {
+  background-image: url("/assets/images/about-page/Rectangle 1062.png");
+}
+
+.vision-card.orange {
+  background-image: url("/assets/images/about-page/Rectangle 1064.png");
+}
+
+@media (max-width: 768px) {
+  .vision-container {
+    flex-direction: column;
+    padding-left: 10px;
+  }
+
+  .vision-text {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .vision-cards {
+    justify-content: center;
+  }
+}
+
+
+// belief section
+
+.belief-section {
+  justify-content: center;
+  padding: 60px;
+  // padding-left: -10px;
+  gap: 30px;
+  max-width: 100%;
+
+
+  background-image: url("/assets/images/about-page/Rectangle 1060.png");
+
+  .section-header {
+     font-family: 'Geist',sans-serif !important;
+    text-align: center;
+    width: auto;
+    margin: 0 auto 40px;
+
+    h2 {
+      font-size: 2.7rem;
+
+      .light {
+        font-weight: 140;
+      }
+
+      strong {
+        font-weight: 550;
+      }
+    }
+  }
+ 
+  .description-belief{
+     font-family: 'Geist',sans-serif !important;
+    text-align: center;
+    p{
+      margin: 0;
+    }
+    .description1,
+    .description2{
+      padding: 0;
+      
+    }}
+
+  .belief-cards {
+     font-family: 'Geist',sans-serif !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .card {
+      display: flex;
+      background: #fff;
+      border-radius: 6px;
+      padding: 40px 30px;
+      width: 400px; 
+      height: 400px;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s;
+      margin-bottom: 0px;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        text-align: left;
+        
+        width: 160px;
+        // padding-left: -30PX;
+        height: 150px;
+        // object-fit: contain;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-family: 'Geist',sans-serif !important;
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        position: relative;
+
+        &::after {
+          content: '';
+          font-family: 'Geist',sans-serif !important;
+          display: block;
+          width: 40px;
+          height: 3px;
+          background-color: #7020D2;
+          margin-top: 6px;
+        }
+      }
+
+      p {
+        font-size: 1.0rem;
+        // margin-bottom: 10px;
+        color: #100b0b;
+      }
+
+      ul {
+        font-size: 1.0rem;
+        padding-left: 20px;
+        margin-bottom: 10px;
+
+        li {
+          font-size: 1.0rem;
+          color:  #100b0b;
+          list-style-type: disc;
+        }
+      }
+
+      .read-more {
+        color: #020405;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }}
+  @media (max-width: 1024px) {
+  .belief-section {
+    padding: 40px 20px;
+    
+    .section-header h2 {
+      font-size: 2rem;
+    }
+
+    .belief-cards {
+      gap: 20px;
+
+      .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+      }
+
+      .card img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .card h4 {
+        font-size: 1rem;
+      }
+
+      .card p, .card ul li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .belief-section {
+    padding: 30px 15px;
+
+    .section-header h2 {
+      font-size: 1.8rem;
+    }
+
+    .belief-cards {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .card img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .belief-section {
+    .section-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .belief-cards .card {
+      padding: 15px;
+    }
+  }
+}
+
+
+.testimonials-section {
+  justify-content: center;
+  background-image: url('/assets/images/about-page/testimonial-bg.png');
+padding-top: 60px;
+padding-left: 10px;
+padding-bottom: 60px;
+max-width: 100%;
+ font-family: 'Geist',sans-serif !important;
+
+  // background: #e8f6fd;
+  // width: 5009px;
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+     font-family: 'Geist',sans-serif !important;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #7020D2 ;
+      // border-image-width: auto;
+      overflow: hidden;
+      margin: 0 auto 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+      }
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      // margin: 0;
+      color: black;
+      opacity: none !important; 
+    
+    }
+
+    .subtitle {
+      color:black;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: #ffd700;
+      font-size: 2.2rem;
+
+      span {
+        margin: 0 1px;
+        color: #ccc;
+
+        &.filled {
+          color: #7020D2;
+                  }
+      }
+    }
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    padding-left: 130px;
+    gap: 2px;
+
+    button {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #ccc;
+      background: white;
+      border-radius: 3px;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &.active {
+        border-color: #ee9229;
+        color: #f88c27;
+      }
+
+      span {
+        display: inline-block;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .testimonials-section {
+    padding: 40px 20px;
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .testimonial-card {
+      width: 280px;
+      padding: 15px;
+
+      .testimonial-image {
+        width: 80px;
+        height: 80px;
+      }
+
+      h4 {
+        font-size: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+      }
+
+      .description {
+        font-size: 0.85rem;
+      }
+
+      .stars {
+        font-size: 1.8rem;
+      }
+    }
+
+    .carousel-buttons {
+      padding-left: 0;
+      justify-content: center;
+      margin-top: 20px;
+
+      button {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    .testimonials-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testimonial-card {
+      width: 100%;
+    }
+  }
+}
+
+
+// specialit section
+
+
+.specialist-section {
+  justify-content: center;
+  background-image: url('/assets/images/about-page/Specialist-bg.png');
+  // padding: 60px 10px;
+  // background: #f5fcff;
+  max-width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: -20px;
+  // text-align: center;
+   font-family: 'Geist',sans-serif !important;
+   text-align: center;
+
+  .section-header {
+    max-width: 800px;
+    margin: 0 auto 40px;
+
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 100;
+
+      strong {
+        font-weight: 550;
+      }
+    }
+
+    p {
+      color: #0f0808;
+      font-size: 1rem;
+      margin-top: 10px;
+      display: flex;
+      position: absolute;
+    }
+  }
+
+  .card-wrapper {
+    padding-top: 50px;
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 130px;
+    // width: 300px;
+    // height: 350px;
+  }
+
+  .specialist-card {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    // width: 400%;
+    // width: 250px;
+     width: 300px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      width: 100%;
+      height: 120px;
+      object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #070202;
+    }
+  }
+
+  .carousel-nav {
+    // margin-top: 40px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 4px;
+     display: flex;
+    justify-content: left;
+    margin-top: 5px;
+    padding-left: 130px;
+    gap: 2px;
+    button {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #F24E1E;
+      background-color: transparent;
+      // background: white;
+      border-radius: 2px;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &.active {
+        border-color: #F24E1E;
+        color: #F24E1E;
+      }
+
+      // &:disabled {
+      //   opacity: 0.5;
+      //   cursor: not-allowed;
+      // }
+
+      span {
+        display: inline-block;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+.vision-cards-wrapper {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.vision-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 200px;
+  perspective: 1000px;
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  &:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flip-card-front h3,
+  .flip-card-back h3 {
+    margin-bottom: 10px;
+  }
+
+  .flip-card-front {
+    background-color: #007bff;
+  }
+
+  .flip-card-back {
+    background-color: #333;
+    transform: rotateY(180deg);
+  }
+
+  // Theme colors
+  .blue {
+    background-color: #007bff;
+  }
+
+  .green {
+    background-color: #28a745;
+  }
+
+  .orange {
+    background-color: #fd7e14;
+  }
+}
+.section-subtitle {
+  font-size: 2.3rem;
+  font-weight: 200; /* light */
+  color: #000;
+  margin-bottom: 20px;
+
+  strong {
+    font-weight: 700; /* bold */
+  }
+}
+
+
+// work section
+
+
+.work-section {
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f8fbfd;
+  text-align: center;
+   font-family: 'Geist',sans-serif !important;
+
+  .header {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 300;
+
+      span {
+        font-weight: 150;
+        font-style: normal;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      color: #555;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+   
+  }
+     .cards-container {
+      text-align: center;
+       font-family: 'Geist',sans-serif !important;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    gap: 30px;
+    padding-left: 120px;
+  }
+
+  .card {
+    text-align: left;
+    background: #fff;
+    border-radius: 12px;
+    padding: 70px 70px; 
+    width: 400px;
+    height: 450px;
+    // width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    img {
+      // text-align: center;
+      padding-left: 15px;
+      width: 180px;
+      height: 100px;  
+      // object-fit: contain;
+      margin-bottom: 15px;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-style: normal;
+      font-size: 1rem;
+      color: #020000;
+      line-height: 1.6;
+    }
+  }
+}
+
+
+//leader section
+ 
+
+.leaders-section {
+  justify-content: center;
+   font-family: 'Geist',sans-serif !important;
+  max-width: 100%;
+  padding: 70px 130px;
+  text-align: center;
+  background: #fff;
+
+  .section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  .leaders-grid {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    // justify-content: center;
+  }
+
+  .leader-card {
+    width: 200px;
+    text-align: center;
+    
+    .image-container {
+      position: relative;
+      width: 280px;
+      height: 290px;
+      background: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     
+    }
+
+    h4 {
+      padding-left: 70px;
+      color: #007bff;
+      margin: 12px 0 4px;
+      font-size: 1rem;
+      justify-content: center;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: #030000;
+      margin: 0;
+       padding-left: 70px;   }
+  }
+}
+
+
+.image-container {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns children at the bottom */
+  // height: 250px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+  height: 250px; 
+}
+
+.icon{
+  text-align: left;
+  padding-left: 10px;
+ 
+  // color: whitesmoke;
+  // background-color: #000;
+  padding-bottom: 10px;
+  padding-left: 10px;
+   background-image: url('/assets/images/about-page/Rectangle 1590.png');
+   height: 80px;
+   width: 80px;
+
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+//clients section
+.clients-section {
+  justify-content: center;
+  max-width: 100%;
+  padding: 80px 130px;
+  background: #f9f9f9;
+}
+
+.clients-container {
+   font-family: 'Geist',sans-serif !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.clients-text {
+  flex: 1 1 40%;
+}
+
+.clients-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.clients-text p {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.arrow-buttons {
+  margin-top: 30px;
+}
+
+.arrow-buttons button {
+  background: none;
+  // border: 2px solid #ff4500;
+  color: #ff4500;
+  padding: 10px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.arrow-buttons button:disabled {
+  opacity: 0.4;
+  // cursor: not;
+}
+
+.clients-logos {
+  flex: 1 1 55%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.logo-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo-box img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+//status section
+.stats-section {
+  justify-content: center;
+   font-family: 'Geist',sans-serif !important;
+  max-width: 100%;
+  background-color: #FBEDFF;
+  padding: 80px 0;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.stats-title {
+  font-size: 45px;
+  font-weight: 150;
+  margin-bottom: 40px;
+}
+
+.stats-title strong {
+  font-weight: 600;
+}
+
+.stats-grid {
+  text-align: center;
+  align-content: center;
+  display: flex;
+  padding-left: 140px;
+  // grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 95px;
+  width: 1000px;
+  // width: auto;
+
+}
+ .stat-row{
+  margin-left: 15px;
+  // text-align: center;
+  align-items: center;
+  display: flex;;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* space between icon and value */
+}
+
+.stat-icon {
+  width: 25px;
+  height: 50px;
+}
+
+.stat-value {
+  font-size: 60px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 18px;
+  color: #050000;
+}
+
+
+
+//cta section
+
+
+.cta-section {
+  max-width: 100%;
+  // background-color: #ffffff;
+  background-image: url('/assets/images/about-page/Rectangle 1620.png');
+  padding: 70px 120px;
+  font-family: 'Arial', sans-serif;
+}
+
+.cta-container {
+   font-family: 'Geist',sans-serif !important;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  // width: 1200px;
+  // margin: auto;
+  // gap: 40px;
+}
+
+.cta-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.cta-subtitle {
+  font-weight: 100;
+  line-height: 3rem;
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.cta-button {
+  // background-color: #07588d;
+  color: white;
+  padding: 14px 26px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.3s ease;
+   background: linear-gradient(#097ACC 0%,#7020D2 100%);
+}
+
+.cta-button:hover {
+  // background-color: #0c5679;
+  background: linear-gradient(rgb(192, 156, 223) 0%,rgb(148, 189, 228) 30px, rgb(167, 221, 243) 100%);
+}
+
+.cta-button .arrow {
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+.cta-image {
+  // flex: 1;
+  // min-width: 280px;
+  text-align: right;
+}
+
+.cta-image img {
+  margin-right: 30px;
+  // max-width: 100%;
+  height: auto;
+}
+.cta-arrow{
+  transform: rotateZ(-30deg);
+  margin-left: 10px;
+  text-align: center;
+}
+
+

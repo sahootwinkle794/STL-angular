@@ -1,0 +1,45 @@
+
+
+<body>
+
+    <section class="job-opening">
+    <form>
+<div class="explore-header">
+  <p>Home > Career > Explore Openings</p>
+  <h1>Explore Openings</h1>
+</div>
+
+<div class="explore-container">
+  <div class="filter-section">
+    <h3>Refine your Search</h3>
+    <input type="text" placeholder="Keyword, Job title, Description" />
+    <div class="filter-category">
+      <p><strong>By Position</strong></p>
+      <button>+ AI/ML Developer (5)</button>
+      <button>+ AI/ML Tech Lead (5)</button>
+    </div>
+  </div>
+
+  <div class="job-list">
+    <h3>Recent Openings</h3>
+    <div class="job-box">
+      <span>Business Manager</span>
+      <span>No. of vacancies - 1</span>
+    </div>
+    <div class="job-box">
+      <span>Java Tech Lead</span>
+      <span>No. of vacancies - 5</span>
+    </div>
+    <!-- Add more jobs here -->
+  </div>
+
+  
+</div>
+    <a routerLink='/career' routerLinkActive="active"  class="Job" disabled>SEE MORE</a>
+
+
+</form>
+</section>
+
+
+</body>

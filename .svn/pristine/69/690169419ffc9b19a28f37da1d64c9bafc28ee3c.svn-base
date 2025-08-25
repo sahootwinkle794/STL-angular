@@ -1,0 +1,798 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+// .industry-section {
+//   margin-top: 100px;
+//   background: url('/assets/images/our-zone-bg.png') no-repeat center center / cover;
+//   width: 100%;
+//   height: 100vh;
+//   color: #fff;
+//   position: relative;
+//   padding: 80px 0;
+//   overflow: hidden;
+//   z-index: -1;
+//   border-top-left-radius: 65px;
+//   border-top-right-radius: 65px;
+// }
+
+// .content{
+//   display: flex;
+//   flex-direction: column;
+//   z-index: 2;
+// }
+
+// .subtitle{
+
+//   margin-left: 150px;
+
+//   font-family: 'Geist', sans-serif !important;
+//   font-size: 36px;
+//   font-weight: 500;
+//   font-style: middle;
+//   letter-spacing: 12%;
+//   line-height: 120%;
+
+//   color: #FF7A33;
+// }
+
+// .title{
+//   font-family: 'Geist', sans-serif !important;
+//   font-size: 75px;
+//   font-weight: 500;
+//   line-height: 120%;
+//   margin-left: 150px;
+
+// }
+// .description{
+//   display: flex;
+//   margin-left: 150px;
+//   font-family: 'Outfit', sans-serif !important;
+//   width: 684px;
+//   font-size: 23px;
+//   font-weight: 400;
+// }
+
+
+
+// .slider {
+//   display: flex;
+//   position: relative;
+//   height: 1029px;
+//   margin-top: -315px;
+//   // overflow: hidden;
+//   // width: 480px;
+//   width: auto;
+// }
+
+// .zone {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
+//   flex: 1;
+//   z-index: -1;
+//   // padding: 40px;
+//   text-align: center;
+//   transition: all 0.3s ease-in-out;
+//   position: relative;
+//   background: rgba(0, 0, 0, 0.4);
+//   border-right: 1px solid #fff;
+//   // filter: blur(9.7px);
+// }
+
+// .zone h2 {
+//   font-size: 26px;
+//   font-weight: bold;
+//   color: #fff;
+// }
+
+// .zone p {
+//   font-size: 16px;
+//   margin-top: 10px;
+//   color: #ccc;
+// }
+
+// .learn-more {
+//   display: inline-block;
+//   margin-top: 20px;
+//   padding: 12px 20px;
+//   background-color: #FF5E24;
+//   border-radius: 25px;
+//   color: #fff;
+//   text-decoration: none;
+//   font-size: 14px;
+//   font-weight: bold;
+// }
+
+// .zone.active {
+//   background: rgba(0, 0, 0, 0.7);
+//   flex: 1.5;
+// }
+
+
+/* Arrows */
+// .arrows {
+//   position: absolute;
+//   top: 50%;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   transform: translateY(-50%);
+//   padding: 0 20px;
+// }
+
+// .arrow {
+//   font-size: 24px;
+//   cursor: pointer;
+//   color: white;
+//   padding: 10px;
+//   background: rgba(0, 0, 0, 0.5);
+//   border-radius: 50%;
+//   user-select: none;
+// }
+
+
+
+
+
+
+
+
+
+// TRY NEW SECTION
+// .industry-section {
+//   margin-top: 100px;
+//   background: url('/assets/images/our-zone-bg.png') no-repeat center center / cover;
+//   width: 100%;
+//   height: 100%;
+//   color: #fff;
+//   position: relative;
+//   padding: 80px 0;
+//   // overflow: hidden;
+//   border-top-left-radius: 65px;
+//   border-top-right-radius: 65px;
+// }
+
+// .content {
+//   position: relative;
+//   z-index: 3;
+//   padding-left: 150px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .subtitle {
+//   font-family: 'Geist', sans-serif !important;
+//   font-size: 36px;
+//   font-weight: 500;
+//   letter-spacing: 0.12em;
+//   line-height: 120%;
+//   color: #FF7A33;
+// }
+
+// .title {
+//   font-family: 'Geist', sans-serif !important;
+//   font-size: 75px;
+//   font-weight: 500;
+//   line-height: 120%;
+//   margin-top: 10px;
+// }
+
+// .description {
+//   font-family: 'Outfit', sans-serif !important;
+//   width: 684px;
+//   font-size: 23px;
+//   font-weight: 400;
+//   margin-top: 20px;
+// }
+
+// .slider {
+//   display: flex;
+//   position: relative;
+//   height: calc(100vh - 200px);    // better than fixed height
+//   margin-top: 40px;
+//   z-index: 2;
+
+//   &:hover .zone {
+//     flex: 1;
+//     filter: blur(2px);
+//     transition: all 0.4s ease-in-out;
+//   }
+
+//   .zone:hover {
+//     flex: 2;
+//     filter: blur(0);
+//     background: rgba(0, 0, 0, 0.7);
+//     z-index: 3;
+//     cursor: pointer;
+//     margin-top:-300px;
+//   }
+
+//   .zone {
+//     flex: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     text-align: center;
+//     transition: all 0.4s ease-in-out;
+//     background: rgba(0, 0, 0, 0.4);
+//     border-right: 1px solid #fff;
+//     filter: blur(0);
+//     padding: 20px;
+//     z-index: 1;
+
+//     h2 {
+//       font-size: 26px;
+//       font-weight: bold;
+//       color: #fff;
+//       margin-bottom: 10px;
+//     }
+
+//     p {
+//       font-size: 16px;
+//       color: #ccc;
+//       max-width: 250px;
+//       line-height: 1.4;
+//     }
+
+//     .learn-more {
+//       margin-top: 20px;
+//       padding: 12px 20px;
+//       background-color: #FF5E24;
+//       border-radius: 25px;
+//       color: #fff;
+//       text-decoration: none;
+//       font-size: 14px;
+//       font-weight: bold;
+//     }
+//   }
+// }
+
+
+
+
+
+// // try 2
+
+
+// .industry-section {
+//   margin-top: 200px;
+//   position: relative;
+//   width: 100%;
+//   height: 900px;
+//   overflow: hidden;
+//   border-top-left-radius: 65px;
+//   border-top-right-radius: 65px;
+//   z-index: 0;
+//   // margin: 0;
+//   padding: 0;
+
+
+//   // Background image with full control over z-index
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     inset: 0;
+//     background: url('/assets/images/our-zone-bg.png') no-repeat center center / cover;
+//     z-index: -1;
+//   }
+// }
+
+// .content {
+//   position: absolute;
+//   z-index: 1;
+//   padding-left: 150px;
+//   display: flex;
+//   flex-direction: column;
+
+//   .subtitle {
+//     margin-top: 100px;
+//     font-family: 'Geist', sans-serif !important;
+//     font-size: 36px;
+//     font-weight: 500;
+//     width: 208px;
+//     height: 43px;
+//     letter-spacing: 0.12em;
+//     line-height: 120%;
+//     color: #FF7A33;
+//   }
+
+//   .title {
+//     font-family: 'Geist', sans-serif !important;
+//     font-size: 75px;
+//     font-weight: 500;
+//     line-height: 120%;
+//     margin-top: 10px;
+//     // width: 776px;
+//     height: 90px;
+//     color: #FFFFFF;
+//   }
+
+//   .description {
+//     font-family: 'Outfit', sans-serif !important;
+//     width: 684px;
+//     font-size: 23px;
+//     font-weight: 400;
+//     margin-top: 20px;
+//     color: #FFFFFF;
+//   }
+// }
+
+// .slider {
+//   display: flex;
+//   position: relative;
+//   height: 100%; 
+//   width: 100%;
+//   // height: 1029px;
+//   // width: 480px;
+//   z-index: 0;
+
+//   // All zones blur & shrink on hover
+
+//   &:hover .zone {
+//     flex: 1;
+//     filter: blur(2px);
+//     transition: all 0.4s ease-in-out;
+//   }
+
+//   // Hovered zone expands & clears blur
+//   .zone:hover {
+//     // flex: 2;
+//     filter: blur(0);
+//     background: rgba(0, 0, 0, 0.7);
+//     z-index: 3;
+//     cursor: pointer;
+//   }
+
+//   .zone {
+//     flex: 1;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//     text-align: center;
+//     transition: all 0.4s ease-in-out;
+//     background: rgba(0, 0, 0, 0.1);
+//     border-right: 1px solid #fff;
+//     filter: blur(0);
+//     padding: 20px;
+//     z-index: 1;
+
+//     h2 {
+//       font-size: 45px;
+//       font-weight: 600;
+
+//       // font-weight: bold;
+//       line-height: 100%;
+
+//       color: #fff;
+//       font-family: 'Geist', sans-serif !important;
+//       // margin-bottom: 10px;
+//     }
+
+//     p {
+//       font-family: 'Outfit', sans-serif !important;
+//       font-weight: 400;
+//       font-size: 23px;
+//       color: #ccc;
+//       max-width: 250px;
+//       line-height: 100%;
+//     }
+
+//     .learn-more {
+//       font-family: 'Geist', sans-serif !important;
+//       margin-top: 20px;
+//       padding: 12px 20px;
+//       background-color: #FF5E24;
+//       border-radius: 25px;
+//       color: #fff;
+//       text-decoration: none;
+//       font-size: 22px;
+//       // font-weight: bold;
+//       font-weight: 400;
+//     }
+//   }
+// }
+
+
+// try 3 
+
+
+img{
+  height:auto;
+  width: auto;
+}
+
+.industry-section {
+  // margin-top: 200px;
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/assets/images/our-zone-bg.png') no-repeat center center / cover;
+    z-index: -1;
+  }
+}
+
+.content {
+  position: absolute;
+  z-index: 2;
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+
+  .subtitle {
+    margin-top: 100px;
+    font-family: 'Geist', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #FF7A33;
+  }
+
+  .title {
+    font-family: 'Geist', sans-serif;
+    font-size: 75px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #FFFFFF;
+  }
+
+  .description {
+    font-family: 'Outfit', sans-serif;
+    width: 684px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #FFFFFF;
+  }
+}
+
+.slider {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  &:hover .zone {
+    flex: 1;
+    filter: blur(2px);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .zone:hover {
+    filter: blur(0);
+    // flex: 2;
+    z-index: 3;
+    cursor: pointer;
+  }
+
+  .zone {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 40px;
+    background: no-repeat center center;
+    background-size: cover;
+    border-right: 1px solid #fff;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+
+    // Overlay
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      z-index: 1;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+
+    h2, p, .learn-more {
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      font-size: 45px;
+      font-weight: 600;
+      color: #fff;
+      font-family: 'Geist', sans-serif;
+      margin-bottom: 10px;
+      transition: all 0.4s ease;
+    }
+
+    p {
+      font-family: 'Outfit', sans-serif;
+      font-size: 23px;
+      font-weight: 400;
+      color: #ccc;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 1s ease;
+      margin-bottom: 0;
+    }
+
+    .learn-more {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 1s ease;
+      font-family: 'Geist', sans-serif;
+      margin-top: 20px;
+      padding: 12px 20px;
+      // background-color: transparent;
+      background: linear-gradient(180deg, #FD8033 -66.19%, #EC292A 164.17%);
+      // border: 2px solid #fff;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 20px;
+      display: inline-block;
+
+      &:hover {
+        // color: #FF5E24;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        background-color: #fff;
+      }
+    }
+
+    &:hover p,
+    &:hover .learn-more {
+      max-height: 500px;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  // .content {
+  //   text-align: center;
+  //   margin-bottom: 40px;
+
+  //   .subtitle {
+  //     color: #ff6b35;
+  //     text-transform: uppercase;
+  //     letter-spacing: 1px;
+  //     font-weight: 600;
+  //     font-size: 1.1rem;
+  //     margin-bottom: 0.5rem;
+  //   }
+
+  //   .title {
+  //     font-size: 2.8rem;
+  //     font-weight: 700;
+  //     margin-bottom: 1rem;
+  //   }
+
+  //   .description {
+  //     font-size: 1.1rem;
+  //     color: #ddd;
+  //     max-width: 800px;
+  //     margin: 0 auto;
+  //     line-height: 1.6;
+  //   }
+  // }
+
+  // .zones {
+  //   display: grid;
+  //   grid-template-columns: repeat(4, 1fr);
+  //   position: relative;
+
+  //   .zone {
+  //     position: relative;
+  //     text-align: center;
+  //     transition: all 0.4s ease-in-out;
+  //     cursor: pointer;
+  //     height: 100%; /* Make each zone full height */
+
+  //     &:hover {
+  //       transform: scale(1.03);
+  //       background-color: rgba(0, 0, 0, 0.2);
+  //       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  //       z-index: 2;
+  //     }
+
+  //     &:not(:last-child)::after {
+  //       content: '';
+  //       position: absolute;
+  //       top: 0;
+  //       right: 0;
+  //       width: 1px;
+  //       height: 100%;
+  //       background: rgba(255, 255, 255, 0.2); // Vertical divider
+  //     }
+
+  //     .zone-content {
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       height: 100%; /* Make content fill zone height */
+  //       max-width: 300px;
+  //       margin: 0 auto;
+
+  //       h2 {
+  //         font-size: 1.6rem;
+  //         font-weight: 600;
+  //         margin-bottom: 0.5rem;
+  //       }
+
+  //       p {
+  //         font-size: 1rem;
+  //         color: #ddd;
+  //         margin-bottom: 1rem;
+  //       }
+
+  //       .learn-more {
+  //         background: #ff6b35;
+  //         color: #fff;
+  //         border: none;
+  //         padding: 10px 20px;
+  //         border-radius: 50px;
+  //         font-weight: bold;
+  //         text-transform: uppercase;
+  //         letter-spacing: 0.5px;
+  //         cursor: pointer;
+  //         transition: background-color 0.3s ease;
+
+  //         &:hover {
+  //           background-color: #e55b2f;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// /* Responsive adjustments */
+// @media (max-width: 992px) {
+//   .industry-section {
+//     .zones {
+//       grid-template-columns: repeat(2, 1fr);
+//     }
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .industry-section {
+//     .zones {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+// }
+
+
+
+
+
+// // WORKIGN SECTION
+
+// .industry-section {
+//   background-image: url('/assets/images/our-zone-bg.png');
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: cover;
+//   color: #fff;
+//   padding: 80px 0;
+//   text-align: center;
+//   height: 100vh;
+//   overflow: hidden;
+// }
+
+// .industry-section .subtitle {
+//   color: #ff6b35;
+//   text-transform: uppercase;
+//   letter-spacing: 1px;
+//   font-weight: 600;
+//   font-size: 1.1rem;
+//   margin-bottom: 0.5rem;
+// }
+
+// .industry-section .title {
+//   font-size: 2.8rem;
+//   font-weight: 700;
+//   margin-bottom: 1rem;
+// }
+
+// .industry-section .description {
+//   font-size: 1.1rem;
+//   color: #ddd;
+//   max-width: 800px;
+//   margin: 0 auto 40px;
+//   line-height: 1.6;
+// }
+
+// .industry-section .zones {
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   height: 100%;
+// }
+
+// .industry-section .zone {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center; /* Center content vertically */
+//   height: 100%;
+//   padding: 40px 20px;
+//   transition: all 0.3s ease;
+//   cursor: pointer;
+// }
+
+// .industry-section .zone:hover {
+//   background-color: rgba(0, 0, 0, 0.2);
+//   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+// }
+
+// .industry-section .zone + .zone {
+//   border-left: 1px solid rgba(255, 255, 255, 0.2); /* Vertical divider */
+// }
+
+// .industry-section .zone .learn-more {
+//   background: #ff6b35;
+//   color: #fff;
+//   border: none;
+//   padding: 10px 20px;
+//   border-radius: 50px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   letter-spacing: 0.5px;
+//   cursor: pointer;
+// }
+
+// .industry-section .zone .learn-more:hover {
+//   background: #e55b2f;
+// }
+// /* Responsive */
+// @media (max-width: 992px) {
+//   .industry-section .zones {
+//     grid-template-columns: repeat(2, 1fr);
+//   }
+// }
+
+// @media (max-width: 600px) {
+//   .industry-section .zones {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+
+
+

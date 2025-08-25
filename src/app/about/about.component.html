@@ -1,0 +1,334 @@
+<section class="about-hero-and-story d-flex">
+  <!-- Hero Section -->
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">From a Growing Team to</h1>
+      <h2 class="hero-subtitle"><strong>a Global Technology <br> Solutions Provider.</strong></h2>
+      <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+        For Over A Decade, We’ve Been A Trusted Technology Partner, <br>
+        Empowering Businesses To Scale Their Businesses And Discover <br>
+        Opportunities With Our Next-Gen Tech Initiatives.
+      </p>
+    </div>
+    <div class="hero-image">  
+      <img src="assets/images/about-page/Rectangle 1611.svg" alt="Building Image">
+    </div>
+  </div>
+</section>
+
+  <!-- Story Section -->
+   <div class="bg-color-story-section">
+<div class="story-section">
+  <div class="overlay">
+    <div class="story-content">
+      <h2>We Started Like This......</h2>
+      <p>
+        Founded In India In 2014 By [Founder Names], Our Mission Is Simple — Be The Go-To Partner For <br>
+        Businesses Facing Any Technical Challenges With Sustainable, Future-Proof Solutions.
+      </p>
+      <p>
+        After 15 Years Of Journey, We And Our Clients Both Agree — We Are Good At What We Do.
+      </p>
+      <button class="watch-btn" >Watch Video <img src="assets/images/about-page/watch-video-about-us.gif" alt="" class="watch-video"> </button>
+    </div>
+  </div>
+</div>
+</div>
+
+<section class="bg-second-section">
+<section class="ceo-first-section">
+  <section class="ceo-main-section">
+    <!-- Left Side: Text + Signature -->
+    <div class="ceo-text-section">
+      <h1><strong>Words From Our CEO</strong></h1>
+      <img src="assets/images/about-page/Ceo-line-img.png" alt="Line Image" />
+      <div class="quote-block">
+        <img class="quote-img" src="assets/images/about-page/chat1.png" alt="Quote Start Icon" />
+        <p>
+          I have seen a company hit a point where going alone is tough—especially with tech. While you constantly strive to grow, scale, and leave a footprint in your industry, those limitations hold you back.
+        </p>
+        <p>
+          The thing is, technology changes rapidly. More importantly, every aspect of your business depends on it—from how you serve your customers to how you operate internally. Technology is the backbone that holds everything together.
+        </p>
+        <p>
+          So, you need a partner who is committed to innovation. Because, let's be honest, if you don't innovate, you're already falling behind.
+        </p>
+        <p class="ceo-third-p">
+          Our mission is simple: to solve your toughest IT challenges and build a scalable, secure ecosystem that keeps you ahead of the curve. We're not here for one-off solutions; we're here for the bigger picture.<img style=" margin-right: -154px;margin-top: 36px; " src="assets/images/about-page/chat2.png" alt="Quote End Icon" />
+          
+        </p>
+      </div>
+      <div class="ceo-signature">
+        <strong>Saswati Mishra</strong><br />
+        CEO, STL
+      </div>
+    </div>
+
+    <!-- Right Side: Image -->
+    <div class="ceo-image-section">
+      <div class="ceo-image-wrapper">
+        <img style="width: 100%;" src="assets/images/about-page/Words From Our CEO.svg" alt="CEO Image" class="circle circle-bg" />
+      </div>
+    </div>
+  </section>
+</section>
+</section>
+
+  <!-- ENDS HERE  CEO -->
+
+<!--  VISION SECTION  STARTS HERE -->
+  <section class="bg-color-vison-section">
+  
+<section class="vision-section">
+  <div class="vision-container">
+    <!-- Left Side -->
+    <div class="vision-text">
+      <h2>
+        How Our Vision <br>
+        <span>Became Reality</span>
+      </h2>
+      <p class="vision-subheading">For The Past 15 Years....</p>
+      <p class="vision-description">
+        Our team of software developers, QA engineers, designers, and project managers takes on a range of
+        projects each year, from dynamic startups to industry leaders.
+      </p>
+      <div class="arrow-button">
+        <button class="arrow-btn" (click)="prev()" [disabled]="currentIndex === 0">
+          <span>&larr;</span>
+        </button>
+        <button class="arrow-btn" (click)="next()" [disabled]="currentIndex >= allCards.length - 3">
+          <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right Side: Cards -->
+    <div class="container vision-cards " >
+      <div
+        class="vision-card"
+        *ngFor="let card of visibleCards"
+        [ngClass]="card.color"
+      >
+        <h3>{{ card.year }}</h3>
+        <p>{{ card.text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+<!-- belief section -->
+ <div class="bg-color-belief-section">
+
+ <div>
+<section  class="belief-section">
+  <div class="section-header text-center">
+    <h2><span class="light">What</span> <strong> we believe</strong></h2> 
+    <span class="description-belief">
+    <p class="description1">{{descrptionbelief1}}</p>
+    <p class="description2">{{descrptionbelief2}}</p>
+  </span>
+  </div>
+
+  <div class="container belief-cards">
+    <div class="card" *ngFor="let item of beliefItems">
+      <img [src]="item.image" [alt]="item.title">
+      <h4>{{ item.title }}</h4>
+      <p *ngIf="!item.list">{{ item.description }}</p>
+      <ul *ngIf="item.list">
+        <li *ngFor="let point of item.list">{{ point }}</li>
+      </ul>
+      <!-- <a *ngIf="item.linkText" class="read-more">{{ item.linkText }}</a> -->
+    </div>
+  </div>
+</section>
+</div>
+</div>
+<!-- testimonals section -->
+
+<!-- <section class="testimonials-section">
+  <h2 class="section-title">Testimonials</h2>
+
+  <div class="testimonials-wrapper">
+    <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+      <div class="testimonial-image">
+        <img [src]="testimonial.image" [alt]="testimonial.name">
+      </div>
+      <h4>{{ testimonial.name }}</h4>
+    
+      <p class="subtitle">{{ testimonial.subtitle }}</p>
+      <p class="description">{{ testimonial.description }}</p>
+      <div class="stars">
+        <ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+          <span [class.filled]="i < testimonial.rating">★</span>
+          
+        </ng-container>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-buttons">
+    <button><span>&larr;</span></button>
+    <button class="active"><span>&rarr;</span></button>
+  </div>
+</section> -->
+
+
+
+<!-- specialist section -->
+ <!-- This is the  need more devlopers section  -->
+
+ <section class="bg-color-specialist-section">
+<section class="specialist-section">
+  <div class="section-header text-center">
+    
+    <h2 class="section-subtitle">
+  Need more than <strong>Developers?</strong>
+</h2>
+
+    <p>
+      We provide a comprehensive team of specialists, including developers, designers, project managers, QA experts, and more.
+    </p>
+  </div>
+
+  <div class=" container card-wrapper">
+    <div class="specialist-card" *ngFor="let role of teamRoles">
+      <img [src]="role.image" [alt]="role.title">
+      <h4 [style.color]="role.color">{{ role.title }}</h4>
+      <p>{{ role.description }}</p>
+    </div>
+  </div>
+
+  <div class="carousel-nav">
+    <button disabled><span>&larr;</span></button>
+    <button class="active"><span>&rarr;</span></button>
+  </div>
+</section>
+</section>
+
+<!-- work Section -->
+
+<section class="work-section">
+  <div class="header">
+    <h2>
+      <span>Flexible ways</span> <strong> we can work with you.</strong>
+    </h2>
+    <p>
+      Our project manager and software development teams are building for you
+    </p>
+  </div>
+
+  <div class="container cards-container">
+    <div class="card" *ngFor="let option of workOptions">
+      <img [src]="option.image" [alt]="option.title" />
+      <h4 [style.color]="option.color">{{ option.title }}</h4>
+      <p>{{ option.description }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- leaders section -->
+
+<!-- <section class="leaders-section">
+  <div class="section-title">
+    <h2>Our <strong>Leaders</strong></h2>
+  </div>
+
+<div class="leaders-grid">
+  <div class="leader-card" *ngFor="let leader of leaders">
+    <div class="image-container">
+      <img [src]="leader.image" alt="Leader Image" />
+
+      
+       <ng-container *ngFor="let social of socialLinks">
+          
+            <i class="icon" [class]="social.icon"></i>
+         
+        </ng-container>
+      </div>
+
+    <h4>{{ leader.name }}</h4>
+    <p>{{ leader.position }}</p>
+  </div>
+</div>
+
+</section> -->
+
+
+<!-- clients section -->
+<section class="clients-section">
+  <div class="clients-container">
+    <!-- Left side: Text and arrows -->
+    <div class="clients-text">
+      <h2>Our <strong>Clients</strong></h2>
+      <p>We have collaborated with clients from over 10 countries worldwide, including the USA, UK, Europe, India, and more.</p>
+      <p>What sets us apart is our commitment to understanding the <br>
+         unique needs of each client, regardless of location.</p>
+
+      <div class="arrow-buttons">
+        <button (click)="prev1()" [disabled]="currentIndex1 === 0">←</button>
+        <button (click)="next1()" [disabled]="currentIndex1+ 8 >= allClients.length">→</button>
+      </div>
+    </div>
+
+    <!-- Right side: Logo Grid -->
+    <div class="clients-logos">
+      <div class="logo-box" *ngFor="let client of visibleClients">
+        <img [src]="client.logo" alt="Client Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Status section -->
+<!-- Status section -->
+<section class="stats-section" #statsSection>
+  <div class="stats-container">
+    <h2 class="stats-title">
+      Elevate Your Journey <strong>with Us</strong>
+    </h2>
+
+    <div class="stats-grid">
+      <div class="stat-card" *ngFor="let stat of stats">
+        <div class="stat-row">
+          <img class="stat-icon" [src]="stat.icon" alt="icon" />
+          <div class="stat-value">
+            {{ stat.current | number }}{{ stat.value.includes('+') ? '+' : '' }}
+          </div>
+        </div>
+        <div class="stat-label">{{ stat.label }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- cta section -->
+
+
+<section  class="cta-section">
+  <div class="cta-container">
+    <!-- Text Content -->
+    <div class="cta-text">
+      <p class="cta-subtitle">100+ companies accelerate their</p>
+        <p class="cta-subtitle"> tech roadmaps with us. </p>
+      <h2 class="cta-title">See how we can help you.</h2>
+      <button class="cta-button">
+        Book a Discovery Call
+        <span class="cta-arrow">→</span>
+      </button>
+    </div>
+
+    <!-- Image/Illustration -->
+    <div class="cta-image">
+      <img src="assets/images/about-page/mob.png" alt="CTA Illustration" />
+    </div>
+  </div>
+</section>
+
+
+
+

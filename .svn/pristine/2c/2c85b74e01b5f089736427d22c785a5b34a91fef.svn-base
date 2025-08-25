@@ -1,0 +1,141 @@
+import { Component, ViewChild,ElementRef } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
+@Component({
+  selector: 'app-service-section',
+  templateUrl: './service-section.component.html',
+  styleUrl: './service-section.component.scss'
+})
+export class ServiceSectionComponent {
+    // @ViewChild('sliderContainer', { static: false }) sliderContainer!: ElementRef;
+
+//     sectionTitle = 'Explore Our';
+//   sectionSubtitle = 'Full scope IT Services';
+//   sectionDescription = 'Whether starting or scaling, our services eliminate every tech barrier and empower your business to succeed digitally.';
+
+//   services = [
+//     {
+//       img: '/assets/images/1.svg',
+//       title: 'Website Development',
+//       description: 'Create fast, responsive websites that hook visitors and push them down the conversion pipeline.'
+//     },
+//     {
+//       img: '/assets/images/2.svg',
+//       title: 'Application Development',
+//       description: 'Build custom applications that automate staff tasks, meet regulatory requirements, and improve service delivery.'
+//     },
+//     {
+//       img: '/assets/images/3.svg',
+//       title: 'Data and Analytics',
+//       description: 'Turn data into insights to make smarter business decisions.'
+//     },
+//     {
+//       img: '/assets/images/4.png',
+//       title: 'Security Services',
+//       description: 'Keep your systems secure with proactive security solutions.'
+//     },
+//     {
+//       img: '/assets/images/5.png',
+//       title: 'Cloud Services',
+//       description: 'Access scalable, reliable cloud solutions for better business agility.'
+//     },
+//     {
+//       img: '/assets/images/6.png',
+//       title: 'Emerging Technologies',
+//       description: 'Implement cutting-edge technologies to drive innovation and growth.'
+//     }
+//   ];
+
+
+//   currentIndex = 0;
+
+// get currentService() {
+//   return this.services?.[this.currentIndex];
+// }
+
+//   prevService() {
+//     if (this.currentIndex > 0) {
+//       this.currentIndex--;
+//     }
+//   }
+
+//   nextService() {
+//     if (this.currentIndex < this.services.length - 1) {
+//       this.currentIndex++;
+//     }
+//   }
+
+
+  @ViewChild('sliderContainer', { static: false }) sliderContainer!: ElementRef;
+
+scrollSlider(direction: 'left' | 'right') {
+  const container = this.sliderContainer.nativeElement;
+  // const scrollAmount = 350;
+  const scrollAmount = 360;
+  container.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
+}
+
+// }
+
+
+
+
+
+
+ sectionTitle = 'Explore Our';
+  sectionSubtitle = 'Full Scope IT Services';
+  sectionDescription =
+    'Whether starting or scaling, our services eliminate every tech barrier and empower your business to succeed digitally.';
+
+  services = [
+    {
+      img: '/assets/images/1.png',
+      title: 'Website Development',
+      description:
+        'Create fast, responsive websites that hook visitors and push them down the conversion pipeline.',
+    },
+    {
+      img: '/assets/images/2.png',
+      title: 'Application Development',
+      description:
+        'Build custom applications that automate staff tasks, meet regulatory requirements, and improve service delivery.'
+    },
+    {
+      img: '/assets/images/3.png',
+      title: 'Data and Analytics',
+      description:
+        'Turn data into insights to make smarter business decisions.'
+    },
+    {
+      img: '/assets/images/4.png',
+      title: 'Security Services',
+      description:
+        'Keep your systems secure with proactive security solutions.'
+    },
+    {
+      img: '/assets/images/5.png',
+      title: 'Cloud Services',
+      description:
+        'Access scalable, reliable cloud solutions for better business agility.'
+    },
+    {
+      img: '/assets/images/6.png',
+      title: 'Emerging Technologies',
+      description:
+        'Implement cutting-edge technologies to drive innovation and growth.'
+    }
+  ];
+
+  // @ViewChild('sliderContainer', { static: false }) sliderContainer!: ElementRef;
+
+  // scrollSlider(direction: 'left' | 'right') {
+  //   const container = this.sliderContainer.nativeElement;
+  //   const scrollAmount = container.offsetWidth * 0.6;
+  //   container.scrollLeft += direction === 'left' ? -scrollAmount : scrollAmount;
+  // }
+
+
+
+
+    loopedServices = [...this.services, ...this.services];
+}
