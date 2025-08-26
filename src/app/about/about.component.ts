@@ -1,5 +1,6 @@
 // import { Component,} from '@angular/core';
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import * as AOS from 'aos' ;
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angula
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
 
 
 
@@ -19,7 +20,23 @@ export class AboutComponent {
 
 
 
+// this is the story section \\
 
+  
+  // animated = false; // ensure animation runs only once
+
+  // ngOnInit() {}
+
+  // ngAfterViewInit() {
+  //   const observer = new IntersectionObserver(entries => {
+  //     if (entries[0].isIntersecting && !this.animated) {
+  //       this.animated = true;
+  //       this.animateStats();
+  //     }
+  //   }, { threshold: 0.3 }); // trigger when 30% of section visible
+
+  //   observer.observe(this.storysection.nativeElement);
+  // }
 
 
 
@@ -102,6 +119,16 @@ get isRightDisabled() {
       this.currentIndex++;
     }
   }
+  ngOnInit1() {
+  setInterval(() => {
+    if (this.currentIndex < this.allCards.length - 3) {
+      this.next();
+    } else {
+      this.currentIndex = 0; // reset to start (circle loop)
+    }
+  }, 3000); // 3 seconds
+}
+
  
     descrptionbelief1:string='We are committed to delivering exceptional digital solutions that drive success. Every software solution we work on is thoughtfully designed, cleanly coded,';
     descrptionbelief2:string='and rigorously tested across all devices for best industry practices.';
@@ -282,9 +309,22 @@ allClients = [
   ];
 
   @ViewChild('statsSection') statsSection!: ElementRef;
+  // @ViewChild('storysection') storysection!: ElementRef;
+  
   animated = false; // ensure animation runs only once
 
-  ngOnInit() {}
+
+  
+//  this code is trying animation AOS
+  ngOnInit() { 
+     AOS.init({
+      once: false, // animation happens only once
+      duration: 1000, // global duration
+    });}
+
+
+
+
 
   ngAfterViewInit() {
     const observer = new IntersectionObserver(entries => {
@@ -295,6 +335,32 @@ allClients = [
     }, { threshold: 0.3 }); // trigger when 30% of section visible
 
     observer.observe(this.statsSection.nativeElement);
+
+
+
+
+
+    // code for trying new animation on AOS 
+
+
+
+  //   ngOnInit() {
+  //   AOS.init({
+  //     once: true, // animation happens only once
+  //     duration: 1000, // global duration
+  //   });
+  // }
+
+
+    // // for story section 
+    // const observer1 = new IntersectionObserver(entries => {
+    //   if (entries[0].isIntersecting && !this.animated) {
+    //     this.animated = true;
+    //     // this.animateStats();
+    //   }
+    // }, { threshold: 1 }); // trigger when 30% of section visible
+
+    // observer1.observe(this.storysection.nativeElement);
   }
 
   animateStats() {

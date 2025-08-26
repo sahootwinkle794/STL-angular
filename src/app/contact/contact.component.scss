@@ -15,7 +15,6 @@ background-image: url('../../../public/assets/images/contact-page/Group 141.svg'
   background-size: cover;
 }
 .support-header{
-    // margin-top: 110px;
 }
 
 .support-header h2 {
@@ -112,10 +111,10 @@ a.support-btn .card-4{
 }
 
 
-.support-btn:hover {
-  background-color: #baecff;
-  color: white;
-}
+// .support-btn:hover {
+//   background-color: #baecff;
+//   color: white;
+// }
 
 
 //  New updad suppot-button adn cards
@@ -149,12 +148,14 @@ border-radius: 10px;
   margin-top: 10px;
   height: 60px;
   margin-bottom: 10px;
+  animation-delay: 0.2s;
 }
 
 .support-card h4 {
   
   font-size: 1.2rem;
   margin: 10px 0;
+  animation-delay: 0.2s;
 }
 
 .support-card p {
@@ -164,6 +165,7 @@ border-radius: 10px;
   color: #000000;
   margin-top: 20px;
   margin-bottom: 20px;
+  animation-delay: 0.2s;
 }
 
 .support-button {
@@ -174,6 +176,7 @@ border-radius: 10px;
 }
 
 .support-btn {
+   animation-delay: 0.8s;
    display: inline-block;
   padding: 10px 10px;
   border: 1px solid #6F39DB;
@@ -187,25 +190,77 @@ background: #F1EAFF;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
-.support-btn:hover {
-  background: linear-gradient(132.06deg, #0A47B9 9.71%, #763289 76.97%);
 
+
+.support-card:nth-child(4) {
+  /* if you want some specific styles here */
 }
 
-.support-card:nth-child(4) .support-button {
-  justify-content: center;
-}
+// /* Define the animation globally */
+// @keyframes slideUpAll {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(40px); /* start lower */
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0); /* back to normal */
+//   }
+// }
+
+// /* Apply animation to elements inside support-card */
+// .support-card:nth-child(4) img,
+// .support-card:nth-child(4) h4,
+// .support-card:nth-child(4) p,
+// .support-card:nth-child(4) .support-button {
+//   opacity: 0; /* hidden before animation */
+//   animation: slideUpAll 2s ease-out forwards;
+// }
+
+// .support-card:nth-child(4) .support-button {
+//   justify-content: center;
+// }
+
+// .support-card:nth-child(1) .support-button .support-btn {
+//   background: linear-gradient(163.74deg, #CEDFFF 8.39%, #DDC9FF 99.02%) !important;
+// }
+// .support-card:nth-child(2) .support-button .support-btn{
+//   background:linear-gradient(163.74deg, #D3E5F3 8.39%, #83DEFF 99.02%)  !important;
+// }
+// .support-card:nth-child(3) .support-button .support-btn{
+//   background:linear-gradient(158.92deg, #FFF0E2 -0.29%, #FFB09C 94.83%)  !important;
+// }
+// .support-card:nth-child(4) .support-button .support-btn{
+//    background:linear-gradient(158.92deg, #FFF9E9 -0.29%, #FFD997 94.83%) !important;
+// }
 
 
-@media screen and (min-width: 1920px) {
-  .support-cards {
-    justify-content: center;
-    max-width: 1600px; /* Adjust based on your card width + gaps */
-    margin: 0 auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
+// @media screen and (min-width: 1920px) {
+//   .support-cards {
+//     justify-content: center;
+//     max-width: 1600px; /* Adjust based on your card width + gaps */
+//     margin: 0 auto;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+// }
+// @keyframes slideUpAll {
+//   0% {
+//     opacity: 0;
+//     transform: translateY(40px); /* start lower */
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0); /* back to normal */
+//   }
+// }
+// .support-card img,
+// .support-card h4,
+// .support-card p,
+// .support-card .support-button {
+//   opacity: 0; /* hidden before animation */
+//   animation: slideUpAll 0.8s ease-out forwards;
+// }
 
 
 // global section
@@ -233,6 +288,9 @@ padding: 50px 0px 20px 110px;
   line-height: 1.3;
   color:#3D1391; 
      margin-left: 15;
+    //  opacity: 0;
+  // animation: slideFromRightCenter 1.2s ease-out forwards;
+  // animation-delay: 1s;
   
 }
 
@@ -241,6 +299,9 @@ padding: 50px 0px 20px 110px;
   font-weight: 600;
   color: #3D1391;
   font-size: 53px;
+  // opacity: 0;
+  //  animation: slideFromRightCenter 1.2s ease-out forwards;
+  // animation-delay: 1s;
 
 } 
 
@@ -378,3 +439,13 @@ padding: 50px 0px 20px 110px;
     background: #fff;
   }
 }
+// @keyframes slideFromRightCenter {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(80px); /* start from right */
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0); /* back to normal */
+//   }
+// }

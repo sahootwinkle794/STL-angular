@@ -7,11 +7,19 @@
   </div>
 
   <div class="container support-cards">
-    <div class="support-card" *ngFor="let card of supportCards">
-      <img [src]="card.icon" [alt]="card.title" />
-      <h4>{{ card.title }}</h4>
-      <p>{{ card.description }}</p>
-      <span class="support-button"><a class="support-btn" [routerLink]="card.link">{{ card.button }}</a></span>
+    <div class="support-card" *ngFor="let card of supportCards" [style.background]="card.Color">
+      <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" [src]="card.icon" [alt]="card.title"/>
+      <h4 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{ card.title }}</h4>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">{{ card.description }}</p>
+      <span data-aos="fade-up" data-aos-duration="900" data-aos-delay="200"class="support-button">
+        <!-- <a class="support-btn" [routerLink]="card.link" [style.border-color]="card.Color" [style.color]="card.Color">{{ card.button }}</a> -->
+         <a class="support-btn"
+   [routerLink]="card.link"
+   [style.border-color]="card.buttonColor"
+   [style.color]="card.buttonColor">
+   {{ card.button }}
+</a>
+      </span>
       
     </div>
     
@@ -21,9 +29,9 @@
 
 <section class="global-presence">
   <div class="left-section">
-    <h2>Fast-track your 
+    <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Fast-track your 
         <br>
-         progress with<br /><span>a worldwide partner</span></h2>
+         progress with<br /><span >a worldwide partner</span></h2>
 
     <button class="cta-button" routerLink="/contact">
       Book A <strong>FREE</strong> Discovery Call

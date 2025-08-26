@@ -27,12 +27,12 @@ export class ServiceSectionComponent implements OnInit, OnDestroy {
       description: 'Turn data into insights to make smarter business decisions.'
     },
     {
-      img: 'assets/images/4.png',
+      img: 'assets/images/4.svg',
       title: 'Security Services',
       description: 'Keep your systems secure with proactive security solutions.'
     },
     {
-      img: 'assets/images/5.png',
+      img: 'assets/images/5.svg',
       title: 'Cloud Services',
       description: 'Access scalable, reliable cloud solutions for better business agility.'
     },

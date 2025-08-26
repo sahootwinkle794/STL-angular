@@ -1,68 +1,64 @@
-import { Component,  Renderer2, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
-
+import { Component, Renderer2, ElementRef, AfterViewInit, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-industry-section',
   templateUrl: './industry-section.component.html',
-  styleUrl: './industry-section.component.scss'
+  styleUrls: ['./industry-section.component.scss']
 })
-export class IndustrySectionComponent  {
+export class IndustrySectionComponent implements AfterViewInit {
 
-
-
-
-
-
-
-
-
-  // try logic
-
-@ViewChildren('zone') zones!: QueryList<ElementRef>;
-
-
-
-  defaultZoneClass = 'education'; // The default active zone
+  @ViewChildren('zone') zones!: QueryList<ElementRef>;
   activeClass = 'active';
+  activeIndex = 0; // Keep track of the active zone index
+  mobileView = false; // To check if we're in mobile view
 
   constructor(private renderer: Renderer2) {}
 
   ngAfterViewInit(): void {
     const zonesArray = this.zones.toArray();
 
-    // Set default active zone (Education)
-    this.setActiveZoneByClass(this.defaultZoneClass);
+    // Detect if it's mobile view
+    if (window.innerWidth <= 768) {
+      this.mobileView = true;
+      this.startAutoSlide();
+    }
 
-    // Add mouseenter and mouseleave listeners to zones
-    zonesArray.forEach(zone => {
+    // Add mouseenter and mouseleave listeners to zones (optional)
+    zonesArray.forEach((zone, index) => {
       const el = zone.nativeElement;
 
       this.renderer.listen(el, 'mouseenter', () => {
-        // Remove active from all
-        zonesArray.forEach(z => this.renderer.removeClass(z.nativeElement, this.activeClass));
-        // Add active to hovered zone
-        this.renderer.addClass(el, this.activeClass);
+        this.setActiveZoneByIndex(index);
       });
 
       this.renderer.listen(el, 'mouseleave', () => {
-        // Remove active from all
-        zonesArray.forEach(z => this.renderer.removeClass(z.nativeElement, this.activeClass));
-        // Re-add active to default zone
-        this.setActiveZoneByClass(this.defaultZoneClass);
+        this.setActiveZoneByIndex(this.activeIndex);
       });
     });
   }
 
-  private setActiveZoneByClass(zoneClass: string) {
+  private setActiveZoneByIndex(index: number): void {
     const zonesArray = this.zones.toArray();
-    zonesArray.forEach(zone => {
-      if (zone.nativeElement.classList.contains(zoneClass)) {
-        this.renderer.addClass(zone.nativeElement, this.activeClass);
+    zonesArray.forEach((zone, i) => {
+      if (i === index) {
+        this.renderer.addClass(zone.nativeElement, this.activeClass); // Activate the hovered zone
       } else {
-        this.renderer.removeClass(zone.nativeElement, this.activeClass);
+        this.renderer.removeClass(zone.nativeElement, this.activeClass); // Deactivate other zones
       }
     });
   }
 
+  // Logic for auto-sliding on mobile view
+  startAutoSlide() {
+    setInterval(() => {
+      this.nextZone();
+    }, 1000); // Change slide every 5 seconds
+  }
 
+  // Move to the next zone (service)
+  nextZone() {
+    const totalZones = this.zones.length;
+    this.activeIndex = (this.activeIndex + 1) % totalZones;
+    this.setActiveZoneByIndex(this.activeIndex);
+  }
 }

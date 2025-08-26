@@ -1,9 +1,9 @@
 // TRY READY SECTION
 
-.ready-sec{
+.ready-sec {
   // margin-top: 50px;
   background-image: url('../../../../public/assets/images/sakhyam/dmsbglast.png');
-   background-size: 1800px 600px; 
+  background-size: 1800px 600px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -19,25 +19,28 @@
 // }
 
 
-.col-lg-5{
-  padding: 100px 0 0 0;
-  // margin-top: 100px;
-}
-.col-lg-7{
+.col-lg-5 {
   padding: 100px 0 0 0;
   // margin-top: 100px;
 }
 
-a{
-  color:#0074BD !important;
+.col-lg-7 {
+  padding: 100px 0 0 0;
+  // margin-top: 100px;
 }
-.img-fluid{
+
+a {
+  color: #0074BD !important;
+}
+
+.img-fluid {
   margin-top: -10px;
   width: 25px;
   height: 15px;
 
   margin-left: 30px;
 }
+
 .ready-sec .main-sec-head {
   color: #000000;
   font-family: 'Geist', sans-serif !important;
@@ -57,12 +60,12 @@ a{
 }
 
 .ready-sec p {
-font-family: 'Outfit', sans-serif !important;
+  font-family: 'Outfit', sans-serif !important;
   font-size: 30px;
   margin-bottom: 0;
   margin-top: 30px;
-font-weight: 400;
-width: 617px;
+  font-weight: 400;
+  width: 617px;
 }
 
 .form-box {
@@ -97,8 +100,9 @@ width: 617px;
   line-height: 50px;
   border-radius: 10px;
 }
-.form-control::placeholder{
-    font-family: 'Exo 2', sans-serif !important;
+
+.form-control::placeholder {
+  font-family: 'Exo 2', sans-serif !important;
   font-weight: 500;
   font-style: Medium;
   font-size: 22px;
@@ -122,8 +126,8 @@ width: 617px;
   height: 60px;
   line-height: 60px;
   border-radius: 40px;
-//   background: linear-gradient(180deg, #076689 0%, #032633 100%);
-background: linear-gradient(135deg, #0A47B9 0%, #763289 100%);
+  //   background: linear-gradient(180deg, #076689 0%, #032633 100%);
+  background: linear-gradient(135deg, #0A47B9 0%, #763289 100%);
   padding: 0 30px;
   color: #fff;
   font-size: 20px;
@@ -155,11 +159,11 @@ background: linear-gradient(135deg, #0A47B9 0%, #763289 100%);
 
 
 
-.btn-animate:hover .img-fluid{
+.btn-animate:hover .img-fluid {
 
-transform: rotate(13deg);
-        // margin-left: 50px;
-        transition: all 0.3s ease-in-out;
+  transform: rotate(13deg);
+  // margin-left: 50px;
+  transition: all 0.3s ease-in-out;
 
 }
 
@@ -191,7 +195,8 @@ transform: rotate(13deg);
     background-size: cover;
     background-position: center top;
   }
-  .col-lg-5{
+
+  .col-lg-5 {
     align-items: left !important;
   }
 
@@ -199,6 +204,11 @@ transform: rotate(13deg);
     font-size: 24px !important;
     font-weight: 500 !important;
   }
+
+  .main-sec-head span {
+    font-size: 32px !important;
+  }
+
   .col-lg-7 {
     margin-top: 40px;
     width: 100% !important;
@@ -209,6 +219,7 @@ transform: rotate(13deg);
     width: 100% !important;
     margin-top: 20px;
     text-align: left;
+    font-size: 18px !important;
   }
 
   .form-box {
@@ -217,6 +228,13 @@ transform: rotate(13deg);
     height: auto;
     padding: 20px 15px;
     border-radius: 15px;
+  }
+
+  .form-box label {
+    font-size: 18px;
+  }
+  input {
+    font-size: 18px !important;
   }
 
   .form-box .form-control {
@@ -232,7 +250,7 @@ transform: rotate(13deg);
   }
 
   .form-box button {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -253,6 +271,7 @@ transform: rotate(13deg);
 
 /* ========== TABLET (701px - 1000px) ========== */
 @media (min-width: 701px) and (max-width: 1000px) {
+
   .col-lg-5,
   .col-lg-7 {
     margin-top: 60px;

@@ -1,59 +1,179 @@
-<body>   
-  <!-- <nav class="breadcrumb" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li><a href="/">Home</a></li> >
-    <li><a href="/career">Career</a></li> 
-  </ol>
-</nav> -->
+<div class="main-container">
+    <section class="container-fluid career-container">
+    
+    <div class="inner-page-banner">
+        <div class="inner-banner-body">
+            <div class="col-md-6 banner-left current-opening-page">
+                <div class="banner-text">
+                    <h1 class="banner-title">Current Openings</h1>
+                    <p class="banner-subtext">We are always on the lookout for talented people to join our team.</p>
+                    <img src="assets/images/Logo-stl.svg" alt ='logo' class="banner-logo">
+                </div>
+            </div>
+    <div class="career-card col-7 mt-5 d-lg-block">
+        <img src="assets/images/career_banner_bg.svg" alt="career" class="img-fluid">
+    </div>
+
+    </div>
+    </div>
 
 
-    <section class="openings-job"> 
+    <div class="container career-card-text col-md-12 ">
 
-      <!--  trying the job- card click open link  -->
-      <a routerLink="/career/job-opening"  routerLinkActive='active' class="read-more">
-    <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <!-- <a routerLink="/career/job-opening"  routerLinkActive='active' class="read-more">Read More</a> -->
-   <span class="read-more">Read More</span>
+        <p>Hopefully the opportunity to work on a wide variety of projects for the leading brands is enough to encourage you to apply for a position. If you are interested in applying for any of the current positions listed below, please complete our online application form. Even if you can’t find what you’re looking for here, chances are we may still be interested in hearing from you (we’re always on the lookout for promising new talent), so why not send us your CV? Please e-mail your resume to <span class="career-email"> contact&#64;stlindia.com</span> </p>
+    </div>
+
+    <div class="container-fluid ">
+        <h2 class="current-opening"> Current Opening at STL<div class="inner-page-header"></div></h2>
+        
+
+    </div>
+
+
+    <!-- CARDS -->
+
+     <div class="container career-card-container">
+<div class="career-card">
+  <div class="top-section" #topSection (click)="toggleJob($event)">
+    <span class="icon">+</span>
+    <div class="details">
+      <div class="title">MERN Stack Developer</div>
+      <div class="date">25-07-2025 To 30-08-2025</div>
+    </div>
+
+        <a class="apply-btn" routerLink="/career/job-opening">
+        Apply Now
+        </a>
+
+  </div>
+
+  
+  <div class="job-desc">
+    <div class="row"><span>No. of Vacancy</span><span>2 Nos</span></div>
+    <div class="row"><span>Experience Type</span><span>Experienced</span></div>
+    <div class="row"><span>Minimum Experience</span><span>2 Years</span></div>
+    <div class="row"><span>Location</span><span>Bhubaneswar</span></div>
+    <div class="row"><span>Qualification</span><span>Any Graduate/B.Sc. (IT) / B-Tech / MCA</span></div>
+    <div class="row desc">
+      <span>Job Description</span>
+      <ul>
+        <li>Develop and maintain web applications using MongoDB, Express.js, React.js, and Node.js</li>
+        <li>Design and implement RESTful APIs and integrate third-party APIs</li>
+        <li>Collaborate with UI/UX designers to implement design into code</li>
+        <li>Write clean, maintainable, and efficient code</li>
+        <li>Optimize applications for maximum speed and scalability</li>
+        <li>Perform code reviews and provide constructive feedback</li>
+      </ul>
+    </div>
+  </div>
 </div>
-</a>
 
+<div class="career-card">
+  <div class="top-section" #topSection (click)="toggleJob($event)">
+    <span class="icon">+</span>
+    <div class="details">
+      <div class="title">MERN Stack Developer</div>
+      <div class="date">25-07-2025 To 30-08-2025</div>
+    </div>
+    <a class="apply-btn" routerLink="/career/job-opening">
+        Apply Now
+        </a>
+  </div>
 
-
- <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <a href='/index.html' class="read-more">Read More</a>
+  
+  <div class="job-desc">
+    <div class="row"><span>No. of Vacancy</span><span>2 Nos</span></div>
+    <div class="row"><span>Experience Type</span><span>Experienced</span></div>
+    <div class="row"><span>Minimum Experience</span><span>2 Years</span></div>
+    <div class="row"><span>Location</span><span>Bhubaneswar</span></div>
+    <div class="row"><span>Qualification</span><span>Any Graduate/B.Sc. (IT) / B-Tech / MCA</span></div>
+    <div class="row desc">
+      <span>Job Description</span>
+      <ul>
+        <li>Develop and maintain web applications using MongoDB, Express.js, React.js, and Node.js</li>
+        <li>Design and implement RESTful APIs and integrate third-party APIs</li>
+        <li>Collaborate with UI/UX designers to implement design into code</li>
+        <li>Write clean, maintainable, and efficient code</li>
+        <li>Optimize applications for maximum speed and scalability</li>
+        <li>Perform code reviews and provide constructive feedback</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 
- <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <a href='/index.html' class="read-more">Read More</a>
+
+
+<div class="career-card">
+  <div class="top-section" (click)="toggleJob($event)">
+    <span class="icon">+</span>
+    <div class="details">
+      <div class="title">MERN Stack Developer</div>
+      <div class="date">25-07-2025 To 30-08-2025</div>
+    </div>
+    <a class="apply-btn" routerLink="/career/job-opening">
+        Apply Now
+        </a>
+  </div>
+
+ 
+  <div class="job-desc">
+    <div class="row"><span>No. of Vacancy</span><span>2 Nos</span></div>
+    <div class="row"><span>Experience Type</span><span>Experienced</span></div>
+    <div class="row"><span>Minimum Experience</span><span>2 Years</span></div>
+    <div class="row"><span>Location</span><span>Bhubaneswar</span></div>
+    <div class="row"><span>Qualification</span><span>Any Graduate/B.Sc. (IT) / B-Tech / MCA</span></div>
+    <div class="row desc">
+      <span>Job Description</span>
+      <ul>
+        <li>Develop and maintain web applications using MongoDB, Express.js, React.js, and Node.js</li>
+        <li>Design and implement RESTful APIs and integrate third-party APIs</li>
+        <li>Collaborate with UI/UX designers to implement design into code</li>
+        <li>Write clean, maintainable, and efficient code</li>
+        <li>Optimize applications for maximum speed and scalability</li>
+        <li>Perform code reviews and provide constructive feedback</li>
+      </ul>
+    </div>
+  </div>
+</div>
 </div>
 
 
- <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <a href='/index.html' class="read-more">Read More</a>
-</div>
 
 
- <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <a href='/index.html' class="read-more">Read More</a>
-</div>
- <div class="job-card">
-  <h3>Job Openings</h3>
-  <p>Explore a full range of openings at STL for various technologies and apply for the relevant one to…</p>
-  <a href='/index.html' class="read-more">Read More</a>
-</div>
+
+<!-- <div class="career-steps">
+  <h2 class="section-title">Our Steps To Welcome You</h2>
+
+  <div class="steps-container">
+    
+    <div class="steps-list">
+      <div
+        class="step"
+        *ngFor="let step of steps; let i = index"
+        [class.active]="selectedStepIndex === i"
+        (click)="selectStep(i)"
+      >
+        <div class="icon">
+          <img [src]="step.icon" alt="step icon" />
+        </div>
+        <div class="label">{{ step.title }}</div>
+      </div>
+    </div>
+
+    
+    <div class="step-content">
+      <img class="step-img" [src]="steps[selectedStepIndex].image" alt="step" />
+      <div class="overlay">
+        <p>{{ steps[selectedStepIndex].description }}</p>
+        <span class="step-number">STEP {{ selectedStepIndex + 1 }}</span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+    
+
 </section>
 
-</body>
-
-
+</div>
