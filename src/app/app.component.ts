@@ -113,7 +113,7 @@ export class AppComponent {
 
 
 ngOnInit() {
-    const loader = document.getElementById('loader');
+    const loader = document.getElementById('app-loader');
 
     if (loader) {
       // Disable scrolling while loader is active
@@ -130,7 +130,7 @@ ngOnInit() {
 
         // Remove loader from DOM after fade-out transition
         setTimeout(() => loader.remove(), 800); // Match CSS transition duration
-      }, 400000);
+      }, 4000);
     }
   }
 

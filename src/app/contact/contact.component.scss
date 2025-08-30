@@ -4,7 +4,11 @@
 // // @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+.Contact_us_Section{
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 .support-section {
   padding: 120px 0px 120px 0px;
 //   background: linear-gradient(to bottom, #f5faff, #ffffff);
@@ -15,6 +19,7 @@ background-image: url('../../../public/assets/images/contact-page/Group 141.svg'
   background-size: cover;
 }
 .support-header{
+  
 }
 
 .support-header h2 {
@@ -119,6 +124,9 @@ a.support-btn .card-4{
 
 //  New updad suppot-button adn cards
 
+
+
+
 .support-card {
 //   width: 380px;
 // height: 465.06689453125px;
@@ -169,7 +177,7 @@ border-radius: 10px;
 }
 
 .support-button {
-  margin-top: auto; /* push to bottom */
+  margin-top: auto; 
   margin-left: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
@@ -190,77 +198,81 @@ background: #F1EAFF;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
+.support-btn:hover{
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.05);
+}
+
 
 
 .support-card:nth-child(4) {
-  /* if you want some specific styles here */
 }
 
-// /* Define the animation globally */
-// @keyframes slideUpAll {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(40px); /* start lower */
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0); /* back to normal */
-//   }
-// }
+/* Define the animation globally */
+@keyframes slideUpAll {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); /* start lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* back to normal */
+  }
+}
 
-// /* Apply animation to elements inside support-card */
-// .support-card:nth-child(4) img,
-// .support-card:nth-child(4) h4,
-// .support-card:nth-child(4) p,
-// .support-card:nth-child(4) .support-button {
-//   opacity: 0; /* hidden before animation */
-//   animation: slideUpAll 2s ease-out forwards;
-// }
+/* Apply animation to elements inside support-card */
+.support-card:nth-child(4) img,
+.support-card:nth-child(4) h4,
+.support-card:nth-child(4) p,
+.support-card:nth-child(4) .support-button {
+  opacity: 0; /* hidden before animation */
+  animation: slideUpAll 1s ease-out forwards;
+}
 
-// .support-card:nth-child(4) .support-button {
-//   justify-content: center;
-// }
+.support-card:nth-child(4) .support-button {
+  justify-content: center;
+}
 
-// .support-card:nth-child(1) .support-button .support-btn {
-//   background: linear-gradient(163.74deg, #CEDFFF 8.39%, #DDC9FF 99.02%) !important;
-// }
-// .support-card:nth-child(2) .support-button .support-btn{
-//   background:linear-gradient(163.74deg, #D3E5F3 8.39%, #83DEFF 99.02%)  !important;
-// }
-// .support-card:nth-child(3) .support-button .support-btn{
-//   background:linear-gradient(158.92deg, #FFF0E2 -0.29%, #FFB09C 94.83%)  !important;
-// }
-// .support-card:nth-child(4) .support-button .support-btn{
-//    background:linear-gradient(158.92deg, #FFF9E9 -0.29%, #FFD997 94.83%) !important;
-// }
+.support-card:nth-child(1) .support-button .support-btn {
+  background: linear-gradient(163.74deg, #CEDFFF 8.39%, #DDC9FF 99.02%) !important;
+}
+.support-card:nth-child(2) .support-button .support-btn{
+  background:linear-gradient(163.74deg, #D3E5F3 8.39%, #83DEFF 99.02%)  !important;
+}
+.support-card:nth-child(3) .support-button .support-btn{
+  background:linear-gradient(158.92deg, #FFF0E2 -0.29%, #FFB09C 94.83%)  !important;
+}
+.support-card:nth-child(4) .support-button .support-btn{
+   background:linear-gradient(158.92deg, #FFF9E9 -0.29%, #FFD997 94.83%) !important;
+}
 
 
-// @media screen and (min-width: 1920px) {
-//   .support-cards {
-//     justify-content: center;
-//     max-width: 1600px; /* Adjust based on your card width + gaps */
-//     margin: 0 auto;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//   }
-// }
-// @keyframes slideUpAll {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(40px); /* start lower */
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0); /* back to normal */
-//   }
-// }
-// .support-card img,
-// .support-card h4,
-// .support-card p,
-// .support-card .support-button {
-//   opacity: 0; /* hidden before animation */
-//   animation: slideUpAll 0.8s ease-out forwards;
-// }
+@media screen and (min-width: 1920px) {
+  .support-cards {
+    justify-content: center;
+    max-width: 1600px; /* Adjust based on your card width + gaps */
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@keyframes slideUpAll {
+  0% {
+    opacity: 0;
+    transform: translateY(40px); /* start lower */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* back to normal */
+  }
+}
+.support-card img,
+.support-card h4,
+.support-card p,
+.support-card .support-button {
+  opacity: 0; /* hidden before animation */
+  animation: slideUpAll 0.8s ease-out forwards;
+}
 
 
 // global section
@@ -316,6 +328,7 @@ padding: 50px 0px 20px 110px;
   font-size: 1rem;
   font-weight: 600;
   border:none ;
+  transition: all 1s ease-in-out;
   // text-decoration: none;
   // transition: background-color 0.3s ease;
   // width: 434.44580078125px;
@@ -338,7 +351,12 @@ padding: 50px 0px 20px 110px;
   margin-left: 20px;
   margin-right: -15px;
       height: 18px;
-  // width: auto;
+      transition: all 1s ease-in-out;
+}
+.cta-button:hover .arrow {
+  margin-left: 20px;
+  margin-right: 15px;
+      height: 18px;
 }
 
 .subtext {
@@ -386,6 +404,75 @@ padding: 50px 0px 20px 110px;
   color: #000;
 }
 
+.tooltip {
+  visibility: hidden;
+  max-width: 220px;
+  background-color: rgb(242, 150, 150);
+  // color: #000000;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px 14px;
+  position: absolute;
+  z-index: 20;
+  bottom: 140%; /* bit more space */
+  left: 50%;
+  transform: translateX(-50%) scale(0.8);
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+  white-space: normal;
+  word-wrap: break-word;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* arrow at bottom of tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(50, 50, 50, 0.95) transparent transparent transparent;
+  pointer-events: none;
+}
+
+
+.tooltip-header {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
+  color: #ff0000;
+}
+
+.tooltip-divider {
+  height: 1px;
+  background-color: #666;
+  margin: 0 0 8px 0;
+  border-radius: 1px;
+}
+
+.tooltip-location {
+  color: #ffffff; /* example different color */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.map-dot:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+  pointer-events: auto;
+}
+
+
+
+
 .map-dot::before {
   content: '';
   display: inline-block;
@@ -405,6 +492,10 @@ padding: 50px 0px 20px 110px;
 .map-dot.dubai {
   top: 55%;
   left: 45%;
+
+  .map-dot.dubai :hover{
+    
+  }
 }
 
 .map-dot.india {
@@ -420,25 +511,25 @@ padding: 50px 0px 20px 110px;
 
 
 
-@media screen and (min-width: 1920px) {
-  .global-presence {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: space-between;
-    max-width: 1600px; 
-    margin: 0 auto; 
-  }
+// @media screen and (min-width: 1920px) {
+//   .global-presence {
+//     display: flex;
+//     flex-wrap: nowrap; 
+//     justify-content: space-between;
+//     max-width: 1600px; 
+//     margin: 0 auto; 
+//   }
 
-  .left-section {
-    position: relative;
-    padding-left: 75px; 
-  }
+//   .left-section {
+//     position: relative;
+//     padding-left: 75px; 
+//   }
 
-  .right-section {
-    flex: 0 0 55%;
-    background: #fff;
-  }
-}
+//   .right-section {
+//     flex: 0 0 55%;
+//     background: #fff;
+//   }
+// }
 // @keyframes slideFromRightCenter {
 //   0% {
 //     opacity: 0;
@@ -449,3 +540,84 @@ padding: 50px 0px 20px 110px;
 //     transform: translateX(0); /* back to normal */
 //   }
 // }
+
+
+
+
+// media for mobile screen 
+
+@media only screen and (min-width:300px) and (max-width:800px) {
+
+  .support-section{
+    padding: 120px 0px 50px 0px !important;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .support-header h2 {
+   font-family: "Geist", sans-serif !important;
+    font-size: 28px !important;
+    text-shadow: #090404;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+    text-align: start;
+    padding: 0 10px 10px 20px;
+}
+.support-header p {
+    font-family: "Outfit", sans-serif !important;
+    font-size: 15px;
+    text-align: start;
+    max-width: 4000px;
+    margin: 0 !important;
+    color: #000000;
+    text-shadow: #141111;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px 20px 20px 20px;
+}
+
+
+.left-section {
+    background: linear-gradient( 166.12deg, #F2ECF4 -22.43%, #D5DEF4 122.35%);
+    padding: 20px 0 0px 20px !important;
+    flex: 1 1 40%;
+    background-size: cover;
+}
+
+
+.global-presence{
+    position: relative;
+    display: grid !important; 
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient( 166.12deg, #ECF4F4 -22.43%, #D5F0F4 122.35%);
+}
+.left-section h2{
+    font-family: "Geist", sans-serif !important;
+    font-size: 40px !important;
+    font-weight: 250;
+    line-height: 1.3;
+    color: #3D1391;
+    margin-left: 15;
+}
+
+.left-section h2 span {
+    font-family: "Geist", sans-serif !important;
+    font-weight: 600;
+    color: #3D1391;
+    font-size: 35px !important; 
+}
+
+
+.right-section h4 {
+    font-family: "Geist", sans-serif !important;
+    padding-top: 15px;
+    padding-left: 20px !important;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #111;
+    font-weight: 500;
+}
+
+}

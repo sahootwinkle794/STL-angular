@@ -10,6 +10,13 @@
 // //   font-family: "Geist", sans-serif;
 // // }
 
+
+body {
+  overflow-x: hidden;
+  width: auto; 
+  position: relative; /* keeps layout contained */
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -3130,87 +3137,87 @@ h4.visible {
 // // LOADER WITH SLOGAN 
 // /* Loader container */
 // /* Loader Container */
-// #app-loader {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: linear-gradient(139.25deg, #0A47B9 9.68%, #763289 90.62%);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   z-index: 9999;
-//   color: #fff;
+#app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(139.25deg, #0A47B9 9.68%, #763289 90.62%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: #fff;
 
-//   opacity: 1;
-//   transition: opacity 1s ease, transform 1.2s ease;
-//   overflow: hidden;
-// }
+  opacity: 1;
+  transition: opacity 1s ease, transform 1.2s ease;
+  overflow: hidden;
+}
 
-// #app-loader.fade-out {
-//   opacity: 0;
-//   transform: scale(1.1); /* slight zoom as it disappears */
-// }
+#app-loader.fade-out {
+  opacity: 0;
+  transform: scale(1.1); /* slight zoom as it disappears */
+}
 
-// /* Logo */
-// #app-loader .logo {
-//   font-size: 4rem;
-//   font-weight: 900;
-//   letter-spacing: 2px;
-//   text-transform: uppercase;
-//   background: linear-gradient(90deg, #ffffff, #763289 , #ffffff);
-//   background-size: 300% 100%;
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   animation: shimmer 3s infinite linear, bounce 2s infinite ease-in-out;
-// }
+/* Logo */
+#app-loader .logo {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff, #763289 , #ffffff);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s infinite linear, bounce 2s infinite ease-in-out;
+}
 
-// /* Slogan */
-// #app-loader .slogan {
-//   margin-top: 20px;
-//   font-size: 1.4rem;
-//   font-weight: 400;
-//   text-align: center;
-//   // max-width: 600px;
-//   line-height: 1.5;
-//   opacity: 0;
-//   animation: fadeInUp 2s ease forwards 1s;
-// }
+/* Slogan */
+#app-loader .slogan {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  // max-width: 600px;
+  line-height: 1.5;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards 1s;
+}
 
-// /* Keyframes */
+/* Keyframes */
 
-// /* Logo shimmer (moving gradient) */
-// @keyframes shimmer {
-//   0% { background-position: 0% 50%; }
-//   100% { background-position: 100% 50%; }
-// }
+/* Logo shimmer (moving gradient) */
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
 
-// /* Logo bounce */
-// @keyframes bounce {
-//   0%, 100% { transform: translateY(0); }
-//   50% { transform: translateY(-10px); }
-// }
+/* Logo bounce */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
 
-// /* Slogan fade-up */
-// @keyframes fadeInUp {
-//   from { opacity: 0; transform: translateY(30px); }
-//   to { opacity: 1; transform: translateY(0); }
-// }
+/* Slogan fade-up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-// /* Background slow gradient animation */
-// @keyframes bgMove {
-//   0% { background-position: 0% 50%; }
-//   50% { background-position: 100% 50%; }
-//   100% { background-position: 0% 50%; }
-// }
+/* Background slow gradient animation */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
-// #app-loader {
-//   background: linear-gradient(139.25deg, #0A47B9, #763289, #0A47B9);
-//   background-size: 200% 200%;
-//   animation: bgMove 12s ease infinite;
-// }
+#app-loader {
+  background: linear-gradient(139.25deg, #0A47B9, #763289, #0A47B9);
+  background-size: 200% 200%;
+  animation: bgMove 12s ease infinite;
+}
 
 
 
@@ -3599,108 +3606,108 @@ h4.visible {
 
 
 
-// WORKING
+// // WORKING
 
-/* Full-page loader */
+// /* Full-page loader */
 
 
-.loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  // background-color: white;
+// .loader {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   display: grid;
+//   place-items: center;
+//   // background-color: white;
 
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(50px);          
-  // -webkit-backdrop-filter: blur(30px);
+//   background: rgba(255, 255, 255, 0.2);
+//   backdrop-filter: blur(50px);          
+//   // -webkit-backdrop-filter: blur(30px);
   
 
 
 
-  //  background: linear-gradient(139.25deg, #0A47B9 9.68%, #763289 90.62%);
-  // background-size: 200% 200%;
-  // animation: bgMove 12s ease infinite;
+//   //  background: linear-gradient(139.25deg, #0A47B9 9.68%, #763289 90.62%);
+//   // background-size: 200% 200%;
+//   // animation: bgMove 12s ease infinite;
 
 
-  z-index: 9999;
-}
-
-// @keyframes bgMove {
-//   0% { background-position: 0% 50%; }
-//   50% { background-position: 100% 50%; }
-//   100% { background-position: 0% 50%; }
+//   z-index: 9999;
 // }
 
-
-.loader .box {
-  position: absolute;
-  border-radius: 50%;
-
-
-    background: linear-gradient(
-    0deg,
-     rgba(216, 207, 219, 0.553) 100%, 
-    rgba(255, 255, 255, 0.2) 0% 
-  );
+// // @keyframes bgMove {
+// //   0% { background-position: 0% 50%; }
+// //   50% { background-position: 100% 50%; }
+// //   100% { background-position: 0% 50%; }
+// // }
 
 
+// .loader .box {
+//   position: absolute;
+//   border-radius: 50%;
 
-  box-shadow:
-    rgba(0, 0, 0, 0.5) 0 10px 10px 0,
-    inset rgba(205, 155, 255, 0.5) 0 5px 10px -7px;
 
-  animation: ripple 2.5s infinite ease-in-out;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  z-index: calc(var(--i) * -1);
-  width: calc(200px + var(--i) * 30px);             //increase width
-  height: calc(200px + var(--i) * 30px);             //increase height
-  animation-delay: calc(var(--i) * 0.15s);
-}
+//     background: linear-gradient(
+//     0deg,
+//      rgba(216, 207, 219, 0.553) 100%, 
+//     rgba(255, 255, 255, 0.2) 0% 
+//   );
 
-.loader .box:last-child {
-  filter: blur(30px);
-}
 
-/* Logo centered */
-.loader .logo {
-  position: absolute;
-  // top: 50%;
-  // left: 50%;
-  transform: translate(40%, 30%); // centers logo container
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;   // same size as your img
-  height: 200px;  // make square to keep logo centered inside
-}
 
-.loader .logo .img-box {
-  width: 100%;
-  height: auto;
-  animation: ripple 2.5s infinite ease-in-out;
-}
+//   box-shadow:
+//     rgba(0, 0, 0, 0.5) 0 10px 10px 0,
+//     inset rgba(205, 155, 255, 0.5) 0 5px 10px -7px;
 
-/* Ripple animation */
-@keyframes ripple {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    // box-shadow: rgba(0,0,0,0.5) 0 10px 10px 0, inset rgba(205,155,255,0.5) 0 5px 10px -7px;
-  }
-  65% {
-    transform: translate(-50%, -50%) scale(1.4);
-    box-shadow: rgba(0,0,0,0) 0 0 0 0;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    // box-shadow: rgba(0,0,0,0.5) 0 10px 10px 0, inset rgba(205,155,255,0.5) 0 5px 10px -7px;
-  }
-}
+//   animation: ripple 2.5s infinite ease-in-out;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%) scale(1);
+//   z-index: calc(var(--i) * -1);
+//   width: calc(200px + var(--i) * 30px);             //increase width
+//   height: calc(200px + var(--i) * 30px);             //increase height
+//   animation-delay: calc(var(--i) * 0.15s);
+// }
+
+// .loader .box:last-child {
+//   filter: blur(30px);
+// }
+
+// /* Logo centered */
+// .loader .logo {
+//   position: absolute;
+//   // top: 50%;
+//   // left: 50%;
+//   transform: translate(40%, 30%); // centers logo container
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 200px;   // same size as your img
+//   height: 200px;  // make square to keep logo centered inside
+// }
+
+// .loader .logo .img-box {
+//   width: 100%;
+//   height: auto;
+//   animation: ripple 2.5s infinite ease-in-out;
+// }
+
+// /* Ripple animation */
+// @keyframes ripple {
+//   0% {
+//     transform: translate(-50%, -50%) scale(1);
+//     // box-shadow: rgba(0,0,0,0.5) 0 10px 10px 0, inset rgba(205,155,255,0.5) 0 5px 10px -7px;
+//   }
+//   65% {
+//     transform: translate(-50%, -50%) scale(1.4);
+//     box-shadow: rgba(0,0,0,0) 0 0 0 0;
+//   }
+//   100% {
+//     transform: translate(-50%, -50%) scale(1);
+//     // box-shadow: rgba(0,0,0,0.5) 0 10px 10px 0, inset rgba(205,155,255,0.5) 0 5px 10px -7px;
+//   }
+// }
 
 
 

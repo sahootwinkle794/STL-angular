@@ -65,7 +65,7 @@
       </li> -->
 
       <!-- Services Dropdown -->
-      <li class="dropdown main-menu-item" *ngIf="services.length" [class.open]="dropdownState.services">
+      <!-- <li class="dropdown main-menu-item" *ngIf="services.length" [class.open]="dropdownState.services">
         <a
           class="btn btn-drop dropdown-toggle nav-link"
           href="#"
@@ -82,7 +82,22 @@
             </a>
           </li>
         </ul>
+      </li> -->
+
+
+
+      <!-- new service link -->
+
+      <li class="main-menu-item">
+        <a
+          class="btn btn-drop dropdown-toggle nav-link"
+          routerLink="/services"
+          routerLinkActive="active"
+        >
+          Services
+        </a>
       </li>
+
 
       <!-- Career -->
       <li class="main-menu-item">

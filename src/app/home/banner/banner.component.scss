@@ -643,7 +643,7 @@
 
 /* =================== MOBILE (≤700px) =================== */
 
-@media only screen and (min-width: 300px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
   .banner {
     padding: 130px 0 80px 0;
   }
@@ -735,7 +735,7 @@
 
 
 /* TABLET (701px – 1000px) */
-@media (min-width: 701px) and (max-width: 1000px) {
+@media (min-width: 801px) and (max-width: 1000px) {
   .banner-title {
     font-size: 48px !important;
   }
@@ -762,7 +762,3 @@
     font-size: 72px !important;
   }
 }
-
-
-
-@media only screen and (min-width: 300px) and (max-width: 700px) {}

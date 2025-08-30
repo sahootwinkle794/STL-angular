@@ -53,12 +53,28 @@ export class AboutComponent implements OnInit {
 }
 
 
-get isLeftDisabled() {
-  return this.activeIndex === 0;
-}
+// get isLeftDisabled() {
+//   return this.activeIndex === 0;
+// }
 
-get isRightDisabled() {
-  return this.activeIndex === 0;
+// get isRightDisabled() {
+//   return this.activeIndex === 0;
+// }
+
+//  this code is trying animation AOS
+  ngOnInit() { 
+     AOS.init({
+      once: false, // animation happens only once
+      duration: 1000, // global duration
+    });
+  // / Start the auto-slide interval
+  this.autoSlideInterval = setInterval(() => {
+    if (this.currentIndex < this.allCards.length - 3) {
+      this.next();
+    } else {
+      this.currentIndex = 0; // reset to start loop
+    }
+  }, 2000); // every 2 seconds
 }
 
 
@@ -66,46 +82,52 @@ get isRightDisabled() {
 
    allCards = [
     {
-      year: '2016',
-      text: 'Opened 3 new offices and two R&D centers and strengthened our global presence.',
-      color: 'blue'
-    },
-    {
       year: '2014',
       text: 'Founded with a mission to deliver innovative IT solutions and drive business success.',
       color: 'green'
     },
     {
+      year: '2016',
+      text: 'Opened 3 new offices and two R&D centers and strengthened our global presence.',
+      color: 'blue'
+    },
+    {
+      year: '2019',
+      text: 'Our value proposition evolved, focusing on delivering integrated cloud, security, and emerging technology solutions for long-term business impact.',
+      color: 'orange'
+    },
+    
+    {
       year: '2022',
       text: 'Reached a milestone—50th client served, continuing our commitment to excellence and growth.',
       color: 'orange'
     },
-    {
-      year: '2023',
-      text: 'Expanded to new markets in Europe, focusing on AI-driven automation.',
-      color: 'blue'
-    },
-    {
-      year: '2024',
-      text: 'Expanded to new markets in Europe, focusing on AI-driven automation.',
-      color: 'blue'
-    },
-    {
-      year: '2025',
-      text: 'Expanded to new markets in Europe, focusing on AI-driven automation.',
-      color: 'blue'
-    },
-    {
-      year: '2026',
-      text: 'Expanded to new markets in Europe, focusing on AI-driven automation.',
-      color: 'blue'
-    }
+   
+   
+    
   ];
 
+
+    extendedCards = [...this.allCards, ...this.allCards.slice(0, this.visibleCount)];
+    
+
   currentIndex = 0;
+   autoSlideInterval: any;
+
+
+   slideTransition = 'transform 10s ease-in-out';
+
+getTranslateX() {
+  return `translateX(-${(100 / this.visibleCount) * this.currentIndex}%)`;
+}
 
   get visibleCards() {
     return this.allCards.slice(this.currentIndex, this.currentIndex + 3);
+  }
+    ngOnDestroy() {
+    if (this.autoSlideInterval) {
+      clearInterval(this.autoSlideInterval);
+    }
   }
 
   prev() {
@@ -119,6 +141,18 @@ get isRightDisabled() {
       this.currentIndex++;
     }
   }
+
+  
+
+
+
+
+
+
+
+
+
+
   ngOnInit1() {
   setInterval(() => {
     if (this.currentIndex < this.allCards.length - 3) {
@@ -128,6 +162,12 @@ get isRightDisabled() {
     }
   }, 3000); // 3 seconds
 }
+
+
+
+// THIS IS FOR AUTO SLIDER
+
+
 
  
     descrptionbelief1:string='We are committed to delivering exceptional digital solutions that drive success. Every software solution we work on is thoughtfully designed, cleanly coded,';
@@ -315,12 +355,7 @@ allClients = [
 
 
   
-//  this code is trying animation AOS
-  ngOnInit() { 
-     AOS.init({
-      once: false, // animation happens only once
-      duration: 1000, // global duration
-    });}
+
 
 
 
@@ -384,6 +419,15 @@ allClients = [
       }, duration / steps);
     });
   }
+
+
+
+
+
+  
+
+
+  
 
 
 }

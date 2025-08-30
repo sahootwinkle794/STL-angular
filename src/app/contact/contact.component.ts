@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener, OnInit  } from '@angular/core';
 import * as AOS from 'aos' ;
 
 
@@ -16,16 +16,7 @@ export class ContactComponent {
   
 
    supportCards = [
-    // {
-    //   class:'card1',
-    //   icon: 'assets/images/contact-page/icon-1.png',
-    //   title: 'Dedicated Support Team 24/7',
-    //   description: 'Reach out to our support team for any assistance. Our team of well-trained professionals listens to your requirements, provides valuable input, and promptly resolves any issues.',
-    //   button: 'Explore Our Services',
-    //   link: '/services',
-    //   Color: 'linear-gradient(163.74deg, #CEDFFF 8.39%, #DDC9FF 99.02%)'
-
-    // },
+  
       {
       class: 'card1',
       icon: 'assets/images/contact-page/icon-1.png',
@@ -66,12 +57,23 @@ export class ContactComponent {
       link: '/contact',
       Color: 'linear-gradient(158.92deg, #FFF9E9 -0.29%, #FFD997 94.83%)',
       buttonColor:'#efb95cff'
-    }
+    },
+    //   {
+    //   class:'card1',
+    //   icon: 'assets/images/contact-page/icon-1.png',
+    //   title: 'Dedicated Support Team 24/7',
+    //   description: 'Reach out to our support team for any assistance. Our team of well-trained professionals listens to your requirements, provides valuable input, and promptly resolves any issues.',
+    //   button: 'Explore Our Services',
+    //   link: '/services',
+    //   Color: 'linear-gradient(163.74deg, #CEDFFF 8.39%, #DDC9FF 99.02%)'
+
+    // },
   ];
   mapDots = [
-  { label: 'USA', class: 'usa' },
-  { label: 'Dubai', class: 'dubai' },
-  { label: 'India', class: 'india' }
+  { label: 'USA', class: 'usa',location: 'lorem'  },
+  { label: 'Dubai', class: 'dubai',location: 'lorem' },
+  { label: 'India', class: 'india',location: 'Odisha CORPORATE OFFICE: DCB - 402-406, 4th Floor,DLF Cyber City, Chandaka Industrial Estate,Bhubaneswar, Odisha-751024, India India +91674 2973271 REGD OFFICE : Silicon Techlab Pvt Ltd, Incubation Centre, Silicon Institute of Technology Campus, Silicon Hills, Patia, Bhubaneswar, Odisha -751024, India' },
+
 ];
 
 
@@ -80,7 +82,45 @@ export class ContactComponent {
        AOS.init({
         once: false, // animation happens only once
         duration: 1000, // global duration
-      });}
+      });
+    this.startAutoSlide();
+    this.checkScreenSize();
+    this.startAutoSlide();
+  }
+
+
+
+      currentIndex = 0;
+  intervalId: any;
+
+
+
+  ngOnDestroy() {
+    clearInterval(this.intervalId);
+  }
+
+  startAutoSlide() {
+    this.intervalId = setInterval(() => {
+      this.nextSlide();
+    }, 3000); // Slide every 3 seconds
+  }
+
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.supportCards.length;
+  }
+
+
+   isMobile = false;
+
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.checkScreenSize();
+  }
+
+  checkScreenSize() {
+    this.isMobile = window.innerWidth < 700;
+  }
 
 
 }

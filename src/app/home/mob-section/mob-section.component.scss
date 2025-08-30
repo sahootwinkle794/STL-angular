@@ -1,12 +1,11 @@
 .mob-sec {
-    padding: 98px 0;
+    padding: 50px 0;
     background: url('../../../../public/assets/images/mob-bg.png');
     background-size: 100%;
     background-position: top 0 left;
     background-repeat: no-repeat;
     animation: slideBackground 10s linear infinite;
     background-size: cover;
-    // background-size: contain;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
@@ -115,7 +114,7 @@ transform: rotate(13deg);
 
 
 
-@media only screen and (min-width: 300px) and (max-width: 700px) {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
   .mob-sec .row > .col-lg-6 {
     flex: 0 0 100%;
     max-width: 100%;
@@ -131,139 +130,24 @@ transform: rotate(13deg);
     font-size: 16px;
     text-align: center;
   }
-
+  .mob-box{
+    margin: 0px 30px;
+  }
   .chat-btn {
     display: inline-block;
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
   }
+  .mob-box h2{
+    font-size: 34px !important;
+  }
+  .mob-box p {
+    font-size: 23px !important;
+  }
+  .mob-box a{
+    text-align: center;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========== MOBILE (≤700px) =========== */
-// @media (max-width: 700px) {
-//   .mob-sec {
-//     padding: 40px 0 32px 0;
-//     background-size: cover;
-//     border-top-left-radius: 25px;
-//     border-top-right-radius: 25px;
-//   }
-
-//   .mob-sec .container {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-
-//   .mob-sec .row {
-//     margin: 0;
-//   }
-
-//   .mob-sec .col-lg-9 {
-//     width: 100%;
-//     padding: 0;
-//   }
-
-//   .mob-sec .row > .col-lg-6 {
-//     width: 100% !important;
-//     max-width: none;
-//     flex: 0 0 100%;
-//     margin-bottom: 28px;
-//     padding: 0;
-//   }
-
-//   .mob-box {
-//     padding: 24px 14px !important;
-//     border-radius: 24px !important;
-//     margin-bottom: 12px;
-//   }
-
-//   .mob-box h2 {
-//     font-size: 26px !important;
-//     line-height: 130%;
-//     margin-bottom: 16px;
-//   }
-
-//   .mob-box p {
-//     font-size: 15px !important;
-//     margin-bottom: 28px;
-//   }
-
-//   .mob-box a {
-//     font-size: 15px !important;
-//     height: 40px !important;
-//     line-height: 38px !important;
-//     border-radius: 25px !important;
-//     padding: 0 18px !important;
-//   }
-
-//   .mob-box a img {
-//     width: 24px;
-//     left: 7px;
-//     top: -2px;
-//   }
-// }
-
-// /* =========== TABLET (701px - 1000px) =========== */
-// @media (min-width: 701px) and (max-width: 1000px) {
-//   .mob-sec {
-//     padding: 64px 0;
-//     background-size: cover;
-//     border-top-left-radius: 36px;
-//     border-top-right-radius: 36px;
-//   }
-
-//   .mob-sec .col-lg-9 {
-//     width: 100%;
-//     padding: 0 18px;
-//   }
-
-//   .mob-sec .row > .col-lg-6 {
-//     width: 48% !important;
-//     max-width: none;
-//     flex: 0 0 48%;
-//     margin-bottom: 0;
-//     padding: 0 6px;
-//   }
-
-//   .mob-box {
-//     padding: 38px 22px !important;
-//     border-radius: 32px !important;
-//   }
-
-//   .mob-box h2 {
-//     font-size: 38px !important;
-//     margin-bottom: 21px;
-//   }
-
-//   .mob-box p {
-//     font-size: 21px !important;
-//     margin-bottom: 36px;
-//   }
-
-//   .mob-box a {
-//     font-size: 17px !important;
-//     height: 45px !important;
-//     line-height: 43px !important;
-//     border-radius: 32px !important;
-//     padding: 0 22px !important;
-//   }
-// }
 
 /* =========== DESKTOP (≥1001px) =========== */
 @media (min-width: 1001px) {

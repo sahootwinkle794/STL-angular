@@ -14,7 +14,7 @@
           <p class="service-paragraph-para">succeed digitally.</p>
         </div>
 
-        <div class="service-section-btn">
+        <div class="service-section-btn desk-control">
           <button (click)="scrollSlider('left')" [disabled]="isLeftDisabled" class="btn service-btn-left">
             <img src="assets/images/service-arrow-left.svg" alt="left arrow" />
           </button>
@@ -36,6 +36,14 @@
               <p>{{ service.description }}</p>
             </div>
           </div>
+        </div>
+        <div class="service-section-btn mob-control">
+          <button (click)="scrollSlider('left')" [disabled]="isLeftDisabled" class="btn service-btn-left">
+            <img src="assets/images/service-arrow-left.svg" alt="left arrow" />
+          </button>
+          <button (click)="scrollSlider('right')" [disabled]="isRightDisabled" class="btn service-btn-right">
+            <img src="assets/images/service-arrow-right.svg" alt="right arrow" />
+          </button>
         </div>
       </div>
 
